@@ -7,7 +7,6 @@ import { createServerFn } from "@tanstack/react-start";
 import axios from "axios";
 import { get } from "node:http";
 
-
 import "../css/styles.css";
 import styles from "../css/footer.module.css";
 
@@ -21,7 +20,7 @@ interface Todo {
 const getTodo = createServerFn({
   method: "GET",
 }).handler(async () => {
-  const res = await axios("https://jsonplaceholder.typicode.com/todos/21");
+  const res = await axios("https://jsonplaceholder.typicode.com/todos/11");
   return res.data;
 });
 
