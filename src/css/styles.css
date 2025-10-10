@@ -1,0 +1,15 @@
+/* @import url(base.css); */
+@import url(core.css);
+/* @import url(react-international-phone/style.css); */
+
+@import url(/node_modules/react-grid-layout/css/styles.css);
+@import url(/node_modules/react-resizable/css/styles.css);
+
+.react-grid-layout {
+  position: relative;
+  transition: height 0ms ease;
+}
+.react-grid-item {
+  transition: all 0ms ease;
+  transition-property: left, top;
+}

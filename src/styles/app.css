@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "daisyui" {
+  themes: bijalapa --default;
+}
+@plugin "daisyui/theme" {
+  name: "bijalapa";
+  default: true; /* set as default */
+  prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
+  color-scheme: light; /* color of browser-provided UI */
+
+  --color-base-100: oklch(98% 0.02 240);
+  --color-base-200: oklch(95% 0.03 240);
+  --color-base-300: oklch(92% 0.04 240);
+  --color-base-content: oklch(20% 0.05 240);
+  --color-primary: #80b8be;
+  --color-primary-content: oklch(28% 0.091 267.935);
+  --color-secondary: #b9baa3;
+  --color-secondary-content: oklch(28% 0.091 267.935);
+  --color-accent: #f58220;
+  --color-accent-content: oklch(28% 0.091 267.935);
+  --color-neutral: oklch(50% 0.05 240);
+  --color-neutral-content: oklch(98% 0.01 240);
+  --color-info: #f000d0;
+  --color-info-content: oklch(98% 0.01 220);
+  --color-success: #a8e200;
+  --color-success-content: oklch(28% 0.091 267.935);
+  --color-warning: #fff440;
+  --color-warning-content: oklch(28% 0.091 267.935);
+  --color-error: #e41e3c;
+  --color-error-content: oklch(98% 0.01 30);
+
+  --font-sans: Quicksand;
+  --font-serif: Cambria;
+  /* border radius */
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+
+  /* base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* border size */
+  --border: 1px;
+
+  /* effects */
+  --depth: 1;
+  --noise: 0;
+}
