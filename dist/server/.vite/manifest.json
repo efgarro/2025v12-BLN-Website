@@ -1,0 +1,117 @@
+{
+  ".output/server/chunks/_/_tanstack-start-manifest_v-CUsKgOx8.mjs": {
+    "file": "assets/_tanstack-start-manifest_v-CUsKgOx8-DuCybPi7.js",
+    "name": "_tanstack-start-manifest_v-CUsKgOx8",
+    "src": ".output/server/chunks/_/_tanstack-start-manifest_v-CUsKgOx8.mjs",
+    "isDynamicEntry": true
+  },
+  ".output/server/chunks/_/_tanstack-start-server-fn-manifest_v-CzLXrrmC.mjs": {
+    "file": "assets/_tanstack-start-server-fn-manifest_v-CzLXrrmC-DSNSelFo.js",
+    "name": "_tanstack-start-server-fn-manifest_v-CzLXrrmC",
+    "src": ".output/server/chunks/_/_tanstack-start-server-fn-manifest_v-CzLXrrmC.mjs",
+    "isDynamicEntry": true,
+    "dynamicImports": [
+      ".output/server/chunks/_/about-C-oBvSgB.mjs",
+      ".output/server/chunks/_/index-B4W6c7Uc.mjs",
+      ".output/server/chunks/_/index-B4W6c7Uc.mjs",
+      ".output/server/chunks/_/index-B4W6c7Uc.mjs"
+    ]
+  },
+  ".output/server/chunks/_/about-Bxe6PIfo.mjs": {
+    "file": "assets/about-Bxe6PIfo-BRS385By.js",
+    "name": "about-Bxe6PIfo",
+    "src": ".output/server/chunks/_/about-Bxe6PIfo.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      ".output/server/chunks/_/ssr.mjs",
+      "_01-Basic-qtdMQvVv-afeXvf3-.js",
+      "_worker-entry-BMtBY4SI.js"
+    ]
+  },
+  ".output/server/chunks/_/about-C-oBvSgB.mjs": {
+    "file": "assets/about-C-oBvSgB-2D2lFA9q.js",
+    "name": "about-C-oBvSgB",
+    "src": ".output/server/chunks/_/about-C-oBvSgB.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      ".output/server/chunks/_/ssr.mjs",
+      "_01-Basic-qtdMQvVv-afeXvf3-.js",
+      "_worker-entry-BMtBY4SI.js"
+    ]
+  },
+  ".output/server/chunks/_/deferred-CdxJuQ03.mjs": {
+    "file": "assets/deferred-CdxJuQ03-JCt7819F.js",
+    "name": "deferred-CdxJuQ03",
+    "src": ".output/server/chunks/_/deferred-CdxJuQ03.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      ".output/server/chunks/_/ssr.mjs",
+      "_worker-entry-BMtBY4SI.js"
+    ]
+  },
+  ".output/server/chunks/_/index-B4W6c7Uc.mjs": {
+    "file": "assets/index-B4W6c7Uc-DUfneROg.js",
+    "name": "index-B4W6c7Uc",
+    "src": ".output/server/chunks/_/index-B4W6c7Uc.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      ".output/server/chunks/_/ssr.mjs",
+      "_footer.module-cqFoTc87-8Oaen6-e.js",
+      "_worker-entry-BMtBY4SI.js"
+    ]
+  },
+  ".output/server/chunks/_/index-DyXh9kiA.mjs": {
+    "file": "assets/index-DyXh9kiA-D4oL5WrM.js",
+    "name": "index-DyXh9kiA",
+    "src": ".output/server/chunks/_/index-DyXh9kiA.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      ".output/server/chunks/_/ssr.mjs",
+      "_footer.module-cqFoTc87-8Oaen6-e.js",
+      "_worker-entry-BMtBY4SI.js"
+    ]
+  },
+  ".output/server/chunks/_/ssr.mjs": {
+    "file": "assets/ssr-D243SbGa.js",
+    "name": "ssr",
+    "src": ".output/server/chunks/_/ssr.mjs",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-BMtBY4SI.js"
+    ],
+    "dynamicImports": [
+      ".output/server/chunks/_/_tanstack-start-manifest_v-CUsKgOx8.mjs",
+      ".output/server/chunks/_/_tanstack-start-server-fn-manifest_v-CzLXrrmC.mjs",
+      ".output/server/chunks/_/deferred-CdxJuQ03.mjs",
+      ".output/server/chunks/_/about-Bxe6PIfo.mjs",
+      ".output/server/chunks/_/index-DyXh9kiA.mjs"
+    ]
+  },
+  "_01-Basic-qtdMQvVv-afeXvf3-.js": {
+    "file": "assets/01-Basic-qtdMQvVv-afeXvf3-.js",
+    "name": "01-Basic-qtdMQvVv",
+    "imports": [
+      ".output/server/chunks/_/ssr.mjs"
+    ]
+  },
+  "_footer.module-cqFoTc87-8Oaen6-e.js": {
+    "file": "assets/footer.module-cqFoTc87-8Oaen6-e.js",
+    "name": "footer.module-cqFoTc87"
+  },
+  "_worker-entry-BMtBY4SI.js": {
+    "file": "assets/worker-entry-BMtBY4SI.js",
+    "name": "worker-entry",
+    "dynamicImports": [
+      ".output/server/chunks/_/ssr.mjs"
+    ]
+  },
+  "virtual:cloudflare/worker-entry": {
+    "file": "index.js",
+    "name": "index",
+    "src": "virtual:cloudflare/worker-entry",
+    "isEntry": true,
+    "imports": [
+      "_worker-entry-BMtBY4SI.js"
+    ]
+  }
+}

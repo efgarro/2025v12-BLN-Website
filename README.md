@@ -162,3 +162,8 @@ git branch -M main
 git remote add origin https://github.com/efgarro/2025v12-BLN-Website.git
 git push -u origin main
 ```
+
+
+server functions
+loaders
+middleware - request / server fn
