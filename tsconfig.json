@@ -1,5 +1,5 @@
 {
-  "include": ["**/*.ts", "**/*.tsx", "src/components/01-Basic.jsx"],
+  "include": ["**/*.ts", "**/*.tsx", "src/components/01-Basic.jsx", "src/components/AmbientPics.jsx", "src/components/FetchPics.jsx"],
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,

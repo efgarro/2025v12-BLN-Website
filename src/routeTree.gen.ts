@@ -9,19 +9,29 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as RoomsRouteImport } from './routes/rooms'
+import { Route as GroundsRouteImport } from './routes/grounds'
 import { Route as DeferredRouteImport } from './routes/deferred'
-import { Route as ApiRouteImport } from './routes/api'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as RoomsSunriseRouteImport } from './routes/rooms.sunrise'
+import { Route as RoomsGuarumoRouteImport } from './routes/rooms.guarumo'
+import { Route as GroundsYardRouteImport } from './routes/grounds.yard'
+import { Route as GroundsRanchRouteImport } from './routes/grounds.ranch'
 
+const RoomsRoute = RoomsRouteImport.update({
+  id: '/rooms',
+  path: '/rooms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GroundsRoute = GroundsRouteImport.update({
+  id: '/grounds',
+  path: '/grounds',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const DeferredRoute = DeferredRouteImport.update({
   id: '/deferred',
   path: '/deferred',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiRoute = ApiRouteImport.update({
-  id: '/api',
-  path: '/api',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -34,55 +44,126 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RoomsSunriseRoute = RoomsSunriseRouteImport.update({
+  id: '/sunrise',
+  path: '/sunrise',
+  getParentRoute: () => RoomsRoute,
+} as any)
+const RoomsGuarumoRoute = RoomsGuarumoRouteImport.update({
+  id: '/guarumo',
+  path: '/guarumo',
+  getParentRoute: () => RoomsRoute,
+} as any)
+const GroundsYardRoute = GroundsYardRouteImport.update({
+  id: '/yard',
+  path: '/yard',
+  getParentRoute: () => GroundsRoute,
+} as any)
+const GroundsRanchRoute = GroundsRanchRouteImport.update({
+  id: '/ranch',
+  path: '/ranch',
+  getParentRoute: () => GroundsRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/api': typeof ApiRoute
   '/deferred': typeof DeferredRoute
+  '/grounds': typeof GroundsRouteWithChildren
+  '/rooms': typeof RoomsRouteWithChildren
+  '/grounds/ranch': typeof GroundsRanchRoute
+  '/grounds/yard': typeof GroundsYardRoute
+  '/rooms/guarumo': typeof RoomsGuarumoRoute
+  '/rooms/sunrise': typeof RoomsSunriseRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/api': typeof ApiRoute
   '/deferred': typeof DeferredRoute
+  '/grounds': typeof GroundsRouteWithChildren
+  '/rooms': typeof RoomsRouteWithChildren
+  '/grounds/ranch': typeof GroundsRanchRoute
+  '/grounds/yard': typeof GroundsYardRoute
+  '/rooms/guarumo': typeof RoomsGuarumoRoute
+  '/rooms/sunrise': typeof RoomsSunriseRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
-  '/api': typeof ApiRoute
   '/deferred': typeof DeferredRoute
+  '/grounds': typeof GroundsRouteWithChildren
+  '/rooms': typeof RoomsRouteWithChildren
+  '/grounds/ranch': typeof GroundsRanchRoute
+  '/grounds/yard': typeof GroundsYardRoute
+  '/rooms/guarumo': typeof RoomsGuarumoRoute
+  '/rooms/sunrise': typeof RoomsSunriseRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/api' | '/deferred'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/deferred'
+    | '/grounds'
+    | '/rooms'
+    | '/grounds/ranch'
+    | '/grounds/yard'
+    | '/rooms/guarumo'
+    | '/rooms/sunrise'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/api' | '/deferred'
-  id: '__root__' | '/' | '/about' | '/api' | '/deferred'
+  to:
+    | '/'
+    | '/about'
+    | '/deferred'
+    | '/grounds'
+    | '/rooms'
+    | '/grounds/ranch'
+    | '/grounds/yard'
+    | '/rooms/guarumo'
+    | '/rooms/sunrise'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/deferred'
+    | '/grounds'
+    | '/rooms'
+    | '/grounds/ranch'
+    | '/grounds/yard'
+    | '/rooms/guarumo'
+    | '/rooms/sunrise'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
-  ApiRoute: typeof ApiRoute
   DeferredRoute: typeof DeferredRoute
+  GroundsRoute: typeof GroundsRouteWithChildren
+  RoomsRoute: typeof RoomsRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/rooms': {
+      id: '/rooms'
+      path: '/rooms'
+      fullPath: '/rooms'
+      preLoaderRoute: typeof RoomsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/grounds': {
+      id: '/grounds'
+      path: '/grounds'
+      fullPath: '/grounds'
+      preLoaderRoute: typeof GroundsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/deferred': {
       id: '/deferred'
       path: '/deferred'
       fullPath: '/deferred'
       preLoaderRoute: typeof DeferredRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api': {
-      id: '/api'
-      path: '/api'
-      fullPath: '/api'
-      preLoaderRoute: typeof ApiRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -99,14 +180,68 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/rooms/sunrise': {
+      id: '/rooms/sunrise'
+      path: '/sunrise'
+      fullPath: '/rooms/sunrise'
+      preLoaderRoute: typeof RoomsSunriseRouteImport
+      parentRoute: typeof RoomsRoute
+    }
+    '/rooms/guarumo': {
+      id: '/rooms/guarumo'
+      path: '/guarumo'
+      fullPath: '/rooms/guarumo'
+      preLoaderRoute: typeof RoomsGuarumoRouteImport
+      parentRoute: typeof RoomsRoute
+    }
+    '/grounds/yard': {
+      id: '/grounds/yard'
+      path: '/yard'
+      fullPath: '/grounds/yard'
+      preLoaderRoute: typeof GroundsYardRouteImport
+      parentRoute: typeof GroundsRoute
+    }
+    '/grounds/ranch': {
+      id: '/grounds/ranch'
+      path: '/ranch'
+      fullPath: '/grounds/ranch'
+      preLoaderRoute: typeof GroundsRanchRouteImport
+      parentRoute: typeof GroundsRoute
+    }
   }
 }
+
+interface GroundsRouteChildren {
+  GroundsRanchRoute: typeof GroundsRanchRoute
+  GroundsYardRoute: typeof GroundsYardRoute
+}
+
+const GroundsRouteChildren: GroundsRouteChildren = {
+  GroundsRanchRoute: GroundsRanchRoute,
+  GroundsYardRoute: GroundsYardRoute,
+}
+
+const GroundsRouteWithChildren =
+  GroundsRoute._addFileChildren(GroundsRouteChildren)
+
+interface RoomsRouteChildren {
+  RoomsGuarumoRoute: typeof RoomsGuarumoRoute
+  RoomsSunriseRoute: typeof RoomsSunriseRoute
+}
+
+const RoomsRouteChildren: RoomsRouteChildren = {
+  RoomsGuarumoRoute: RoomsGuarumoRoute,
+  RoomsSunriseRoute: RoomsSunriseRoute,
+}
+
+const RoomsRouteWithChildren = RoomsRoute._addFileChildren(RoomsRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
-  ApiRoute: ApiRoute,
   DeferredRoute: DeferredRoute,
+  GroundsRoute: GroundsRouteWithChildren,
+  RoomsRoute: RoomsRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

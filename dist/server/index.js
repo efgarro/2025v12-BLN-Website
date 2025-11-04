@@ -1,12 +1,8 @@
-import { w } from "./assets/worker-entry-BMtBY4SI.js";
+import { F } from "./assets/worker-entry-C05JoE1H.js";
 import "node:events";
 import "node:stream";
-import "node:buffer";
-import "node:timers";
-import "cloudflare:workers";
-import "node:net";
-import "node:util";
-import "node:crypto";
+import "node:async_hooks";
+import "node:stream/web";
 export {
-  w as default
+  F as default
 };

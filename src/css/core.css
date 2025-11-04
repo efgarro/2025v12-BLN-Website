@@ -50,13 +50,41 @@
   height: 100%;
 }
 
+.card--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.core_wrapper {
+    width: clamp(4rem, 97.5vw, 27.5rem); /* 440px */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+    padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+    height: 100%;
+  }
+
+
 /* Mobile Screen Rules <= 599px */
+
+@media only screen and (min-device-width: 576px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+  .core_wrapper {
+    width: clamp(27.5rem, 85vw, 33.75rem); /* 540px */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+    padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+    height: 100%;
+  }
+}
+
 
 /* Tablet (medium) Screen Rules >=768px <992px | 720px container*/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 991px) and (-webkit-min-device-pixel-ratio: 1) {
   .core_wrapper {
-    width: clamp(45rem, 85vw, 45rem); /* 720px */
+    width: clamp(33.75rem, 85vw, 45rem); /* 720px */
     margin-left: auto;
     margin-right: auto;
     padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
@@ -73,7 +101,7 @@
 
 @media (min-width: 992px) {
   .core_wrapper {
-    width: clamp(16rem, 85vw, 60rem); /* 960px */
+    width: clamp(45rem, 85vw, 60rem); /* 960px */
     margin-left: auto;
     margin-right: auto;
     padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
