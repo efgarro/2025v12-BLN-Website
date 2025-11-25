@@ -3,14 +3,17 @@ import React from "react";
 const MenuBarViewRooms = () => {
   return (
     <div className="core_flexRow justify-center">
-      <ul className="menu menu-vertical md:menu-horizontal px-1">
-        <li className="flex-1 bg-blue-400">
-          <a className="flex w-36 justify-center text-white" href="/rooms/guarumo">
+      <ul className="menu menu-vertical gap-1 md:menu-horizontal md:px-1 md:gap-2">
+        <li className="flex-1 bg-[#A8E200]">
+          <a
+            className="flex h-13 w-36 justify-center font-semibold text-[#3A3E40]"
+            href="/rooms/guarumo"
+          >
             Guarumo Room
           </a>
         </li>
-        <li className="flex-1">
-          <a className="flex w-36 justify-center" href="/rooms/sunrise">
+        <li className="flex-1 bg-[#ff9c46]">
+          <a className="flex h-13 w-36 justify-center font-semibold text-[#3A3E40]" href="/rooms/sunrise">
             Sunrise Room
           </a>
         </li>

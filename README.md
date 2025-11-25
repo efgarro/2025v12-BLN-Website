@@ -33,22 +33,22 @@ BijaLapa Natural Menu
    The Grounds
      The Yard
      Ranch Area
-     We are Organic
-     Rural Work
+     Organic Practices
+
+     // Rural Work
 
    Activities
 	  Local Restaurants
-	  Hiking
+	  Hiking (Hike to La Poza, Hike to Bijagual Waterfall)
 	  Fogata Night
-	  Hike to La Poza
-	  Hike to Bijagual Waterfall
 	  The Town of Bijagual and Sorroundings
-	  Horseback Tours
-	  Crocodile Tours (One-hour drive or less)
+	
+    // Horseback Tours
+	  // Crocodile Tours (One-hour drive or less)
 
    Scarlet Macaw Habitat Project
-	 Wildlife Journal
-	 One Hundred Trees a Year (and Counting)
+	  Wildlife Journal
+	  One Hundred Trees a Year (and Counting)
 
    Local Partners
 
@@ -72,17 +72,12 @@ Routes:
 /grounds/yard
 /grounds/ranch
 /grounds/organic
-/grounds/work
 
 /activities <show photoStory>
 /activities/restaurants
 /activities/hiking
 /activities/fogata-night
-/activities/la-poza
-/activities/waterfall
-/activities/horseback
 /activities/bijagual
-/activities/croc-tour
 
 /sm-habitat <show photoStory>
 /sm-habitat/wildlife

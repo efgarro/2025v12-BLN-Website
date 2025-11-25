@@ -1,5 +1,11 @@
 {
-  "include": ["**/*.ts", "**/*.tsx", "src/components/01-Basic.jsx", "src/components/AmbientPics.jsx", "src/components/FetchPics.jsx"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "src/components/01-Basic.jsx",
+    "src/components/ImageClusterGrid.jsx",
+    "src/components/FetchPics.jsx"
+  ],
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,

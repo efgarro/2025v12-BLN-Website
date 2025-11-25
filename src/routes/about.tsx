@@ -34,8 +34,8 @@ function RouteComponent() {
           <button className="btn btn-warning">Warning</button>
           <button className="btn btn-error">Error</button>
         </div>
-        <textarea className="textarea my-3" placeholder="Bio"></textarea>
-        <BasicLayout />
+        {/* <textarea className="textarea my-3" placeholder="Bio"></textarea> */}
+        {/* <BasicLayout /> */}
         <div className="prose prose-lg prose-pre:bg-amber-900">
           {/* <Markdown>{data}</Markdown> */}
           <Markdown remarkPlugins={[remarkGfm]}>{data}</Markdown>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { AmbientPics } from "./AmbientPics";
-import { useScreenWidth } from "~/hooks/useScreenWidht";
+import { ImageClusterGrid } from "./ImageClusterGrid";
+import { useScreenWidth } from "~/hooks/useScreenWidth";
 
 export const FetchPics = ({ searchTerm }) => {
   const [dataPics, setDataPics] = useState([]);
@@ -123,7 +123,7 @@ export const FetchPics = ({ searchTerm }) => {
     <>
       {console.log(screenWidth)}
       {console.log(rowHeight)}
-      <AmbientPics
+      <ImageClusterGrid
         dataPics={dataPics}
         layouts={layouts}
         rowHeight={rowHeight}

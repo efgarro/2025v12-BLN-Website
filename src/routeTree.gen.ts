@@ -10,18 +10,36 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as RoomsRouteImport } from './routes/rooms'
+import { Route as InquireRouteImport } from './routes/inquire'
+import { Route as HabitatRouteImport } from './routes/habitat'
 import { Route as GroundsRouteImport } from './routes/grounds'
 import { Route as DeferredRouteImport } from './routes/deferred'
+import { Route as ActivitiesRouteImport } from './routes/activities'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as RoomsSunriseRouteImport } from './routes/rooms.sunrise'
 import { Route as RoomsGuarumoRouteImport } from './routes/rooms.guarumo'
+import { Route as HabitatWildlifeRouteImport } from './routes/habitat.wildlife'
+import { Route as HabitatTreesRouteImport } from './routes/habitat.trees'
 import { Route as GroundsYardRouteImport } from './routes/grounds.yard'
 import { Route as GroundsRanchRouteImport } from './routes/grounds.ranch'
+import { Route as GroundsOrganicRouteImport } from './routes/grounds.organic'
+import { Route as ActivitiesRestaurantsRouteImport } from './routes/activities.restaurants'
+import { Route as ActivitiesHikingRouteImport } from './routes/activities.hiking'
 
 const RoomsRoute = RoomsRouteImport.update({
   id: '/rooms',
   path: '/rooms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InquireRoute = InquireRouteImport.update({
+  id: '/inquire',
+  path: '/inquire',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HabitatRoute = HabitatRouteImport.update({
+  id: '/habitat',
+  path: '/habitat',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GroundsRoute = GroundsRouteImport.update({
@@ -32,6 +50,11 @@ const GroundsRoute = GroundsRouteImport.update({
 const DeferredRoute = DeferredRouteImport.update({
   id: '/deferred',
   path: '/deferred',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ActivitiesRoute = ActivitiesRouteImport.update({
+  id: '/activities',
+  path: '/activities',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -54,6 +77,16 @@ const RoomsGuarumoRoute = RoomsGuarumoRouteImport.update({
   path: '/guarumo',
   getParentRoute: () => RoomsRoute,
 } as any)
+const HabitatWildlifeRoute = HabitatWildlifeRouteImport.update({
+  id: '/wildlife',
+  path: '/wildlife',
+  getParentRoute: () => HabitatRoute,
+} as any)
+const HabitatTreesRoute = HabitatTreesRouteImport.update({
+  id: '/trees',
+  path: '/trees',
+  getParentRoute: () => HabitatRoute,
+} as any)
 const GroundsYardRoute = GroundsYardRouteImport.update({
   id: '/yard',
   path: '/yard',
@@ -64,26 +97,57 @@ const GroundsRanchRoute = GroundsRanchRouteImport.update({
   path: '/ranch',
   getParentRoute: () => GroundsRoute,
 } as any)
+const GroundsOrganicRoute = GroundsOrganicRouteImport.update({
+  id: '/organic',
+  path: '/organic',
+  getParentRoute: () => GroundsRoute,
+} as any)
+const ActivitiesRestaurantsRoute = ActivitiesRestaurantsRouteImport.update({
+  id: '/restaurants',
+  path: '/restaurants',
+  getParentRoute: () => ActivitiesRoute,
+} as any)
+const ActivitiesHikingRoute = ActivitiesHikingRouteImport.update({
+  id: '/hiking',
+  path: '/hiking',
+  getParentRoute: () => ActivitiesRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/activities': typeof ActivitiesRouteWithChildren
   '/deferred': typeof DeferredRoute
   '/grounds': typeof GroundsRouteWithChildren
+  '/habitat': typeof HabitatRouteWithChildren
+  '/inquire': typeof InquireRoute
   '/rooms': typeof RoomsRouteWithChildren
+  '/activities/hiking': typeof ActivitiesHikingRoute
+  '/activities/restaurants': typeof ActivitiesRestaurantsRoute
+  '/grounds/organic': typeof GroundsOrganicRoute
   '/grounds/ranch': typeof GroundsRanchRoute
   '/grounds/yard': typeof GroundsYardRoute
+  '/habitat/trees': typeof HabitatTreesRoute
+  '/habitat/wildlife': typeof HabitatWildlifeRoute
   '/rooms/guarumo': typeof RoomsGuarumoRoute
   '/rooms/sunrise': typeof RoomsSunriseRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/activities': typeof ActivitiesRouteWithChildren
   '/deferred': typeof DeferredRoute
   '/grounds': typeof GroundsRouteWithChildren
+  '/habitat': typeof HabitatRouteWithChildren
+  '/inquire': typeof InquireRoute
   '/rooms': typeof RoomsRouteWithChildren
+  '/activities/hiking': typeof ActivitiesHikingRoute
+  '/activities/restaurants': typeof ActivitiesRestaurantsRoute
+  '/grounds/organic': typeof GroundsOrganicRoute
   '/grounds/ranch': typeof GroundsRanchRoute
   '/grounds/yard': typeof GroundsYardRoute
+  '/habitat/trees': typeof HabitatTreesRoute
+  '/habitat/wildlife': typeof HabitatWildlifeRoute
   '/rooms/guarumo': typeof RoomsGuarumoRoute
   '/rooms/sunrise': typeof RoomsSunriseRoute
 }
@@ -91,11 +155,19 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/activities': typeof ActivitiesRouteWithChildren
   '/deferred': typeof DeferredRoute
   '/grounds': typeof GroundsRouteWithChildren
+  '/habitat': typeof HabitatRouteWithChildren
+  '/inquire': typeof InquireRoute
   '/rooms': typeof RoomsRouteWithChildren
+  '/activities/hiking': typeof ActivitiesHikingRoute
+  '/activities/restaurants': typeof ActivitiesRestaurantsRoute
+  '/grounds/organic': typeof GroundsOrganicRoute
   '/grounds/ranch': typeof GroundsRanchRoute
   '/grounds/yard': typeof GroundsYardRoute
+  '/habitat/trees': typeof HabitatTreesRoute
+  '/habitat/wildlife': typeof HabitatWildlifeRoute
   '/rooms/guarumo': typeof RoomsGuarumoRoute
   '/rooms/sunrise': typeof RoomsSunriseRoute
 }
@@ -104,33 +176,57 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/activities'
     | '/deferred'
     | '/grounds'
+    | '/habitat'
+    | '/inquire'
     | '/rooms'
+    | '/activities/hiking'
+    | '/activities/restaurants'
+    | '/grounds/organic'
     | '/grounds/ranch'
     | '/grounds/yard'
+    | '/habitat/trees'
+    | '/habitat/wildlife'
     | '/rooms/guarumo'
     | '/rooms/sunrise'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
+    | '/activities'
     | '/deferred'
     | '/grounds'
+    | '/habitat'
+    | '/inquire'
     | '/rooms'
+    | '/activities/hiking'
+    | '/activities/restaurants'
+    | '/grounds/organic'
     | '/grounds/ranch'
     | '/grounds/yard'
+    | '/habitat/trees'
+    | '/habitat/wildlife'
     | '/rooms/guarumo'
     | '/rooms/sunrise'
   id:
     | '__root__'
     | '/'
     | '/about'
+    | '/activities'
     | '/deferred'
     | '/grounds'
+    | '/habitat'
+    | '/inquire'
     | '/rooms'
+    | '/activities/hiking'
+    | '/activities/restaurants'
+    | '/grounds/organic'
     | '/grounds/ranch'
     | '/grounds/yard'
+    | '/habitat/trees'
+    | '/habitat/wildlife'
     | '/rooms/guarumo'
     | '/rooms/sunrise'
   fileRoutesById: FileRoutesById
@@ -138,8 +234,11 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  ActivitiesRoute: typeof ActivitiesRouteWithChildren
   DeferredRoute: typeof DeferredRoute
   GroundsRoute: typeof GroundsRouteWithChildren
+  HabitatRoute: typeof HabitatRouteWithChildren
+  InquireRoute: typeof InquireRoute
   RoomsRoute: typeof RoomsRouteWithChildren
 }
 
@@ -150,6 +249,20 @@ declare module '@tanstack/react-router' {
       path: '/rooms'
       fullPath: '/rooms'
       preLoaderRoute: typeof RoomsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/inquire': {
+      id: '/inquire'
+      path: '/inquire'
+      fullPath: '/inquire'
+      preLoaderRoute: typeof InquireRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/habitat': {
+      id: '/habitat'
+      path: '/habitat'
+      fullPath: '/habitat'
+      preLoaderRoute: typeof HabitatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/grounds': {
@@ -164,6 +277,13 @@ declare module '@tanstack/react-router' {
       path: '/deferred'
       fullPath: '/deferred'
       preLoaderRoute: typeof DeferredRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/activities': {
+      id: '/activities'
+      path: '/activities'
+      fullPath: '/activities'
+      preLoaderRoute: typeof ActivitiesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -194,6 +314,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RoomsGuarumoRouteImport
       parentRoute: typeof RoomsRoute
     }
+    '/habitat/wildlife': {
+      id: '/habitat/wildlife'
+      path: '/wildlife'
+      fullPath: '/habitat/wildlife'
+      preLoaderRoute: typeof HabitatWildlifeRouteImport
+      parentRoute: typeof HabitatRoute
+    }
+    '/habitat/trees': {
+      id: '/habitat/trees'
+      path: '/trees'
+      fullPath: '/habitat/trees'
+      preLoaderRoute: typeof HabitatTreesRouteImport
+      parentRoute: typeof HabitatRoute
+    }
     '/grounds/yard': {
       id: '/grounds/yard'
       path: '/yard'
@@ -208,21 +342,71 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GroundsRanchRouteImport
       parentRoute: typeof GroundsRoute
     }
+    '/grounds/organic': {
+      id: '/grounds/organic'
+      path: '/organic'
+      fullPath: '/grounds/organic'
+      preLoaderRoute: typeof GroundsOrganicRouteImport
+      parentRoute: typeof GroundsRoute
+    }
+    '/activities/restaurants': {
+      id: '/activities/restaurants'
+      path: '/restaurants'
+      fullPath: '/activities/restaurants'
+      preLoaderRoute: typeof ActivitiesRestaurantsRouteImport
+      parentRoute: typeof ActivitiesRoute
+    }
+    '/activities/hiking': {
+      id: '/activities/hiking'
+      path: '/hiking'
+      fullPath: '/activities/hiking'
+      preLoaderRoute: typeof ActivitiesHikingRouteImport
+      parentRoute: typeof ActivitiesRoute
+    }
   }
 }
 
+interface ActivitiesRouteChildren {
+  ActivitiesHikingRoute: typeof ActivitiesHikingRoute
+  ActivitiesRestaurantsRoute: typeof ActivitiesRestaurantsRoute
+}
+
+const ActivitiesRouteChildren: ActivitiesRouteChildren = {
+  ActivitiesHikingRoute: ActivitiesHikingRoute,
+  ActivitiesRestaurantsRoute: ActivitiesRestaurantsRoute,
+}
+
+const ActivitiesRouteWithChildren = ActivitiesRoute._addFileChildren(
+  ActivitiesRouteChildren,
+)
+
 interface GroundsRouteChildren {
+  GroundsOrganicRoute: typeof GroundsOrganicRoute
   GroundsRanchRoute: typeof GroundsRanchRoute
   GroundsYardRoute: typeof GroundsYardRoute
 }
 
 const GroundsRouteChildren: GroundsRouteChildren = {
+  GroundsOrganicRoute: GroundsOrganicRoute,
   GroundsRanchRoute: GroundsRanchRoute,
   GroundsYardRoute: GroundsYardRoute,
 }
 
 const GroundsRouteWithChildren =
   GroundsRoute._addFileChildren(GroundsRouteChildren)
+
+interface HabitatRouteChildren {
+  HabitatTreesRoute: typeof HabitatTreesRoute
+  HabitatWildlifeRoute: typeof HabitatWildlifeRoute
+}
+
+const HabitatRouteChildren: HabitatRouteChildren = {
+  HabitatTreesRoute: HabitatTreesRoute,
+  HabitatWildlifeRoute: HabitatWildlifeRoute,
+}
+
+const HabitatRouteWithChildren =
+  HabitatRoute._addFileChildren(HabitatRouteChildren)
 
 interface RoomsRouteChildren {
   RoomsGuarumoRoute: typeof RoomsGuarumoRoute
@@ -239,8 +423,11 @@ const RoomsRouteWithChildren = RoomsRoute._addFileChildren(RoomsRouteChildren)
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  ActivitiesRoute: ActivitiesRouteWithChildren,
   DeferredRoute: DeferredRoute,
   GroundsRoute: GroundsRouteWithChildren,
+  HabitatRoute: HabitatRouteWithChildren,
+  InquireRoute: InquireRoute,
   RoomsRoute: RoomsRouteWithChildren,
 }
 export const routeTree = rootRouteImport
