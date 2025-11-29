@@ -1,0 +1,20 @@
+{
+  "date": "2025-10-10T19:27:21.249Z",
+  "preset": "cloudflare-module",
+  "framework": {
+    "name": "nitro",
+    "version": ""
+  },
+  "versions": {
+    "nitro": "2.12.4"
+  },
+  "commands": {
+    "preview": "npx wrangler dev server/index.mjs --assets public",
+    "deploy": "npx wrangler deploy server/index.mjs --assets public"
+  },
+  "config": {
+    "cloudflare": {
+      "nodeCompat": true
+    }
+  }
+}

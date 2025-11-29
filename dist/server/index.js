@@ -1,8 +1,8 @@
-import { G } from "./assets/worker-entry-3e4I1JDA.js";
+import { F } from "./assets/worker-entry-BUtatavz.js";
 import "node:events";
 import "node:stream";
 import "node:async_hooks";
 import "node:stream/web";
 export {
-  G as default
+  F as default
 };

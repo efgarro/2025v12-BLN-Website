@@ -3,11 +3,11 @@ import { ImageClusterGrid } from "./ImageClusterGrid";
 import { useScreenWidth } from "../hooks/useScreenWidth";
 import { useGetImageStack } from "../apiFns/apiFns";
 
-export const ImageCluster = () => {
+export const ImageCluster = (image_cluster_id) => {
   const [dataPics, setDataPics] = useState([]);
   const [layouts, setLayouts] = useState({});
   const { screenWidth, rowHeight } = useScreenWidth();
-  const { data } = useGetImageStack();
+  const { data } = useGetImageStack(image_cluster_id);
 
   useEffect(() => {
     // const fetchData = async () => {

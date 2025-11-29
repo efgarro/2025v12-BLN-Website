@@ -20,7 +20,9 @@ function Rooms() {
       <MenuBarViewRooms />
       <Suspense fallback="Loading Middleman...">
         <ClientOnly>
-          <ImageCluster />
+          <ImageCluster
+            image_cluster_id={"019a939c-e590-779a-aaa6-66085d69ccae"}
+          />
         </ClientOnly>
       </Suspense>
       <Outlet />

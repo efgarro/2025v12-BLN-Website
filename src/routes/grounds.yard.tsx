@@ -5,11 +5,11 @@ import { ImageCluster } from "~/components/ImageCluster";
 
 export const Route = createFileRoute("/grounds/yard")({
   loader: ({ context }) => {
-      // Kick off loading as early as possible!
-      context.queryClient.prefetchQuery(
-        useGetImageStackOptions("019a8f35-70f2-74f4-a53b-01917b4d47e7")
-      );
-    },
+    // Kick off loading as early as possible!
+    context.queryClient.prefetchQuery(
+      useGetImageStackOptions("019a8f35-70f2-74f4-a53b-01917b4d47e7")
+    );
+  },
   component: Yard,
 });
 
@@ -18,7 +18,9 @@ function Yard() {
     <div>
       <Suspense fallback="Loading Middleman...">
         <ClientOnly>
-          <ImageCluster />
+          <ImageCluster
+            image_cluster_id={"019a8f35-70f2-74f4-a53b-01917b4d47e7"}
+          />
         </ClientOnly>
       </Suspense>
     </div>

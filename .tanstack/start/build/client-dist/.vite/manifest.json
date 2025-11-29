@@ -1,0 +1,58 @@
+{
+  "../../~start/default-client-entry.tsx": {
+    "file": "assets/main-C8KIyoGN.js",
+    "name": "main",
+    "src": "../../~start/default-client-entry.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/routes/deferred.tsx?tsr-split=component",
+      "src/routes/about.tsx?tsr-split=component",
+      "src/routes/index.tsx?tsr-split=component"
+    ],
+    "css": [
+      "assets/styles-D3CiK31b.css"
+    ],
+    "assets": [
+      "assets/styles-D3CiK31b.css",
+      "assets/app-DGxfKCjO.css"
+    ]
+  },
+  "C:/00-CodeShop/2025v12-BLN-Website/src/css/styles.css": {
+    "file": "assets/styles-D3CiK31b.css",
+    "src": "C:/00-CodeShop/2025v12-BLN-Website/src/css/styles.css"
+  },
+  "C:/00-CodeShop/2025v12-BLN-Website/src/styles/app.css": {
+    "file": "assets/app-DGxfKCjO.css",
+    "src": "C:/00-CodeShop/2025v12-BLN-Website/src/styles/app.css"
+  },
+  "src/routes/about.tsx?tsr-split=component": {
+    "file": "assets/about-HietOLc1.js",
+    "name": "about",
+    "src": "src/routes/about.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/deferred.tsx?tsr-split=component": {
+    "file": "assets/deferred-oAEYbsdS.js",
+    "name": "deferred",
+    "src": "src/routes/deferred.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../~start/default-client-entry.tsx"
+    ]
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-BPmiGJSz.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "../../~start/default-client-entry.tsx"
+    ],
+    "css": [
+      "assets/index-89pAZCRU.css"
+    ]
+  }
+}
