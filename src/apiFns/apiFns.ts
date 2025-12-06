@@ -30,8 +30,8 @@ export const useGetImageStackOptions = (image_cluster_id: string) =>
     queryKey: ["cluster"],
     queryFn: async () => {
       const res = await axiosInstance.get(
-        `/bln/cluster/cluster_stack/019a939c-e590-779a-aaa6-66085d69ccae`
-        // `/bln/cluster/cluster_stack/${image_cluster_id}`
+        // `/bln/cluster/cluster_stack/019a939c-e590-779a-aaa6-66085d69ccae`
+        `/bln/cluster/cluster_stack/${image_cluster_id}`
       );
       return res.data;
     },

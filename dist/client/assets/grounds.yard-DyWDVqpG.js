@@ -1,1 +1,0 @@
-import{j as r,r as e,C as s}from"./main-C26wR22r.js";import{I as a}from"./ImageCluster-BQb_ITD9.js";import"./useScreenWidth-DAh1XAGZ.js";function o(){return r.jsx("div",{children:r.jsx(e.Suspense,{fallback:"Loading Middleman...",children:r.jsx(s,{children:r.jsx(a,{image_cluster_id:"019a8f35-70f2-74f4-a53b-01917b4d47e7"})})})})}export{o as component};
