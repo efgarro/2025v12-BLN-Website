@@ -1,7 +1,11 @@
 import { queryOptions, useSuspenseQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-const axiosInstance = axios.create({ baseURL: "http://3.85.17.83" });
+// const axiosInstance = axios.create({ baseURL: "https://api.soy-cr.com" });
+const axiosInstance = axios.create({
+  baseURL: "https://idearapps.com",
+});
+// const axiosInstance = axios.create({ baseURL: "http://3.85.17.83" });
 // const axiosInstance = axios.create({ baseURL: "http://localhost:4040" });
 
 export const deferredOptions = () =>
