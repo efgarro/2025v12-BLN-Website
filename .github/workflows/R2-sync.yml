@@ -1,0 +1,23 @@
+name: Sync Markdown to R2
+
+on:
+  push:
+    branches:
+      - main # Or your desired branch
+
+jobs:
+  deploy:
+    runs-on: [ ubuntu-latest ]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Sync Markdown files to R2
+        uses: jw-12138/r2-directory-sync@v1 # Or another suitable R2 sync action
+        with:
+          cloudflare_account_id: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          r2_access_key_id: ${{ secrets.R2_ACCESS_KEY_ID }}
+          r2_secret_access_key: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          r2_bucket_name: ${{ secrets.R2_BUCKET_NAME }}
+          source_directory: "src/prose" # e.g., "docs" or "content"
+          destination_directory: "prose" # Optional: specify a subdirectory in R2
