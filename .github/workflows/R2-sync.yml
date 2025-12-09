@@ -5,7 +5,7 @@ on:
     branches:
       - main # Or your desired branch
     paths:
-      - "/src/prose/" # Specify the path to your markdown files
+      - "/src/prose/**" # Specify the path to your markdown files
 
 jobs:
   deploy:
@@ -13,7 +13,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-
+      - name: Install AWS CLI v2
+        uses: aws-actions/setup-aws-cli@v1
+        with:
+          version: "2.x"
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -23,7 +26,7 @@ jobs:
 
       - name: Sync Markdown files to R2
         run: |
-          aws s3 sync /src/prose/ s3://${{ secrets.R2_BUCKET_NAME }}/prose/ \
+          aws s3 sync src/prose/ s3://${{ secrets.R2_BUCKET_NAME }}/prose/ \
             --endpoint-url https://${{ secrets.CLOUDFLARE_ACCOUNT_ID }}.r2.cloudflarestorage.com
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
