@@ -7,7 +7,7 @@ import BasicLayout from "~/components/01-Basic";
 
 export const getMdfile = createServerFn().handler(async () => {
   const response = await axios.get(
-    "https://raw.githubusercontent.com/efgarro/2024v10-SCR-CMApp/refs/heads/main/README.md"
+    "https://r2storage.bijalapa.com/prose/wildlife-1.md"
   );
   return response.data;
 });
