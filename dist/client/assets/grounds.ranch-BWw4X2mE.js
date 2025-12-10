@@ -1,0 +1,1 @@
+import{j as r,r as n,C as s}from"./main-DO43igeH.js";import{I as e}from"./ImageCluster-HT7dl04X.js";import"./useScreenWidth-BfncViVV.js";function o(){return r.jsx("div",{children:r.jsx(n.Suspense,{fallback:"Loading Middleman...",children:r.jsx(s,{children:r.jsx(e,{})})})})}export{o as component};
