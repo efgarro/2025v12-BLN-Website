@@ -14,4 +14,4 @@ function RouteComponent() {
   );
 }
 
-// rooms
+// rooms with a view
