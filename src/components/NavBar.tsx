@@ -27,7 +27,10 @@ const NavBar = () => {
               </a>
             </li>
             <li className="justify-center">
-              <a className="w-24 xl:w-36 justify-center text-center" href="/activities">
+              <a
+                className="w-24 xl:w-36 justify-center text-center"
+                href="/eatdo"
+              >
                 Where to Eat & What to Do
               </a>
             </li>
@@ -45,7 +48,10 @@ const NavBar = () => {
               </a>
             </li>
             <li className="justify-center">
-              <a className="w-24 xl:w-36 justify-center font-bold bg-[#B9BAA3] text-white" href="/inquire">
+              <a
+                className="w-24 xl:w-36 justify-center font-bold bg-[#B9BAA3] text-white"
+                href="/inquire"
+              >
                 Inquire
               </a>
             </li>
@@ -95,7 +101,7 @@ const NavBar = () => {
                 <a href="/grounds">Grounds</a>
               </li>
               <li>
-                <a href="/activities">Activities</a>
+                <a href="/eatdo">Where to Eat & What to Do</a>
               </li>
               <li>
                 <a href="/habitat">Scarlet Macaw Habitat Project</a>

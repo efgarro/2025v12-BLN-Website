@@ -7,13 +7,16 @@ const MenuBarViewRooms = () => {
         <li className="flex-1 bg-[#A8E200]">
           <a
             className="flex h-13 w-36 justify-center font-semibold text-[#3A3E40]"
-            href="/rooms/guarumo"
+            href="/guarumo"
           >
             Guarumo Room
           </a>
         </li>
         <li className="flex-1 bg-[#ff9c46]">
-          <a className="flex h-13 w-36 justify-center font-semibold text-[#3A3E40]" href="/rooms/sunrise">
+          <a
+            className="flex h-13 w-36 justify-center font-semibold text-[#3A3E40]"
+            href="/sunrise"
+          >
             Sunrise Room
           </a>
         </li>

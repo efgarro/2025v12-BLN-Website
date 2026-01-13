@@ -37,18 +37,18 @@ BijaLapa Natural Menu
 
      // Rural Work
 
-   Activities
-	  Local Restaurants
+   Where to Eat What to Do
+	  Restaurants
 	  Hiking (Hike to La Poza, Hike to Bijagual Waterfall)
-	  Fogata Night
-	  The Town of Bijagual and Sorroundings
-	
-    // Horseback Tours
+	  
+    //Fogata Night
+	  //The Town of Bijagual and Sorroundings
+	  // Horseback Tours
 	  // Crocodile Tours (One-hour drive or less)
 
    Scarlet Macaw Habitat Project
-	  Wildlife Journal
 	  One Hundred Trees a Year (and Counting)
+	  Wildlife Journal
 
    Local Partners
 
@@ -62,34 +62,66 @@ Routes:
 /category/page
 /category/page/[unit | item]
 
-/home <show photoStory>
+/ <show photoStory>
 
-/view-rooms <show photoStory>
-/view-rooms/guarumo
-/view-rooms/sunrise
+/rooms <show photoStory>
+/rooms/guarumo
+/sunrise
 
 /grounds <show photoStory>
 /grounds/yard
 /grounds/ranch
 /grounds/organic
 
-/activities <show photoStory>
-/activities/restaurants
-/activities/hiking
-/activities/fogata-night
-/activities/bijagual
+/eat-do <show photoStory>
+/eat-do/restaurants
+/eat-do/hiking
+/eat-do/fogata-night
+/eat-do/bijagual
 
-/sm-habitat <show photoStory>
-/sm-habitat/wildlife
-/sm-habitat/trees
+/habitat <show photoStory>
+/habitat/wildlife
+/habitat/trees
 
-/local-partners
 /contact
 /about-us
 /terms-and-conditions
 ```
 
-cluster types
+cluster stacks
+
+views
+rooms
+  [guarumo]
+  [sunrise]
+yard
+ranch
+organic
+restaurant
+  [sudy]
+  [martas]
+  [loit]
+hiking
+trees
+wildlife
+
+cluster mix
+
+mx_home
+mx-rooms
+mx-grounds
+  mx-yard
+  mx-ranch
+  mx-organic
+mx-eat-do
+mx-sudy
+mx-martas
+mx-loit
+mx-hiking
+mx-habitat
+mx-trees
+mx-wildlife
+
 
 hero
 home
@@ -162,3 +194,10 @@ git push -u origin main
 server functions
 loaders
 middleware - request / server fn
+
+
+## Upload *.md files to R2 using wrangler CLI
+
+```
+/c/00-IdearApps/2025v12-BLN-Website/.git/hooks/post-merge
+```

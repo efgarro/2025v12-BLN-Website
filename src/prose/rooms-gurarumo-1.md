@@ -1,0 +1,2 @@
+### The Guarumo Room
+This room is named after the Guarumo tree, for its noble and friendly vibe to birds and insects. No wonder they call it **The Restaurant of the Forest**, as it attracts a wide range of birds and insects. Right there on the corner of the balcony, there are two beautiful specimens that cast a friendly aura over this room.

@@ -1,0 +1,1 @@
+import{j as n,r,C as s}from"./main-DBnbnf8G.js";import{I as e}from"./ImageCluster-BCIfWCBF.js";function i(){return n.jsx("div",{children:n.jsx(r.Suspense,{fallback:"Loading Middleman...",children:n.jsx(s,{children:n.jsx(e,{})})})})}export{i as component};

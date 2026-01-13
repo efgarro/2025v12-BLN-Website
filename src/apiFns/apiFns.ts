@@ -4,7 +4,7 @@ import axios from "axios";
 const axiosInstance = axios.create({
   baseURL: "https://idearapps.com",
 });
-// const axiosInstance = axios.create({ baseURL: "http://localhost:4040" });
+// const axiosInstance = axios.create({ baseURL: "http://localhost:8080" });
 
 export const deferredOptions = () =>
   queryOptions({
@@ -23,17 +23,31 @@ export const useGetDeferred = () => {
   return useSuspenseQuery(deferredOptions());
 };
 
-export const useGetImageStackOptions = (image_cluster_id: string) =>
+// export const useGetImageStackOptions = (image_cluster_id: string) =>
+//   queryOptions({
+//     queryKey: ["cluster"],
+//     queryFn: async () => {
+//       const res = await axiosInstance.get(
+//         `/bln/cluster/cluster_stack/${image_cluster_id}`
+//       );
+//       return res.data;
+//     },
+//   });
+
+// export const useGetImageStack = (image_cluster_id: string) => {
+//   return useSuspenseQuery(useGetImageStackOptions(image_cluster_id));
+// };
+export const useGetImageMixOptions = (image_mix_name: string) =>
   queryOptions({
-    queryKey: ["cluster"],
+    queryKey: ["cluster_mix"],
     queryFn: async () => {
       const res = await axiosInstance.get(
-        `/bln/cluster/cluster_stack/${image_cluster_id}`
+        `/bln/cluster/cluster_mix/${image_mix_name}`
       );
       return res.data;
     },
   });
 
-export const useGetImageStack = (image_cluster_id: string) => {
-  return useSuspenseQuery(useGetImageStackOptions(image_cluster_id));
+export const useGetImageMix = (image_mix_name: string) => {
+  return useSuspenseQuery(useGetImageMixOptions(image_mix_name));
 };

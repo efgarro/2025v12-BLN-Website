@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 import { ImageClusterGrid } from "./ImageClusterGrid";
 import { useScreenWidth } from "../hooks/useScreenWidth";
-import { useGetImageStack } from "../apiFns/apiFns";
+import { useGetImageMix } from "../apiFns/apiFns";
 
-export const ImageCluster = (image_cluster_id) => {
+export const ImageCluster = ({ image_mix_name }) => {
   const [dataPics, setDataPics] = useState([]);
   const [layouts, setLayouts] = useState({});
   const { screenWidth, rowHeight } = useScreenWidth();
-  const { data } = useGetImageStack(image_cluster_id);
-
+  const { data } = useGetImageMix(image_mix_name);
+  console.log(image_mix_name);
   useEffect(() => {
     // const fetchData = async () => {
     //   try {
@@ -49,7 +49,7 @@ export const ImageCluster = (image_cluster_id) => {
     // }; //endof fetchData
     // fetchData();
     setDataPics(data);
-  }, [data]); //endof useEffect to fetchData
+  }, [image_mix_name]); //endof useEffect to fetchData
 
   useEffect(() => {
     const generateLayoutLg = () => {
@@ -120,6 +120,8 @@ export const ImageCluster = (image_cluster_id) => {
       lg: generateLayoutLg(),
     });
   }, [dataPics]);
+  console.log("inside ImageCluster");
+  console.log(dataPics);
 
   return (
     <>
