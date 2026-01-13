@@ -202,4 +202,12 @@ middleware - request / server fn
 /c/00-IdearApps/2025v12-BLN-Website/.git/hooks/post-merge
 ```
 
-### Hellow Bella!!
+### How can I exclude a config file from git merge a branch
+
+
+```js
+git merge --no-commit <branch name>
+
+git checkout HEAD -- /c/00-IdearApps/2025v12-BLN-Website/src/apiFns/apiFns.ts
+
+```
