@@ -198,8 +198,12 @@ middleware - request / server fn
 
 ## Upload *.md files to R2 using wrangler CLI
 
-```
+```sh
+# for all*.md files use
 /c/00-IdearApps/2025v12-BLN-Website/.git/hooks/post-merge
+
+# for individual *.md files use
+npx wrangler r2 object put --remote 2025v12-bijalapa/prose/"$(basename "/c/00-IdearApps/2025v12-BLN-Website/src/prose/rooms-1.md")" --file "/c/00-IdearApps/2025v12-BLN-Website/src/prose/rooms-1.md"
 ```
 
 ### How can I exclude a config file from git merge a branch
