@@ -1,4 +1,6 @@
 ### The Sunrise Room
 
+
 If weather conditions permit,  you can view the most breath-taken sunrise scene right from your bed. As the sun raises, the unveiling hues shift from orange, to pink to yellow. The chirping of the birds and the cool air lead the sky in a transition from dark to light.
-<br></br>
+
+![Interior of Room](https://r2storage.bijalapa.com/rooms/945d0e8e6be5_IMG_6242.jpg)
