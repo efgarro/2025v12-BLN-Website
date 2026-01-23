@@ -40,7 +40,7 @@ BijaLapa Natural Menu
    Where to Eat What to Do
 	  Restaurants
 	  Hiking (Hike to La Poza, Hike to Bijagual Waterfall)
-	  
+
     //Fogata Night
 	  //The Town of Bijagual and Sorroundings
 	  // Horseback Tours
@@ -92,15 +92,15 @@ cluster stacks
 
 views
 rooms
-  [guarumo]
-  [sunrise]
+[guarumo]
+[sunrise]
 yard
 ranch
 organic
 restaurant
-  [sudy]
-  [martas]
-  [loit]
+[sudy]
+[martas]
+[loit]
 hiking
 trees
 wildlife
@@ -110,9 +110,9 @@ cluster mix
 mx_home
 mx-rooms
 mx-grounds
-  mx-yard
-  mx-ranch
-  mx-organic
+mx-yard
+mx-ranch
+mx-organic
 mx-eat-do
 mx-sudy
 mx-martas
@@ -122,55 +122,51 @@ mx-habitat
 mx-trees
 mx-wildlife
 
-
 hero
 home
 category
-  view-rooms
-  grounds
-  activities
-  sm-habitat
+view-rooms
+grounds
+activities
+sm-habitat
 page
-  guarumo
-  sunrise
-  yard
-  ranch
-  organic
+guarumo
+sunrise
+yard
+ranch
+organic
 
 cluster: {
-  cluster_id: uuid,
-  title: home,
-  type: root | cate | page
+cluster_id: uuid,
+title: home,
+type: root | cate | page
 }
 
 [{
-  image_id: uuid,
-  clusters: [cluster_id, cluster_id,...]
+image_id: uuid,
+clusters: [cluster_id, cluster_id,...]
 }]
 
-
 root
-  home
-  actividades
-  grounds
-  activities
-  sm-habitat
-  local-partners
-  ...etc
+home
+actividades
+grounds
+activities
+sm-habitat
+local-partners
+...etc
 
 activities
-  restaurants
-  fogata-night
-  la-poza
-  ...etc
+restaurants
+fogata-night
+la-poza
+...etc
 
 page
 
 home
 la-poza
 organic
-
-
 
 page
 name: home
@@ -190,20 +186,19 @@ git remote add origin https://github.com/efgarro/2025v12-BLN-Website.git
 git push -u origin main
 ```
 
-
 server functions
 loaders
 middleware - request / server fn
 
+## Upload \*.md files to R2 using wrangler CLI
 
-## Upload *.md files to R2 using wrangler CLI
-
-```
+```sh
 /c/00-IdearApps/2025v12-BLN-Website/.git/hooks/post-merge
+
+npx wrangler r2 object put --remote 2025v12-bijalapa/prose/"$(basename "/c/00-IdearApps/2025v12-BLN-Website/src/prose/about.md")" --file "/c/00-IdearApps/2025v12-BLN-Website/src/prose/about.md"
 ```
 
 ### How can I exclude a config file from git merge a branch
-
 
 ```js
 git merge --no-commit <branch name>
