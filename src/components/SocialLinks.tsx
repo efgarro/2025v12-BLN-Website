@@ -4,7 +4,7 @@ const SocialLinks = () => {
   return (
     // <nav>
     <div className="core_flexRow justify-center gap-8 mb-8">
-      <a href="https://wa.me/50686453761">
+      <a href="https://wa.me/50683393335">
         {/* <!-- Whatsapp --> */}
 
         <svg
