@@ -4,7 +4,7 @@ const CardGrounds = () => {
   return (
     <div className="card bg-base-100 w-auto shadow-sm rounded-xs mb-12">
             <figure>
-              <img src="img/G1-Yard/IMG_4759.JPEG" alt="Yard" />
+              <img src="https://r2storage.bijalapa.com/yard/beed9b34a2a7_IMG_4759.JPEG" alt="Yard" />
             </figure>
             <div className="card-body bg-bln-azul-arena">
               <h2 className="card-title font-bold mb-2">The Grounds</h2>

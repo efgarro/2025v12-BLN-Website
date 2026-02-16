@@ -4,7 +4,7 @@ const CardEatdo = () => {
   return (
     <div className="card bg-base-100 w-auto shadow-sm rounded-xs mb-12">
       <figure>
-        <img src="img/A2-Hiking/IMG_3127.JPEG" alt="Eat" />
+        <img src="https://r2storage.bijalapa.com/hiking/bac1160f0046_IMG_3127.JPEG" alt="Eat" />
       </figure>
       <div className="card-body bg-bln-flor-amarilla">
         <h2 className="card-title font-bold mb-2">Where to Eat & What to Do</h2>
