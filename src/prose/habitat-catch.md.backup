@@ -1,0 +1,1 @@
+The pride and joy of BijaLapa Natural is the Scarlet Macaw Habitat Project which has a simple premise; _plant trees and wildlife will come_. So, for ten years straight, one hundred trees (or more) per year have been planted, and not only the majestic Scarlet Macaw has come to reap the benefits, but many other forms of wildlife too.

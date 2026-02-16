@@ -1,0 +1,1 @@
+Hidden away, and scarcely a five-minute drive from the center of town, BijaLapa Natural offers rooms with a view where the grounds and the scenery set the stage for peaceful contemplation. When weather conditions permit, the starry...starry nights are spectacular.

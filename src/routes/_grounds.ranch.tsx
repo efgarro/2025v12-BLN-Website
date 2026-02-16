@@ -21,6 +21,7 @@ function Ranch() {
               <ImageCluster image_mix_name={"ranch"}/>
             </ClientOnly>
           </Suspense>
+          <div className="h-48 mb-12"></div>
         </div>
       );
 }

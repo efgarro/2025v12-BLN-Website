@@ -1,0 +1,1 @@
+Across the grounds, a mixture of blooming flowers keeps pollinators busy most of the year, while fruits like bananas attract at least two species of toucans. Embracing sustainable organic practices has been our shared purpose and vision from day one.

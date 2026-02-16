@@ -1,0 +1,2 @@
+Although there is no food service currently available on the premises, around Bijagual you can find several nearby restaurants with a warm and attentive atmosphere. When it comes to activities, the town of Bijagual offers two different hiking trails to a waterfall, as well as a waterhole suitable for swimming. Also, when ocean conditions allow, Jacó beach offers great surfing lessons for all levels.
+

@@ -10,7 +10,7 @@ import { ImageCluster } from "~/components/ImageCluster";
 
 export const getMdfile = createServerFn().handler(async () => {
   const response = await axios.get(
-    "https://r2storage.bijalapa.com/prose/restaurants-1.md"
+    "https://r2storage.bijalapa.com/prose/restaurants-1.md",
   );
 
   return response.data;
@@ -30,18 +30,16 @@ function RouteComponent() {
   console.log(data);
   return (
     <>
-      <div className="core_wrapper">
-        <Suspense fallback="Loading Middleman...">
-          <ClientOnly>
-            <ImageCluster image_mix_name={"restaurant"} />
-          </ClientOnly>
-        </Suspense>
-        <div className="article_wrapper">
-          <div className="prose prose-lg prose-pre:bg-amber-900">
-            <Markdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
-              {data}
-            </Markdown>
-          </div>
+      {/* <Suspense fallback="Loading Middleman...">
+        <ClientOnly>
+          <ImageCluster image_mix_name={"restaurant"} />
+        </ClientOnly>
+      </Suspense> */}
+      <div className="article_wrapper">
+        <div className="prose prose-lg prose-pre:bg-amber-900">
+          <Markdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
+            {data}
+          </Markdown>
         </div>
       </div>
     </>

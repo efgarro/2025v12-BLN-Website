@@ -6,9 +6,7 @@ import { ImageCluster } from "~/components/ImageCluster";
 export const Route = createFileRoute("/_grounds/yard")({
   loader: ({ context }) => {
     // Kick off loading as early as possible!
-    context.queryClient.prefetchQuery(
-      useGetImageMixOptions("yard")
-    );
+    context.queryClient.prefetchQuery(useGetImageMixOptions("yard"));
   },
   component: Yard,
 });
@@ -18,11 +16,10 @@ function Yard() {
     <div>
       <Suspense fallback="Loading Middleman...">
         <ClientOnly>
-          <ImageCluster
-            image_mix_name={"yard"}
-          />
+          <ImageCluster image_mix_name={"yard"} />
         </ClientOnly>
       </Suspense>
+      <div className="mb-12"></div>
     </div>
   );
 }

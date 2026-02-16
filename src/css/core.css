@@ -74,6 +74,11 @@
   height: 100%;
 }
 
+.social_box {
+  height: 80px;
+  background-color: #3a3e40;
+}
+
 /* Mobile Screen Rules <= 599px */
 
 @media only screen and (min-device-width: 576px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
