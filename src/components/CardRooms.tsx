@@ -4,7 +4,7 @@ const CardRooms = () => {
   return (
     <div className="card bg-base-100 w-auto shadow-sm rounded-xs mb-12">
       <figure>
-        <img src="img/R1-View Rooms/interior-guarumo-1.jpg" alt="Rooms" />
+        <img src="https://r2storage.bijalapa.com/rooms/bc59f0371287_interior-guarumo-1.jpg" alt="Rooms" />
       </figure>
       <div className="card-body bg-bln-verde-arena">
         <h2 className="card-title font-bold mb-2">Rooms with a View</h2>

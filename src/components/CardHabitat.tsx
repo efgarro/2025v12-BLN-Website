@@ -4,7 +4,7 @@ const CardHabitat = () => {
   return (
     <div className="card bg-base-100 w-auto shadow-sm rounded-xs mb-12">
             <figure>
-              <img src="img/H1-Wildlife/IMG_0124.jpg" alt="Lapa" />
+              <img src="https://r2storage.bijalapa.com/wildlife/7a16757e5d4b_IMG_0124.jpg" alt="Lapa" />
             </figure>
             <div className="card-body bg-bln-azul-arena">
               <h2 className="card-title font-bold mb-2">
