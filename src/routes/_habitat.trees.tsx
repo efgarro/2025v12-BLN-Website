@@ -19,6 +19,7 @@ function RouteComponent() {
           <ImageCluster image_mix_name={"trees"} />
         </ClientOnly>
       </Suspense>
+      <div className="mb-12"></div>
     </div>
   );
 }

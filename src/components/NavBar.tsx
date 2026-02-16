@@ -28,14 +28,6 @@ const NavBar = () => {
             </li>
             <li className="justify-center">
               <a
-                className="w-24 xl:w-36 justify-center text-center"
-                href="/eatdo"
-              >
-                Where to Eat & What to Do
-              </a>
-            </li>
-            <li className="justify-center">
-              <a
                 className="w-36 xl:w-36 justify-center text-center"
                 href="/habitat"
               >
@@ -43,10 +35,19 @@ const NavBar = () => {
               </a>
             </li>
             <li className="justify-center">
+              <a
+                className="w-24 xl:w-36 justify-center text-center"
+                href="/eatdo"
+              >
+                Where to Eat & What to Do
+              </a>
+            </li>
+
+            {/* <li className="justify-center">
               <a className="w-24 xl:w-36 justify-center" href="/about">
                 About Us
               </a>
-            </li>
+            </li> */}
             <li className="justify-center">
               <a
                 className="w-24 xl:w-36 justify-center font-bold bg-[#B9BAA3] text-white"
@@ -101,14 +102,14 @@ const NavBar = () => {
                 <a href="/grounds">Grounds</a>
               </li>
               <li>
-                <a href="/eatdo">Where to Eat & What to Do</a>
-              </li>
-              <li>
                 <a href="/habitat">Scarlet Macaw Habitat Project</a>
               </li>
               <li>
-                <a href="/about">About Us</a>
+                <a href="/eatdo">Where to Eat & What to Do</a>
               </li>
+              {/* <li>
+                <a href="/about">About Us</a>
+              </li> */}
               <li>
                 <a href="/inquire">Inquire</a>
               </li>

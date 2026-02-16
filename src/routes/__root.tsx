@@ -25,6 +25,7 @@ import NavBar from "~/components/NavBar";
 import { IRouterContext } from "~/types/blnTypes";
 import { getRouter } from "~/router";
 import { useScreenWidth } from "~/hooks/useScreenWidth";
+import Footer from "~/components/Footer";
 
 export const Route = createRootRouteWithContext<IRouterContext>()({
   head: () => ({
@@ -54,6 +55,7 @@ function BijaLapaHomePage() {
       <RootDocument>
         <NavBar />
         <Outlet />
+        <Footer />
       </RootDocument>
     </NavSettingsProvider>
   );
