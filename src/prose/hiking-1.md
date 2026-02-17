@@ -1,21 +1,42 @@
 
 
-Several hiking trails located near town allow visitors to immerse themselves in nature, offering the hiker a mental escape into lush green spaces.
+Several hiking trails allow visitors to immerse themselves in nature, offering the hiker a mental escape into green spaces.
 
-### Caminata a Catarata de Bijagual
-
-This trail takes you into the bottom of the waterfall.
-
- 
-### Catarata de Bijagual - Finca de Macana
-
-This trail takes you into the bottom of the waterfall.
+### Bijagual Waterfall Trails
 
 
-### Catarata de Bijagual - Macana Entrance
+The Bijagual Waterfall is one of the tallest waterfalls in Costa Rica and is composed of a series of inclined/vertical drops that added together represent an approximate height of 180m~200m. There are two private reserves that offer entrance to different elevation view points.  
 
-This trail takes you into the bottom of the waterfall.
+**The first entrance** is located about 5km from the _costanera_ highway on the road going up to the town of Bijagual. It is a private reserve without a name, no phone signal, no internet, no _stinking_ social media, and has been promoted the old fashion way; word of mouth.
 
-### Caminata al Bajo de La Trampa
+This gate is the begining of a challenging a 2km (aprox.) descending trail that reaches the waterfall plunge pool. Once at the basin, one can stand just a few meters away to feel the force of the misty droplets as the water rams into the basin.
 
-This trail takes you into the bottom of the waterfall.
+Once at the bottom, the visitor can also enjoy some calm river pools.
+
+![First Entrance Poster](https://r2storage.bijalapa.com/hiking/1b67e66866eb_first-entrance-1.JPEG)
+
+![Regulations-for-Visitors](https://r2storage.bijalapa.com/hiking/60ba2fda57f5_first-entrance-2.JPEG)
+
+![lower-section-of-waterfall](https://r2storage.bijalapa.com/hiking/31db35e313c4_7b6fe52d14e1.jpg)
+
+
+**The second entrance** is also a private reserve named **Tours Bijagual Waterfall**. At this reserve you can enjoy a self guided hike as well as a horseback riding tour. The trail to the waterfall takes the visitor to a view point located just above mid-height and to the side of the rushing water.
+
+Another popular trail at this reserve takes the visitor to a river pool suitable for rock diving and _water bomb_ splashing. 
+
+![la-poza](https://r2storage.bijalapa.com/hiking/bac1160f0046_IMG_3127.JPEG)
+
+You can visit [Tours Bijagual Waterfall](https://bijagualwaterfall.com) for further information
+
+
+Allow 3~3.5 hours for a full experience at either reserve.
+
+### La Esperanza Walk
+
+This is more a walk (_caminata_) than a hike. Enjoy easy walking from BijaLapa Natural to the town of La Esperanza on a gravel rural road. Great views. Allow 2.5 hours. Difficulty: easy. 
+
+### Paso de los Monos Trail
+
+This trail is within the BijaLapa Natural grounds and takes you through a small area of primary rainforest. A natural stone weeping wall is the highlight of the walk.  Allow 45 min, difficulty: easy.
+
+![Stone Weeping Wall](https://r2storage.bijalapa.com/hiking/449efb78052a_natural-stone-weeping-wall.jpg)
