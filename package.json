@@ -37,7 +37,6 @@
   "devDependencies": {
     "@cloudflare/vite-plugin": "^1.13.12",
     "@tailwindcss/typography": "^0.5.16",
-    "@tanstack/nitro-v2-vite-plugin": "^1.132.40",
     "@types/lodash": "^4.17.20",
     "@types/pg": "^8.15.5",
     "@types/react": "^19.1.8",
@@ -47,6 +46,7 @@
     "daisyui": "^5.0.50",
     "typescript": "^5.8.3",
     "vite-css-modules": "^1.10.0",
+    "vite-plugin-sitemap": "^0.8.2",
     "vite-tsconfig-paths": "^5.1.4",
     "wrangler": "^4.42.2"
   }

@@ -19,8 +19,11 @@ Bar and Restaurant, cold beer, great _bocas_.
 
 ![Interior of Room](https://r2storage.bijalapa.com/restaurant/371fc60b111a_bar-bijagual-01.JPEG)
 
-### Pizzería Loit
+### Pizzería Loïc
 
 Tired of local "tipical" food, this family-run business serves great pizza. The Margarita Pizza is top-notch.
+
+[View in Google](https://share.google/1QswcbbS7Hd79NsDy)
+
 
 ![Interior of Room](https://r2storage.bijalapa.com/restaurant/1228ba9e544a_OpaloFotografia-48.jpg)

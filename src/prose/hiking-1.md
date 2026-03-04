@@ -31,12 +31,12 @@ You can visit [Tours Bijagual Waterfall](https://bijagualwaterfall.com) for furt
 
 Allow 3~3.5 hours for a full experience at either reserve.
 
-### La Esperanza Walk
+### Walk to La Esperanza
 
 This is more a walk (_caminata_) than a hike. Enjoy easy walking from BijaLapa Natural to the town of La Esperanza on a gravel rural road. Great views. Allow 2.5 hours. Difficulty: easy. 
 
 ### Paso de los Monos Trail
 
-This trail is within the BijaLapa Natural grounds and takes you through a small area of primary rainforest. A natural stone weeping wall is the highlight of the walk.  Allow 45 min, difficulty: easy.
+This trail is located within the BijaLapa Natural grounds and takes you through a small area of primary rainforest. A natural stone weeping wall is the highlight of the walk.  Allow 45 min, difficulty: easy.
 
 ![Stone Weeping Wall](https://r2storage.bijalapa.com/hiking/449efb78052a_natural-stone-weeping-wall.jpg)
