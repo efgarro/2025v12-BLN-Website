@@ -6,7 +6,7 @@ import viteReact from "@vitejs/plugin-react";
 import { patchCssModules } from "vite-css-modules";
 import tailwindcss from "@tailwindcss/vite";
 import { cloudflare } from "@cloudflare/vite-plugin";
-import { nitroV2Plugin } from "@tanstack/nitro-v2-vite-plugin";
+import Sitemap from 'vite-plugin-sitemap'
 
 export default defineConfig({
   server: {
@@ -18,10 +18,7 @@ export default defineConfig({
     }),
     cloudflare({ viteEnvironment: { name: "ssr" } }),
     tanstackStart(),
-    // nitroV2Plugin(
-    //   // nitro config goes here, e.g.
-    //   { preset: "node-server" }
-    // ),
+    Sitemap({ hostname: 'https://bijalapa.com' }),
     viteReact(),
     patchCssModules(),
     tailwindcss(),
