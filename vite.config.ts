@@ -6,7 +6,7 @@ import viteReact from "@vitejs/plugin-react";
 import { patchCssModules } from "vite-css-modules";
 import tailwindcss from "@tailwindcss/vite";
 import { cloudflare } from "@cloudflare/vite-plugin";
-import Sitemap from 'vite-plugin-sitemap'
+import { sitemapPlugin } from '@corentints/tanstack-router-sitemap';
 
 export default defineConfig({
   server: {
@@ -18,7 +18,11 @@ export default defineConfig({
     }),
     cloudflare({ viteEnvironment: { name: "ssr" } }),
     tanstackStart(),
-    Sitemap({ hostname: 'https://bijalapa.com' }),
+    sitemapPlugin({
+        baseUrl: 'https://bijalapa.com',
+        outputPath: "public/sitemap.xml",
+        verbose: true,
+      }),
     viteReact(),
     patchCssModules(),
     tailwindcss(),
