@@ -10,8 +10,6 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as InquireRouteImport } from './routes/inquire'
-import { Route as DeferredRouteImport } from './routes/deferred'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as RoomsRouteImport } from './routes/_rooms'
 import { Route as HabitatRouteImport } from './routes/_habitat'
 import { Route as GroundsRouteImport } from './routes/_grounds'
@@ -34,16 +32,6 @@ import { Route as EatdoEatdoRouteImport } from './routes/_eatdo.eatdo'
 const InquireRoute = InquireRouteImport.update({
   id: '/inquire',
   path: '/inquire',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DeferredRoute = DeferredRouteImport.update({
-  id: '/deferred',
-  path: '/deferred',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AboutRoute = AboutRouteImport.update({
-  id: '/about',
-  path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RoomsRoute = RoomsRouteImport.update({
@@ -135,8 +123,6 @@ const EatdoEatdoRoute = EatdoEatdoRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/deferred': typeof DeferredRoute
   '/inquire': typeof InquireRoute
   '/eatdo': typeof EatdoEatdoRoute
   '/hiking': typeof EatdoHikingRoute
@@ -154,8 +140,6 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/about': typeof AboutRoute
-  '/deferred': typeof DeferredRoute
   '/inquire': typeof InquireRoute
   '/eatdo': typeof EatdoEatdoRoute
   '/hiking': typeof EatdoHikingRoute
@@ -178,8 +162,6 @@ export interface FileRoutesById {
   '/_grounds': typeof GroundsRouteWithChildren
   '/_habitat': typeof HabitatRouteWithChildren
   '/_rooms': typeof RoomsRouteWithChildren
-  '/about': typeof AboutRoute
-  '/deferred': typeof DeferredRoute
   '/inquire': typeof InquireRoute
   '/_eatdo/eatdo': typeof EatdoEatdoRoute
   '/_eatdo/hiking': typeof EatdoHikingRoute
@@ -199,8 +181,6 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
-    | '/about'
-    | '/deferred'
     | '/inquire'
     | '/eatdo'
     | '/hiking'
@@ -218,8 +198,6 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
-    | '/about'
-    | '/deferred'
     | '/inquire'
     | '/eatdo'
     | '/hiking'
@@ -241,8 +219,6 @@ export interface FileRouteTypes {
     | '/_grounds'
     | '/_habitat'
     | '/_rooms'
-    | '/about'
-    | '/deferred'
     | '/inquire'
     | '/_eatdo/eatdo'
     | '/_eatdo/hiking'
@@ -265,8 +241,6 @@ export interface RootRouteChildren {
   GroundsRoute: typeof GroundsRouteWithChildren
   HabitatRoute: typeof HabitatRouteWithChildren
   RoomsRoute: typeof RoomsRouteWithChildren
-  AboutRoute: typeof AboutRoute
-  DeferredRoute: typeof DeferredRoute
   InquireRoute: typeof InquireRoute
 }
 
@@ -279,45 +253,31 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InquireRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/deferred': {
-      id: '/deferred'
-      path: '/deferred'
-      fullPath: '/deferred'
-      preLoaderRoute: typeof DeferredRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/about': {
-      id: '/about'
-      path: '/about'
-      fullPath: '/about'
-      preLoaderRoute: typeof AboutRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/_rooms': {
       id: '/_rooms'
       path: ''
-      fullPath: ''
+      fullPath: '/'
       preLoaderRoute: typeof RoomsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/_habitat': {
       id: '/_habitat'
       path: ''
-      fullPath: ''
+      fullPath: '/'
       preLoaderRoute: typeof HabitatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/_grounds': {
       id: '/_grounds'
       path: ''
-      fullPath: ''
+      fullPath: '/'
       preLoaderRoute: typeof GroundsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/_eatdo': {
       id: '/_eatdo'
       path: ''
-      fullPath: ''
+      fullPath: '/'
       preLoaderRoute: typeof EatdoRouteImport
       parentRoute: typeof rootRouteImport
     }
@@ -488,8 +448,6 @@ const rootRouteChildren: RootRouteChildren = {
   GroundsRoute: GroundsRouteWithChildren,
   HabitatRoute: HabitatRouteWithChildren,
   RoomsRoute: RoomsRouteWithChildren,
-  AboutRoute: AboutRoute,
-  DeferredRoute: DeferredRoute,
   InquireRoute: InquireRoute,
 }
 export const routeTree = rootRouteImport
