@@ -1,0 +1,1 @@
+import{a,j as r}from"./main-CFxz_W3v.js";import{M as s,r as o,a as i}from"./index-BadYEuGk.js";function t(){const e=a.useLoaderData();return r.jsx("div",{children:r.jsx("div",{className:"article_wrapper mt-6",children:r.jsx("div",{className:"prose prose-lg prose-pre:bg-amber-900",children:r.jsx(s,{rehypePlugins:[i],remarkPlugins:[o],children:e})})})})}export{t as component};

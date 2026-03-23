@@ -24,7 +24,7 @@ export class ImageClusterGrid extends React.Component {
         {this.props.dataPics.map((photo) => {
           return (
             <div key={photo.id} className={"card--img"}>
-              <img src={photo.url} alt={"Pic"} />
+              <img src={photo.url} alt={`${photo.description}`} />
             </div>
           );
         })}

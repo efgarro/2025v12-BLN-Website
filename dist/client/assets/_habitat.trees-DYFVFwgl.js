@@ -1,1 +1,0 @@
-import{j as e,r as s,C as n}from"./main-BIwb0SDO.js";import{I as r}from"./ImageCluster-CCGiBjKi.js";function i(){return e.jsxs("div",{children:[e.jsx(s.Suspense,{fallback:"Loading Middleman...",children:e.jsx(n,{children:e.jsx(r,{image_mix_name:"trees"})})}),e.jsx("div",{className:"mb-12"})]})}export{i as component};

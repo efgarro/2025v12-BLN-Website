@@ -15,6 +15,8 @@ import { Route as HabitatRouteImport } from './routes/_habitat'
 import { Route as GroundsRouteImport } from './routes/_grounds'
 import { Route as EatdoRouteImport } from './routes/_eatdo'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BaqueanoIndexRouteImport } from './routes/baqueano/index'
+import { Route as BaqueanoBijagualWaterfallRouteImport } from './routes/baqueano/bijagual-waterfall'
 import { Route as RoomsSunriseRouteImport } from './routes/_rooms.sunrise'
 import { Route as RoomsRoomsRouteImport } from './routes/_rooms.rooms'
 import { Route as RoomsGuarumoRouteImport } from './routes/_rooms.guarumo'
@@ -55,6 +57,17 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BaqueanoIndexRoute = BaqueanoIndexRouteImport.update({
+  id: '/baqueano/',
+  path: '/baqueano/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BaqueanoBijagualWaterfallRoute =
+  BaqueanoBijagualWaterfallRouteImport.update({
+    id: '/baqueano/bijagual-waterfall',
+    path: '/baqueano/bijagual-waterfall',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const RoomsSunriseRoute = RoomsSunriseRouteImport.update({
   id: '/sunrise',
   path: '/sunrise',
@@ -137,6 +150,8 @@ export interface FileRoutesByFullPath {
   '/guarumo': typeof RoomsGuarumoRoute
   '/rooms': typeof RoomsRoomsRoute
   '/sunrise': typeof RoomsSunriseRoute
+  '/baqueano/bijagual-waterfall': typeof BaqueanoBijagualWaterfallRoute
+  '/baqueano/': typeof BaqueanoIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -154,6 +169,8 @@ export interface FileRoutesByTo {
   '/guarumo': typeof RoomsGuarumoRoute
   '/rooms': typeof RoomsRoomsRoute
   '/sunrise': typeof RoomsSunriseRoute
+  '/baqueano/bijagual-waterfall': typeof BaqueanoBijagualWaterfallRoute
+  '/baqueano': typeof BaqueanoIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -176,6 +193,8 @@ export interface FileRoutesById {
   '/_rooms/guarumo': typeof RoomsGuarumoRoute
   '/_rooms/rooms': typeof RoomsRoomsRoute
   '/_rooms/sunrise': typeof RoomsSunriseRoute
+  '/baqueano/bijagual-waterfall': typeof BaqueanoBijagualWaterfallRoute
+  '/baqueano/': typeof BaqueanoIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -195,6 +214,8 @@ export interface FileRouteTypes {
     | '/guarumo'
     | '/rooms'
     | '/sunrise'
+    | '/baqueano/bijagual-waterfall'
+    | '/baqueano/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -212,6 +233,8 @@ export interface FileRouteTypes {
     | '/guarumo'
     | '/rooms'
     | '/sunrise'
+    | '/baqueano/bijagual-waterfall'
+    | '/baqueano'
   id:
     | '__root__'
     | '/'
@@ -233,6 +256,8 @@ export interface FileRouteTypes {
     | '/_rooms/guarumo'
     | '/_rooms/rooms'
     | '/_rooms/sunrise'
+    | '/baqueano/bijagual-waterfall'
+    | '/baqueano/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -242,6 +267,8 @@ export interface RootRouteChildren {
   HabitatRoute: typeof HabitatRouteWithChildren
   RoomsRoute: typeof RoomsRouteWithChildren
   InquireRoute: typeof InquireRoute
+  BaqueanoBijagualWaterfallRoute: typeof BaqueanoBijagualWaterfallRoute
+  BaqueanoIndexRoute: typeof BaqueanoIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -286,6 +313,20 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/baqueano/': {
+      id: '/baqueano/'
+      path: '/baqueano'
+      fullPath: '/baqueano/'
+      preLoaderRoute: typeof BaqueanoIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/baqueano/bijagual-waterfall': {
+      id: '/baqueano/bijagual-waterfall'
+      path: '/baqueano/bijagual-waterfall'
+      fullPath: '/baqueano/bijagual-waterfall'
+      preLoaderRoute: typeof BaqueanoBijagualWaterfallRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/_rooms/sunrise': {
@@ -449,6 +490,8 @@ const rootRouteChildren: RootRouteChildren = {
   HabitatRoute: HabitatRouteWithChildren,
   RoomsRoute: RoomsRouteWithChildren,
   InquireRoute: InquireRoute,
+  BaqueanoBijagualWaterfallRoute: BaqueanoBijagualWaterfallRoute,
+  BaqueanoIndexRoute: BaqueanoIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

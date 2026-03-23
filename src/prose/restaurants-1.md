@@ -3,27 +3,27 @@ Simple and genuine, you can find local ("tipical") food very fulfilling in two o
 
 ### Restaurante Sudy
 
-Named after their kids Susan and Dylan, they serve local food in amigable environment right in the center of town. The _empanadas_ are a must-try.
+Located in the center of town, _Restaurante Sudy_ serves Tico food (_Comida Típica_) in a rustic, open-air, ranch-style welcoming atmosphere complemented by friendly service. The _empanadas_ are a must-try.
 
-![Interior of Room](https://r2storage.bijalapa.com/restaurant/7abfb8af7019_restaurante-sudy-01.JPEG)
+![The seating area at Restaurante Sudy offers a rustic, open-air, ranch-style welcoming atmosphere complemented by friendly service](https://r2storage.bijalapa.com/restaurant/7abfb8af7019_restaurante-sudy-01.JPEG)
 
-### Rancho Shadday
+### La Cocina de Doña Marta (Rancho Shadday)
 
-I call it Doña Marta's Restaurant rather, a bit away from town, she serves local food cooked in a wood burning stove, need I say more?. Great tasting smoothies and spectacular views.
+Located a bit away from town on the road from Bijagual to Jacó, this restaurant serves Tico food (_comida típica_) in a rustic, open-air, ranch-style environment. Known for its authentic local flavors, it serves handmade _empanadas_, _gallo pinto_, and _casados_ - all cooked on a wood-burning stove. These dishes pair perfectly with great-tasting smoothies, while views of the surrounding mountains and the Nicoya Peninsula provide a spectacular backdrop.
 
-![Interior of Room](https://r2storage.bijalapa.com/restaurant/73c9297ae2b6_IMG_4554.JPEG)
+![La Cocina de Doña Marta offers seating in a rustic open-air ranch-style environment](https://r2storage.bijalapa.com/restaurant/73c9297ae2b6_IMG_4554.JPEG)
 
 ### Bar Bijagual
 
-Bar and Restaurant, cold beer, great _bocas_.
+Located in the center of town, Bar Bijagual offers ice-cold beers, great Tico _bocas_ and the occasional live band.
 
-![Interior of Room](https://r2storage.bijalapa.com/restaurant/371fc60b111a_bar-bijagual-01.JPEG)
+![Right there in the center of town, Bar Bijagual offers ice-cold beers, great Tico bocas and the occasional live band](https://r2storage.bijalapa.com/restaurant/371fc60b111a_bar-bijagual-01.JPEG)
 
 ### Pizzería Loïc
 
-Tired of local "tipical" food, this family-run business serves great pizza. The Margarita Pizza is top-notch.
+Tired of Tico food (_comida típica_)? This family-run pizzeria serves great pies at very reasonable prices. The all-terrain ham and pepperoni pizza is baked to perfection: a crispy crust, thoroughly melted cheese and a mixture of salty and savory flavors. The Margherita pizza is also top-notch. Beautifully lit at night, the seating area offers a welcoming atmosphere for family dining. Doggies are allowed.
 
 [View in Google](https://share.google/1QswcbbS7Hd79NsDy)
 
 
-![Interior of Room](https://r2storage.bijalapa.com/restaurant/1228ba9e544a_OpaloFotografia-48.jpg)
+![Ham and pepperoni pizza baked to perfection; crispy crust, thoroughly melted cheese and mixture of salty and savory flavors](https://r2storage.bijalapa.com/restaurant/1228ba9e544a_OpaloFotografia-48.jpg)
