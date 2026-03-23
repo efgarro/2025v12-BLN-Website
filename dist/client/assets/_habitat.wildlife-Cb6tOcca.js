@@ -1,1 +1,0 @@
-import{j as e,r as s,C as n}from"./main-CFxz_W3v.js";import{I as i}from"./ImageCluster-BvV7Ni1p.js";function m(){return e.jsxs("div",{children:[e.jsx(s.Suspense,{fallback:"Loading Middleman...",children:e.jsx(n,{children:e.jsx(i,{image_mix_name:"wildlife"})})}),e.jsx("div",{className:"mb-12"})]})}export{m as component};

@@ -1,0 +1,1 @@
+import{e as a,j as r}from"./main-Gmc8TrBX.js";import{M as s,r as o,a as m}from"./index-CPGpB86r.js";function t(){const e=a.useLoaderData();return r.jsx("div",{children:r.jsx("div",{className:"article_wrapper mt-6",children:r.jsx("div",{className:"prose prose-lg prose-pre:bg-amber-900",children:r.jsx(s,{rehypePlugins:[m],remarkPlugins:[o],children:e})})})})}export{t as component};

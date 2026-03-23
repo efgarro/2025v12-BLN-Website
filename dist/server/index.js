@@ -1,4 +1,4 @@
-import { H, I } from "./assets/worker-entry-DOKHgtWa.js";
+import { H, I } from "./assets/worker-entry-5NGvoT4L.js";
 import "node:events";
 import "node:stream";
 import "node:async_hooks";

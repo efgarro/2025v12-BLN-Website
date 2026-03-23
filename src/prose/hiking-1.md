@@ -32,7 +32,7 @@ Allow 3~3.5 hours for a full experience at either reserve.
 
 You can visit [Tours Bijagual Waterfall](https://bijagualwaterfall.com) for further information
 
-Please read Baqueano Guide article [Bijagual Waterfall](https://bijagualwaterfall.com/baqueano/bijagual-waterfall) for further insight knowledge.
+Please read Baqueano Guide article [Bijagual Waterfall](https://bijalapa.com/baqueano/bijagual-waterfall) for further insight knowledge.
 
 
 ### Walk to La Esperanza

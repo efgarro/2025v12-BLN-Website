@@ -4,65 +4,69 @@
     "src": "C:/00-IdearApps/2025v12-BLN-Website/src/css/styles.css"
   },
   "C:/00-IdearApps/2025v12-BLN-Website/src/styles/app.css": {
-    "file": "assets/app-BUWKSKt4.css",
+    "file": "assets/app-CECL2CPI.css",
     "src": "C:/00-IdearApps/2025v12-BLN-Website/src/styles/app.css"
   },
-  "_CardEatdo-DA2dAAWz.js": {
-    "file": "assets/CardEatdo-DA2dAAWz.js",
+  "_CardEatdo-DYIWIlzF.js": {
+    "file": "assets/CardEatdo-DYIWIlzF.js",
     "name": "CardEatdo",
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
-  "_CardGrounds-C8lqscKL.js": {
-    "file": "assets/CardGrounds-C8lqscKL.js",
+  "_CardGrounds-DD_e9e_L.js": {
+    "file": "assets/CardGrounds-DD_e9e_L.js",
     "name": "CardGrounds",
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
-  "_CardHabitat-C_YNSOVy.js": {
-    "file": "assets/CardHabitat-C_YNSOVy.js",
+  "_CardHabitat-DnfxcMHN.js": {
+    "file": "assets/CardHabitat-DnfxcMHN.js",
     "name": "CardHabitat",
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
-  "_CardRooms-Cc5Hnf2H.js": {
-    "file": "assets/CardRooms-Cc5Hnf2H.js",
+  "_CardRooms-DjUPegUG.js": {
+    "file": "assets/CardRooms-DjUPegUG.js",
     "name": "CardRooms",
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
-  "_createServerRpc-Pn5oogK-.js": {
-    "file": "assets/createServerRpc-Pn5oogK-.js",
+  "_createServerRpc-dm5LaInk.js": {
+    "file": "assets/createServerRpc-dm5LaInk.js",
     "name": "createServerRpc",
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
-  "_index-Bt-ffQcF.js": {
-    "file": "assets/index-Bt-ffQcF.js",
+  "_index-3XPvuq7g.js": {
+    "file": "assets/index-3XPvuq7g.js",
     "name": "index",
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
-  "_index-D87pU2Xl.js": {
-    "file": "assets/index-D87pU2Xl.js",
+  "_index-Dm0glo5v.js": {
+    "file": "assets/index-Dm0glo5v.js",
     "name": "index",
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
-  "_router-B2t0vaOv.js": {
-    "file": "assets/router-B2t0vaOv.js",
+  "_router-CmOFTN5k.css": {
+    "file": "assets/router-CmOFTN5k.css",
+    "src": "_router-CmOFTN5k.css"
+  },
+  "_router-D6hqw19b.js": {
+    "file": "assets/router-D6hqw19b.js",
     "name": "router",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_index-Bt-ffQcF.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_index-Dm0glo5v.js"
     ],
     "dynamicImports": [
       "src/routes/inquire.tsx?tsr-split=component",
@@ -71,6 +75,8 @@
       "src/routes/_grounds.tsx?tsr-split=component",
       "src/routes/_eatdo.tsx?tsr-split=component",
       "src/routes/index.tsx?tsr-split=component",
+      "src/routes/baqueano/index.tsx?tsr-split=component",
+      "src/routes/baqueano/bijagual-waterfall.tsx?tsr-split=component",
       "src/routes/_rooms.sunrise.tsx?tsr-split=component",
       "src/routes/_rooms.rooms.tsx?tsr-split=component",
       "src/routes/_rooms.guarumo.tsx?tsr-split=component",
@@ -90,25 +96,23 @@
     ],
     "assets": [
       "assets/styles-CO3iXWhy.css",
-      "assets/app-BUWKSKt4.css"
+      "assets/app-CECL2CPI.css"
     ]
   },
-  "_router-CmOFTN5k.css": {
-    "file": "assets/router-CmOFTN5k.css",
-    "src": "_router-CmOFTN5k.css"
-  },
-  "_worker-entry-DOKHgtWa.js": {
-    "file": "assets/worker-entry-DOKHgtWa.js",
+  "_worker-entry-5NGvoT4L.js": {
+    "file": "assets/worker-entry-5NGvoT4L.js",
     "name": "worker-entry",
     "dynamicImports": [
       "tanstack-start-manifest:v",
       "src/routes/inquire.tsx?tss-serverfn-split",
+      "src/routes/baqueano/index.tsx?tss-serverfn-split",
       "src/routes/_rooms.rooms.tsx?tss-serverfn-split",
       "src/routes/_rooms.sunrise.tsx?tss-serverfn-split",
       "src/routes/_rooms.guarumo.tsx?tss-serverfn-split",
-      "src/routes/_eatdo.hiking.tsx?tss-serverfn-split",
+      "src/routes/baqueano/bijagual-waterfall.tsx?tss-serverfn-split",
       "src/routes/_eatdo.restaurants.tsx?tss-serverfn-split",
-      "_router-B2t0vaOv.js",
+      "src/routes/_eatdo.hiking.tsx?tss-serverfn-split",
+      "_router-D6hqw19b.js",
       "node_modules/@tanstack/react-start/dist/plugin/default-entry/start.ts"
     ]
   },
@@ -119,283 +123,329 @@
     "isDynamicEntry": true
   },
   "src/routes/_eatdo.eatdo.tsx?tsr-split=component": {
-    "file": "assets/_eatdo.eatdo-55cl_S0_.js",
+    "file": "assets/_eatdo.eatdo-CJfdGjfF.js",
     "name": "_eatdo.eatdo",
     "src": "src/routes/_eatdo.eatdo.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_CardGrounds-C8lqscKL.js",
-      "_CardHabitat-C_YNSOVy.js",
-      "_CardRooms-Cc5Hnf2H.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_CardGrounds-DD_e9e_L.js",
+      "_CardHabitat-DnfxcMHN.js",
+      "_CardRooms-DjUPegUG.js"
     ]
   },
   "src/routes/_eatdo.hiking.tsx?tsr-split=component": {
-    "file": "assets/_eatdo.hiking-DSaK8eVM.js",
+    "file": "assets/_eatdo.hiking-DeOm4Nb_.js",
     "name": "_eatdo.hiking",
     "src": "src/routes/_eatdo.hiking.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_router-B2t0vaOv.js",
-      "_index-D87pU2Xl.js",
-      "_index-Bt-ffQcF.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_router-D6hqw19b.js",
+      "_index-3XPvuq7g.js",
+      "_index-Dm0glo5v.js"
     ]
   },
   "src/routes/_eatdo.hiking.tsx?tss-serverfn-split": {
-    "file": "assets/_eatdo.hiking-CBbI7Ja9.js",
+    "file": "assets/_eatdo.hiking-BM4BZWDj.js",
     "name": "_eatdo.hiking",
     "src": "src/routes/_eatdo.hiking.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-Pn5oogK-.js",
-      "_index-Bt-ffQcF.js",
-      "_worker-entry-DOKHgtWa.js"
+      "_createServerRpc-dm5LaInk.js",
+      "_index-Dm0glo5v.js",
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "src/routes/_eatdo.restaurants.tsx?tsr-split=component": {
-    "file": "assets/_eatdo.restaurants-DkqQ6h7U.js",
+    "file": "assets/_eatdo.restaurants-BbbDWdji.js",
     "name": "_eatdo.restaurants",
     "src": "src/routes/_eatdo.restaurants.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_router-B2t0vaOv.js",
-      "_index-D87pU2Xl.js",
-      "_index-Bt-ffQcF.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_router-D6hqw19b.js",
+      "_index-3XPvuq7g.js",
+      "_index-Dm0glo5v.js"
     ]
   },
   "src/routes/_eatdo.restaurants.tsx?tss-serverfn-split": {
-    "file": "assets/_eatdo.restaurants-Bi3xy93v.js",
+    "file": "assets/_eatdo.restaurants-VIPBVghe.js",
     "name": "_eatdo.restaurants",
     "src": "src/routes/_eatdo.restaurants.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-Pn5oogK-.js",
-      "_index-Bt-ffQcF.js",
-      "_worker-entry-DOKHgtWa.js"
+      "_createServerRpc-dm5LaInk.js",
+      "_index-Dm0glo5v.js",
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "src/routes/_eatdo.tsx?tsr-split=component": {
-    "file": "assets/_eatdo-BQRbIDOD.js",
+    "file": "assets/_eatdo-D4VlcVm5.js",
     "name": "_eatdo",
     "src": "src/routes/_eatdo.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_router-B2t0vaOv.js",
-      "_index-Bt-ffQcF.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_router-D6hqw19b.js",
+      "_index-Dm0glo5v.js"
     ]
   },
   "src/routes/_grounds.grounds.tsx?tsr-split=component": {
-    "file": "assets/_grounds.grounds-FRU1Yl4v.js",
+    "file": "assets/_grounds.grounds-2WGvX3bq.js",
     "name": "_grounds.grounds",
     "src": "src/routes/_grounds.grounds.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_CardEatdo-DA2dAAWz.js",
-      "_CardHabitat-C_YNSOVy.js",
-      "_CardRooms-Cc5Hnf2H.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_CardEatdo-DYIWIlzF.js",
+      "_CardHabitat-DnfxcMHN.js",
+      "_CardRooms-DjUPegUG.js"
     ]
   },
   "src/routes/_grounds.organic.tsx?tsr-split=component": {
-    "file": "assets/_grounds.organic-CtmdGAQB.js",
+    "file": "assets/_grounds.organic-CpUfaUTC.js",
     "name": "_grounds.organic",
     "src": "src/routes/_grounds.organic.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "src/routes/_grounds.ranch.tsx?tsr-split=component": {
-    "file": "assets/_grounds.ranch-B0_o_p8Q.js",
+    "file": "assets/_grounds.ranch-CMXr9LP7.js",
     "name": "_grounds.ranch",
     "src": "src/routes/_grounds.ranch.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "src/routes/_grounds.tsx?tsr-split=component": {
-    "file": "assets/_grounds-C51Bm4vD.js",
+    "file": "assets/_grounds-C2-8JCNx.js",
     "name": "_grounds",
     "src": "src/routes/_grounds.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_router-B2t0vaOv.js",
-      "_index-Bt-ffQcF.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_router-D6hqw19b.js",
+      "_index-Dm0glo5v.js"
     ]
   },
   "src/routes/_grounds.yard.tsx?tsr-split=component": {
-    "file": "assets/_grounds.yard-D5nFydZf.js",
+    "file": "assets/_grounds.yard-BuveeUaf.js",
     "name": "_grounds.yard",
     "src": "src/routes/_grounds.yard.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "src/routes/_habitat.habitat.tsx?tsr-split=component": {
-    "file": "assets/_habitat.habitat-BWCGgfib.js",
+    "file": "assets/_habitat.habitat-DlG-_8Hl.js",
     "name": "_habitat.habitat",
     "src": "src/routes/_habitat.habitat.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_CardEatdo-DA2dAAWz.js",
-      "_CardGrounds-C8lqscKL.js",
-      "_CardRooms-Cc5Hnf2H.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_CardEatdo-DYIWIlzF.js",
+      "_CardGrounds-DD_e9e_L.js",
+      "_CardRooms-DjUPegUG.js"
     ]
   },
   "src/routes/_habitat.trees.tsx?tsr-split=component": {
-    "file": "assets/_habitat.trees-B1js50Pi.js",
+    "file": "assets/_habitat.trees-D-8rdVAL.js",
     "name": "_habitat.trees",
     "src": "src/routes/_habitat.trees.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "src/routes/_habitat.tsx?tsr-split=component": {
-    "file": "assets/_habitat-DHFXD5iV.js",
+    "file": "assets/_habitat-D0ksl31H.js",
     "name": "_habitat",
     "src": "src/routes/_habitat.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_router-B2t0vaOv.js",
-      "_index-Bt-ffQcF.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_router-D6hqw19b.js",
+      "_index-Dm0glo5v.js"
     ]
   },
   "src/routes/_habitat.wildlife.tsx?tsr-split=component": {
-    "file": "assets/_habitat.wildlife-B1js50Pi.js",
+    "file": "assets/_habitat.wildlife-D-8rdVAL.js",
     "name": "_habitat.wildlife",
     "src": "src/routes/_habitat.wildlife.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "src/routes/_rooms.guarumo.tsx?tsr-split=component": {
-    "file": "assets/_rooms.guarumo-B7b5nW86.js",
+    "file": "assets/_rooms.guarumo-qufy-xHu.js",
     "name": "_rooms.guarumo",
     "src": "src/routes/_rooms.guarumo.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_router-B2t0vaOv.js",
-      "_index-D87pU2Xl.js",
-      "_index-Bt-ffQcF.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_router-D6hqw19b.js",
+      "_index-3XPvuq7g.js",
+      "_index-Dm0glo5v.js"
     ]
   },
   "src/routes/_rooms.guarumo.tsx?tss-serverfn-split": {
-    "file": "assets/_rooms.guarumo-D_ze1Kfn.js",
+    "file": "assets/_rooms.guarumo-Drzii68T.js",
     "name": "_rooms.guarumo",
     "src": "src/routes/_rooms.guarumo.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-Pn5oogK-.js",
-      "_index-Bt-ffQcF.js",
-      "_worker-entry-DOKHgtWa.js"
+      "_createServerRpc-dm5LaInk.js",
+      "_index-Dm0glo5v.js",
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "src/routes/_rooms.rooms.tsx?tsr-split=component": {
-    "file": "assets/_rooms.rooms-DuUYcwo1.js",
+    "file": "assets/_rooms.rooms-CR_uHfjS.js",
     "name": "_rooms.rooms",
     "src": "src/routes/_rooms.rooms.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_CardGrounds-C8lqscKL.js",
-      "_CardHabitat-C_YNSOVy.js",
-      "_CardEatdo-DA2dAAWz.js",
-      "_router-B2t0vaOv.js",
-      "_index-Bt-ffQcF.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_CardGrounds-DD_e9e_L.js",
+      "_CardHabitat-DnfxcMHN.js",
+      "_CardEatdo-DYIWIlzF.js",
+      "_router-D6hqw19b.js",
+      "_index-Dm0glo5v.js"
     ]
   },
   "src/routes/_rooms.rooms.tsx?tss-serverfn-split": {
-    "file": "assets/_rooms.rooms-DFZXfJp4.js",
+    "file": "assets/_rooms.rooms-PcYG2vam.js",
     "name": "_rooms.rooms",
     "src": "src/routes/_rooms.rooms.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-Pn5oogK-.js",
-      "_index-Bt-ffQcF.js",
-      "_worker-entry-DOKHgtWa.js"
+      "_createServerRpc-dm5LaInk.js",
+      "_index-Dm0glo5v.js",
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "src/routes/_rooms.sunrise.tsx?tsr-split=component": {
-    "file": "assets/_rooms.sunrise-CcUjcngT.js",
+    "file": "assets/_rooms.sunrise-DwhKB9t_.js",
     "name": "_rooms.sunrise",
     "src": "src/routes/_rooms.sunrise.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_router-B2t0vaOv.js",
-      "_index-D87pU2Xl.js",
-      "_index-Bt-ffQcF.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_router-D6hqw19b.js",
+      "_index-3XPvuq7g.js",
+      "_index-Dm0glo5v.js"
     ]
   },
   "src/routes/_rooms.sunrise.tsx?tss-serverfn-split": {
-    "file": "assets/_rooms.sunrise-DwBCpBMD.js",
+    "file": "assets/_rooms.sunrise-D07_wITr.js",
     "name": "_rooms.sunrise",
     "src": "src/routes/_rooms.sunrise.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-Pn5oogK-.js",
-      "_index-Bt-ffQcF.js",
-      "_worker-entry-DOKHgtWa.js"
+      "_createServerRpc-dm5LaInk.js",
+      "_index-Dm0glo5v.js",
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "src/routes/_rooms.tsx?tsr-split=component": {
-    "file": "assets/_rooms-BstApOg1.js",
+    "file": "assets/_rooms-Cwnrq5Qq.js",
     "name": "_rooms",
     "src": "src/routes/_rooms.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
+    ]
+  },
+  "src/routes/baqueano/bijagual-waterfall.tsx?tsr-split=component": {
+    "file": "assets/bijagual-waterfall-KRC9KQYO.js",
+    "name": "bijagual-waterfall",
+    "src": "src/routes/baqueano/bijagual-waterfall.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-5NGvoT4L.js",
+      "_router-D6hqw19b.js",
+      "_index-3XPvuq7g.js",
+      "_index-Dm0glo5v.js"
+    ]
+  },
+  "src/routes/baqueano/bijagual-waterfall.tsx?tss-serverfn-split": {
+    "file": "assets/bijagual-waterfall-BXxHyYTk.js",
+    "name": "bijagual-waterfall",
+    "src": "src/routes/baqueano/bijagual-waterfall.tsx?tss-serverfn-split",
+    "isDynamicEntry": true,
+    "imports": [
+      "_createServerRpc-dm5LaInk.js",
+      "_index-Dm0glo5v.js",
+      "_worker-entry-5NGvoT4L.js"
+    ]
+  },
+  "src/routes/baqueano/index.tsx?tsr-split=component": {
+    "file": "assets/index-Bb3peVDy.js",
+    "name": "index",
+    "src": "src/routes/baqueano/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-5NGvoT4L.js",
+      "_router-D6hqw19b.js",
+      "_index-3XPvuq7g.js",
+      "_index-Dm0glo5v.js"
+    ]
+  },
+  "src/routes/baqueano/index.tsx?tss-serverfn-split": {
+    "file": "assets/index-Dymx8acL.js",
+    "name": "index",
+    "src": "src/routes/baqueano/index.tsx?tss-serverfn-split",
+    "isDynamicEntry": true,
+    "imports": [
+      "_createServerRpc-dm5LaInk.js",
+      "_index-Dm0glo5v.js",
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "src/routes/index.tsx?tsr-split=component": {
-    "file": "assets/index-DGnh-0Pu.js",
+    "file": "assets/index-D8Y9qLKJ.js",
     "name": "index",
     "src": "src/routes/index.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_CardGrounds-C8lqscKL.js",
-      "_CardHabitat-C_YNSOVy.js",
-      "_CardEatdo-DA2dAAWz.js",
-      "_CardRooms-Cc5Hnf2H.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_CardGrounds-DD_e9e_L.js",
+      "_CardHabitat-DnfxcMHN.js",
+      "_CardEatdo-DYIWIlzF.js",
+      "_CardRooms-DjUPegUG.js"
     ]
   },
   "src/routes/inquire.tsx?tsr-split=component": {
-    "file": "assets/inquire-C47IklBx.js",
+    "file": "assets/inquire-C6X2KL0v.js",
     "name": "inquire",
     "src": "src/routes/inquire.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js",
-      "_router-B2t0vaOv.js",
-      "_index-D87pU2Xl.js",
-      "_index-Bt-ffQcF.js"
+      "_worker-entry-5NGvoT4L.js",
+      "_router-D6hqw19b.js",
+      "_index-3XPvuq7g.js",
+      "_index-Dm0glo5v.js"
     ]
   },
   "src/routes/inquire.tsx?tss-serverfn-split": {
-    "file": "assets/inquire-CyeFHHZg.js",
+    "file": "assets/inquire-C33ZcnZ-.js",
     "name": "inquire",
     "src": "src/routes/inquire.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-Pn5oogK-.js",
-      "_index-Bt-ffQcF.js",
-      "_worker-entry-DOKHgtWa.js"
+      "_createServerRpc-dm5LaInk.js",
+      "_index-Dm0glo5v.js",
+      "_worker-entry-5NGvoT4L.js"
     ]
   },
   "tanstack-start-manifest:v": {
-    "file": "assets/_tanstack-start-manifest_v-CWthbCoc.js",
+    "file": "assets/_tanstack-start-manifest_v-cm67PjM5.js",
     "name": "_tanstack-start-manifest_v",
     "src": "tanstack-start-manifest:v",
     "isDynamicEntry": true
@@ -406,7 +456,7 @@
     "src": "virtual:cloudflare/worker-entry",
     "isEntry": true,
     "imports": [
-      "_worker-entry-DOKHgtWa.js"
+      "_worker-entry-5NGvoT4L.js"
     ]
   }
 }
