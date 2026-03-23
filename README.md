@@ -168,6 +168,13 @@ home
 la-poza
 organic
 
+/baqueano_guide/bijagual_waterfall
+/baqueano_guide/town_of_bijagual
+/baqueano_guide/tarcoles_river_bridge
+/...etc
+
+Tico food / Costa Rican cuisine / _Comida Típica_
+
 page
 name: home
 route: "/home"
@@ -198,6 +205,9 @@ middleware - request / server fn
 
 npx wrangler r2 object put --remote 2025v12-bijalapa/prose/"$(basename "/c/00-IdearApps/2025v12-BLN-Website/src/prose/about.md")" --file "/c/00-IdearApps/2025v12-BLN-Website/src/prose/about.md"
 ```
+
+C:\00-IdearApps\2025v12-BLN-Website\src\prose\baqueano-guide\bijagual-waterfall.md
+
 
 ### How can I exclude a config file from git merge a branch
 
