@@ -1,5 +1,5 @@
-/* @import url(base.css); */
 @import url(core.css);
+@import url(embla.css);
 /* @import url(react-international-phone/style.css); */
 
 @import url(/node_modules/react-grid-layout/css/styles.css);
@@ -28,17 +28,17 @@
   background-color: rgba(245, 239, 137, 0.25);
 }
 .bln-rojo {
-  color: #E41E3C;
+  color: #e41e3c;
 }
 .bln-verde {
-  color: #A8E200;
+  color: #a8e200;
 }
 .bln-lila {
-  color: #F000D0;
+  color: #f000d0;
 }
 .bln-naranja {
-  color: #F58220;
+  color: #f58220;
 }
 .bln-amarillo {
-  color: #FFF440;
+  color: #fff440;
 }

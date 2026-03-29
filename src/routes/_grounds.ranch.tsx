@@ -4,6 +4,18 @@ import { useGetImageMixOptions } from '~/apiFns/apiFns';
 import { ImageCluster } from '~/components/ImageCluster';
 
 export const Route = createFileRoute('/_grounds/ranch')({
+  head: () => ({
+    meta: [
+      {
+        title: "Ranch Social Space",
+      },
+      {
+        name: "description",
+        content:
+          "It includes a photo gallery on the ranch social shared space",
+      },
+    ],
+  }),
   loader: ({ context }) => {
             // Kick off loading as early as possible!
             context.queryClient.prefetchQuery(

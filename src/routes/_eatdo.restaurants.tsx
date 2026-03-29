@@ -17,6 +17,18 @@ export const getMdfile = createServerFn().handler(async () => {
 });
 
 export const Route = createFileRoute("/_eatdo/restaurants")({
+  head: () => ({
+    meta: [
+      {
+        title: "Restaurants around Bijagual",
+      },
+      {
+        name: "description",
+        content:
+          "It includes information on several restaurants around the Bijagual area",
+      },
+    ],
+  }),
   loader: async ({ context }) => {
     // Kick off loading as early as possible!
     context.queryClient.prefetchQuery(useGetImageMixOptions("restaurant"));

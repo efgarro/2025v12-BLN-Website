@@ -14,6 +14,18 @@ export const getMarkdownfile = createServerFn().handler(async () => {
 });
 
 export const Route = createFileRoute("/baqueano/")({
+  head: () => ({
+    meta: [
+      {
+        title: "Baqueano Guide",
+      },
+      {
+        name: "description",
+        content:
+          "It includes an index menu of the published articles meant to provide the visitor with information on Bijagual and its surrounding areas",
+      },
+    ],
+  }),
   loader: async () => {
     // Kick off loading as early as possible!
     return await getMarkdownfile();

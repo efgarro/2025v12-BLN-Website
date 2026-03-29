@@ -74,6 +74,12 @@
   height: 100%;
 }
 
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  height: clamp(4rem, 97.5vw, 20rem);
+}
+
 .social_box {
   height: 80px;
   background-color: #3a3e40;
@@ -98,6 +104,11 @@
     padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     height: 100%;
   }
+  .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    height: clamp(20rem, 85vw, 27.5rem);
+  }
 }
 
 /* Tablet (medium) Screen Rules >=768px <992px | 720px container*/
@@ -119,6 +130,11 @@
     padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     height: 100%;
+  }
+  .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    height: clamp(27.5rem, 85vw, 37.5rem);
   }
 
   .core_sidebar {
@@ -144,6 +160,12 @@
     padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     height: 100%;
+  }
+
+  .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    height: clamp(27.5rem, 85vw, 37.5rem);
   }
 
   .core_sidebar {
@@ -177,6 +199,12 @@
     padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     height: 100%;
+  }
+
+  .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    height: clamp(27.5rem, 85vw, 37.5rem);
   }
 
   .core_sidebar {

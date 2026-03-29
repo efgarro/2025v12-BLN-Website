@@ -44,3 +44,11 @@ export interface INavSettingsContext {
 export interface IRouterContext {
   queryClient: QueryClient;
 }
+
+export interface IImagePreview {
+  id: string;
+  url: string;
+  orientation: string;
+  description: string;
+  figcaption: string;
+}

@@ -4,6 +4,18 @@ import { useGetImageMixOptions } from "~/apiFns/apiFns";
 import { ImageCluster } from "~/components/ImageCluster";
 
 export const Route = createFileRoute("/_habitat/wildlife")({
+  head: () => ({
+    meta: [
+      {
+        title: "Wildlife Journal",
+      },
+      {
+        name: "description",
+        content:
+          "It includes a photo gallery that records wildlife within BijaLapa Natural",
+      },
+    ],
+  }),
   loader: ({ context }) => {
     // Kick off loading as early as possible!
     context.queryClient.prefetchQuery(
