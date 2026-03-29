@@ -1,72 +1,68 @@
 {
   "C:/00-IdearApps/2025v12-BLN-Website/src/css/styles.css": {
-    "file": "assets/styles-CO3iXWhy.css",
+    "file": "assets/styles-D5SOosh3.css",
     "src": "C:/00-IdearApps/2025v12-BLN-Website/src/css/styles.css"
   },
   "C:/00-IdearApps/2025v12-BLN-Website/src/styles/app.css": {
-    "file": "assets/app-CECL2CPI.css",
+    "file": "assets/app-ybbZgzxX.css",
     "src": "C:/00-IdearApps/2025v12-BLN-Website/src/styles/app.css"
   },
-  "_CardEatdo-DYIWIlzF.js": {
-    "file": "assets/CardEatdo-DYIWIlzF.js",
+  "_CardEatdo-vuhStLFp.js": {
+    "file": "assets/CardEatdo-vuhStLFp.js",
     "name": "CardEatdo",
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
-  "_CardGrounds-DD_e9e_L.js": {
-    "file": "assets/CardGrounds-DD_e9e_L.js",
+  "_CardGrounds-CG2KCiF5.js": {
+    "file": "assets/CardGrounds-CG2KCiF5.js",
     "name": "CardGrounds",
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
-  "_CardHabitat-DnfxcMHN.js": {
-    "file": "assets/CardHabitat-DnfxcMHN.js",
+  "_CardHabitat-CGbFELrI.js": {
+    "file": "assets/CardHabitat-CGbFELrI.js",
     "name": "CardHabitat",
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
-  "_CardRooms-DjUPegUG.js": {
-    "file": "assets/CardRooms-DjUPegUG.js",
+  "_CardRooms-C-tSR_Kd.js": {
+    "file": "assets/CardRooms-C-tSR_Kd.js",
     "name": "CardRooms",
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
-  "_createServerRpc-dm5LaInk.js": {
-    "file": "assets/createServerRpc-dm5LaInk.js",
+  "_createServerRpc-BYYXCyIA.js": {
+    "file": "assets/createServerRpc-BYYXCyIA.js",
     "name": "createServerRpc",
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
-  "_index-3XPvuq7g.js": {
-    "file": "assets/index-3XPvuq7g.js",
+  "_index-3bgYrsNh.js": {
+    "file": "assets/index-3bgYrsNh.js",
     "name": "index",
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
-  "_index-Dm0glo5v.js": {
-    "file": "assets/index-Dm0glo5v.js",
+  "_index-Bp8QaAZy.js": {
+    "file": "assets/index-Bp8QaAZy.js",
     "name": "index",
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
-  "_router-CmOFTN5k.css": {
-    "file": "assets/router-CmOFTN5k.css",
-    "src": "_router-CmOFTN5k.css"
-  },
-  "_router-D6hqw19b.js": {
-    "file": "assets/router-D6hqw19b.js",
+  "_router-Bp1FaMTG.js": {
+    "file": "assets/router-Bp1FaMTG.js",
     "name": "router",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_index-3bgYrsNh.js"
     ],
     "dynamicImports": [
       "src/routes/inquire.tsx?tsr-split=component",
@@ -76,6 +72,7 @@
       "src/routes/_eatdo.tsx?tsr-split=component",
       "src/routes/index.tsx?tsr-split=component",
       "src/routes/baqueano/index.tsx?tsr-split=component",
+      "src/routes/baqueano/town-of-bijagual.tsx?tsr-split=component",
       "src/routes/baqueano/bijagual-waterfall.tsx?tsr-split=component",
       "src/routes/_rooms.sunrise.tsx?tsr-split=component",
       "src/routes/_rooms.rooms.tsx?tsr-split=component",
@@ -95,24 +92,29 @@
       "assets/router-CmOFTN5k.css"
     ],
     "assets": [
-      "assets/styles-CO3iXWhy.css",
-      "assets/app-CECL2CPI.css"
+      "assets/styles-D5SOosh3.css",
+      "assets/app-ybbZgzxX.css"
     ]
   },
-  "_worker-entry-5NGvoT4L.js": {
-    "file": "assets/worker-entry-5NGvoT4L.js",
+  "_router-CmOFTN5k.css": {
+    "file": "assets/router-CmOFTN5k.css",
+    "src": "_router-CmOFTN5k.css"
+  },
+  "_worker-entry-D3zVgP0m.js": {
+    "file": "assets/worker-entry-D3zVgP0m.js",
     "name": "worker-entry",
     "dynamicImports": [
       "tanstack-start-manifest:v",
       "src/routes/inquire.tsx?tss-serverfn-split",
       "src/routes/baqueano/index.tsx?tss-serverfn-split",
+      "src/routes/baqueano/bijagual-waterfall.tsx?tss-serverfn-split",
       "src/routes/_rooms.rooms.tsx?tss-serverfn-split",
       "src/routes/_rooms.sunrise.tsx?tss-serverfn-split",
+      "src/routes/baqueano/town-of-bijagual.tsx?tss-serverfn-split",
       "src/routes/_rooms.guarumo.tsx?tss-serverfn-split",
-      "src/routes/baqueano/bijagual-waterfall.tsx?tss-serverfn-split",
       "src/routes/_eatdo.restaurants.tsx?tss-serverfn-split",
       "src/routes/_eatdo.hiking.tsx?tss-serverfn-split",
-      "_router-D6hqw19b.js",
+      "_router-Bp1FaMTG.js",
       "node_modules/@tanstack/react-start/dist/plugin/default-entry/start.ts"
     ]
   },
@@ -123,329 +125,351 @@
     "isDynamicEntry": true
   },
   "src/routes/_eatdo.eatdo.tsx?tsr-split=component": {
-    "file": "assets/_eatdo.eatdo-CJfdGjfF.js",
+    "file": "assets/_eatdo.eatdo-CD20C3qt.js",
     "name": "_eatdo.eatdo",
     "src": "src/routes/_eatdo.eatdo.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_CardGrounds-DD_e9e_L.js",
-      "_CardHabitat-DnfxcMHN.js",
-      "_CardRooms-DjUPegUG.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_CardGrounds-CG2KCiF5.js",
+      "_CardHabitat-CGbFELrI.js",
+      "_CardRooms-C-tSR_Kd.js"
     ]
   },
   "src/routes/_eatdo.hiking.tsx?tsr-split=component": {
-    "file": "assets/_eatdo.hiking-DeOm4Nb_.js",
+    "file": "assets/_eatdo.hiking-C52Ps3zT.js",
     "name": "_eatdo.hiking",
     "src": "src/routes/_eatdo.hiking.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_router-D6hqw19b.js",
-      "_index-3XPvuq7g.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_router-Bp1FaMTG.js",
+      "_index-Bp8QaAZy.js",
+      "_index-3bgYrsNh.js"
     ]
   },
   "src/routes/_eatdo.hiking.tsx?tss-serverfn-split": {
-    "file": "assets/_eatdo.hiking-BM4BZWDj.js",
+    "file": "assets/_eatdo.hiking-CYMq4URE.js",
     "name": "_eatdo.hiking",
     "src": "src/routes/_eatdo.hiking.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-dm5LaInk.js",
-      "_index-Dm0glo5v.js",
-      "_worker-entry-5NGvoT4L.js"
+      "_createServerRpc-BYYXCyIA.js",
+      "_index-3bgYrsNh.js",
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/_eatdo.restaurants.tsx?tsr-split=component": {
-    "file": "assets/_eatdo.restaurants-BbbDWdji.js",
+    "file": "assets/_eatdo.restaurants-DQg4Fj-I.js",
     "name": "_eatdo.restaurants",
     "src": "src/routes/_eatdo.restaurants.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_router-D6hqw19b.js",
-      "_index-3XPvuq7g.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_router-Bp1FaMTG.js",
+      "_index-Bp8QaAZy.js",
+      "_index-3bgYrsNh.js"
     ]
   },
   "src/routes/_eatdo.restaurants.tsx?tss-serverfn-split": {
-    "file": "assets/_eatdo.restaurants-VIPBVghe.js",
+    "file": "assets/_eatdo.restaurants-Con_RLIV.js",
     "name": "_eatdo.restaurants",
     "src": "src/routes/_eatdo.restaurants.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-dm5LaInk.js",
-      "_index-Dm0glo5v.js",
-      "_worker-entry-5NGvoT4L.js"
+      "_createServerRpc-BYYXCyIA.js",
+      "_index-3bgYrsNh.js",
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/_eatdo.tsx?tsr-split=component": {
-    "file": "assets/_eatdo-D4VlcVm5.js",
+    "file": "assets/_eatdo-5shSfsjJ.js",
     "name": "_eatdo",
     "src": "src/routes/_eatdo.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_router-D6hqw19b.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_router-Bp1FaMTG.js",
+      "_index-3bgYrsNh.js"
     ]
   },
   "src/routes/_grounds.grounds.tsx?tsr-split=component": {
-    "file": "assets/_grounds.grounds-2WGvX3bq.js",
+    "file": "assets/_grounds.grounds-B985vcEp.js",
     "name": "_grounds.grounds",
     "src": "src/routes/_grounds.grounds.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_CardEatdo-DYIWIlzF.js",
-      "_CardHabitat-DnfxcMHN.js",
-      "_CardRooms-DjUPegUG.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_CardEatdo-vuhStLFp.js",
+      "_CardHabitat-CGbFELrI.js",
+      "_CardRooms-C-tSR_Kd.js"
     ]
   },
   "src/routes/_grounds.organic.tsx?tsr-split=component": {
-    "file": "assets/_grounds.organic-CpUfaUTC.js",
+    "file": "assets/_grounds.organic-DMufdmLe.js",
     "name": "_grounds.organic",
     "src": "src/routes/_grounds.organic.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/_grounds.ranch.tsx?tsr-split=component": {
-    "file": "assets/_grounds.ranch-CMXr9LP7.js",
+    "file": "assets/_grounds.ranch-j8QaIbvp.js",
     "name": "_grounds.ranch",
     "src": "src/routes/_grounds.ranch.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/_grounds.tsx?tsr-split=component": {
-    "file": "assets/_grounds-C2-8JCNx.js",
+    "file": "assets/_grounds-Bh4sAbCW.js",
     "name": "_grounds",
     "src": "src/routes/_grounds.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_router-D6hqw19b.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_router-Bp1FaMTG.js",
+      "_index-3bgYrsNh.js"
     ]
   },
   "src/routes/_grounds.yard.tsx?tsr-split=component": {
-    "file": "assets/_grounds.yard-BuveeUaf.js",
+    "file": "assets/_grounds.yard-bWdPpSHl.js",
     "name": "_grounds.yard",
     "src": "src/routes/_grounds.yard.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/_habitat.habitat.tsx?tsr-split=component": {
-    "file": "assets/_habitat.habitat-DlG-_8Hl.js",
+    "file": "assets/_habitat.habitat-2opEY3bV.js",
     "name": "_habitat.habitat",
     "src": "src/routes/_habitat.habitat.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_CardEatdo-DYIWIlzF.js",
-      "_CardGrounds-DD_e9e_L.js",
-      "_CardRooms-DjUPegUG.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_CardEatdo-vuhStLFp.js",
+      "_CardGrounds-CG2KCiF5.js",
+      "_CardRooms-C-tSR_Kd.js"
     ]
   },
   "src/routes/_habitat.trees.tsx?tsr-split=component": {
-    "file": "assets/_habitat.trees-D-8rdVAL.js",
+    "file": "assets/_habitat.trees-B5sQEpOh.js",
     "name": "_habitat.trees",
     "src": "src/routes/_habitat.trees.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/_habitat.tsx?tsr-split=component": {
-    "file": "assets/_habitat-D0ksl31H.js",
+    "file": "assets/_habitat-bNKPVFQf.js",
     "name": "_habitat",
     "src": "src/routes/_habitat.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_router-D6hqw19b.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_router-Bp1FaMTG.js",
+      "_index-3bgYrsNh.js"
     ]
   },
   "src/routes/_habitat.wildlife.tsx?tsr-split=component": {
-    "file": "assets/_habitat.wildlife-D-8rdVAL.js",
+    "file": "assets/_habitat.wildlife-B5sQEpOh.js",
     "name": "_habitat.wildlife",
     "src": "src/routes/_habitat.wildlife.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/_rooms.guarumo.tsx?tsr-split=component": {
-    "file": "assets/_rooms.guarumo-qufy-xHu.js",
+    "file": "assets/_rooms.guarumo-DhM92xZC.js",
     "name": "_rooms.guarumo",
     "src": "src/routes/_rooms.guarumo.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_router-D6hqw19b.js",
-      "_index-3XPvuq7g.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_router-Bp1FaMTG.js",
+      "_index-Bp8QaAZy.js",
+      "_index-3bgYrsNh.js"
     ]
   },
   "src/routes/_rooms.guarumo.tsx?tss-serverfn-split": {
-    "file": "assets/_rooms.guarumo-Drzii68T.js",
+    "file": "assets/_rooms.guarumo-CTBdW0S5.js",
     "name": "_rooms.guarumo",
     "src": "src/routes/_rooms.guarumo.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-dm5LaInk.js",
-      "_index-Dm0glo5v.js",
-      "_worker-entry-5NGvoT4L.js"
+      "_createServerRpc-BYYXCyIA.js",
+      "_index-3bgYrsNh.js",
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/_rooms.rooms.tsx?tsr-split=component": {
-    "file": "assets/_rooms.rooms-CR_uHfjS.js",
+    "file": "assets/_rooms.rooms-D52MBfF6.js",
     "name": "_rooms.rooms",
     "src": "src/routes/_rooms.rooms.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_CardGrounds-DD_e9e_L.js",
-      "_CardHabitat-DnfxcMHN.js",
-      "_CardEatdo-DYIWIlzF.js",
-      "_router-D6hqw19b.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_CardGrounds-CG2KCiF5.js",
+      "_CardHabitat-CGbFELrI.js",
+      "_CardEatdo-vuhStLFp.js",
+      "_router-Bp1FaMTG.js",
+      "_index-3bgYrsNh.js"
     ]
   },
   "src/routes/_rooms.rooms.tsx?tss-serverfn-split": {
-    "file": "assets/_rooms.rooms-PcYG2vam.js",
+    "file": "assets/_rooms.rooms-B8AeRlOU.js",
     "name": "_rooms.rooms",
     "src": "src/routes/_rooms.rooms.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-dm5LaInk.js",
-      "_index-Dm0glo5v.js",
-      "_worker-entry-5NGvoT4L.js"
+      "_createServerRpc-BYYXCyIA.js",
+      "_index-3bgYrsNh.js",
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/_rooms.sunrise.tsx?tsr-split=component": {
-    "file": "assets/_rooms.sunrise-DwhKB9t_.js",
+    "file": "assets/_rooms.sunrise-BL-5TwAU.js",
     "name": "_rooms.sunrise",
     "src": "src/routes/_rooms.sunrise.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_router-D6hqw19b.js",
-      "_index-3XPvuq7g.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_router-Bp1FaMTG.js",
+      "_index-Bp8QaAZy.js",
+      "_index-3bgYrsNh.js"
     ]
   },
   "src/routes/_rooms.sunrise.tsx?tss-serverfn-split": {
-    "file": "assets/_rooms.sunrise-D07_wITr.js",
+    "file": "assets/_rooms.sunrise-BxWegxq-.js",
     "name": "_rooms.sunrise",
     "src": "src/routes/_rooms.sunrise.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-dm5LaInk.js",
-      "_index-Dm0glo5v.js",
-      "_worker-entry-5NGvoT4L.js"
+      "_createServerRpc-BYYXCyIA.js",
+      "_index-3bgYrsNh.js",
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/_rooms.tsx?tsr-split=component": {
-    "file": "assets/_rooms-Cwnrq5Qq.js",
+    "file": "assets/_rooms-CqF-URUh.js",
     "name": "_rooms",
     "src": "src/routes/_rooms.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/baqueano/bijagual-waterfall.tsx?tsr-split=component": {
-    "file": "assets/bijagual-waterfall-KRC9KQYO.js",
+    "file": "assets/bijagual-waterfall-CUbp-mS0.js",
     "name": "bijagual-waterfall",
     "src": "src/routes/baqueano/bijagual-waterfall.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_router-D6hqw19b.js",
-      "_index-3XPvuq7g.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_router-Bp1FaMTG.js",
+      "_index-Bp8QaAZy.js",
+      "_index-3bgYrsNh.js"
     ]
   },
   "src/routes/baqueano/bijagual-waterfall.tsx?tss-serverfn-split": {
-    "file": "assets/bijagual-waterfall-BXxHyYTk.js",
+    "file": "assets/bijagual-waterfall-CAp9ObGi.js",
     "name": "bijagual-waterfall",
     "src": "src/routes/baqueano/bijagual-waterfall.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-dm5LaInk.js",
-      "_index-Dm0glo5v.js",
-      "_worker-entry-5NGvoT4L.js"
+      "_createServerRpc-BYYXCyIA.js",
+      "_index-3bgYrsNh.js",
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/baqueano/index.tsx?tsr-split=component": {
-    "file": "assets/index-Bb3peVDy.js",
+    "file": "assets/index-DhOGfo3B.js",
     "name": "index",
     "src": "src/routes/baqueano/index.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_router-D6hqw19b.js",
-      "_index-3XPvuq7g.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_router-Bp1FaMTG.js",
+      "_index-Bp8QaAZy.js",
+      "_index-3bgYrsNh.js"
     ]
   },
   "src/routes/baqueano/index.tsx?tss-serverfn-split": {
-    "file": "assets/index-Dymx8acL.js",
+    "file": "assets/index-DwvZQ3FJ.js",
     "name": "index",
     "src": "src/routes/baqueano/index.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-dm5LaInk.js",
-      "_index-Dm0glo5v.js",
-      "_worker-entry-5NGvoT4L.js"
+      "_createServerRpc-BYYXCyIA.js",
+      "_index-3bgYrsNh.js",
+      "_worker-entry-D3zVgP0m.js"
+    ]
+  },
+  "src/routes/baqueano/town-of-bijagual.tsx?tsr-split=component": {
+    "file": "assets/town-of-bijagual-AQRnfxTz.js",
+    "name": "town-of-bijagual",
+    "src": "src/routes/baqueano/town-of-bijagual.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-D3zVgP0m.js",
+      "_router-Bp1FaMTG.js",
+      "_index-3bgYrsNh.js"
+    ]
+  },
+  "src/routes/baqueano/town-of-bijagual.tsx?tss-serverfn-split": {
+    "file": "assets/town-of-bijagual-DlJw-KRz.js",
+    "name": "town-of-bijagual",
+    "src": "src/routes/baqueano/town-of-bijagual.tsx?tss-serverfn-split",
+    "isDynamicEntry": true,
+    "imports": [
+      "_createServerRpc-BYYXCyIA.js",
+      "_index-3bgYrsNh.js",
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "src/routes/index.tsx?tsr-split=component": {
-    "file": "assets/index-D8Y9qLKJ.js",
+    "file": "assets/index-D6hb2pKK.js",
     "name": "index",
     "src": "src/routes/index.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_CardGrounds-DD_e9e_L.js",
-      "_CardHabitat-DnfxcMHN.js",
-      "_CardEatdo-DYIWIlzF.js",
-      "_CardRooms-DjUPegUG.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_CardGrounds-CG2KCiF5.js",
+      "_CardHabitat-CGbFELrI.js",
+      "_CardEatdo-vuhStLFp.js",
+      "_CardRooms-C-tSR_Kd.js"
     ]
   },
   "src/routes/inquire.tsx?tsr-split=component": {
-    "file": "assets/inquire-C6X2KL0v.js",
+    "file": "assets/inquire-BB3Z6Pxn.js",
     "name": "inquire",
     "src": "src/routes/inquire.tsx?tsr-split=component",
     "isDynamicEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js",
-      "_router-D6hqw19b.js",
-      "_index-3XPvuq7g.js",
-      "_index-Dm0glo5v.js"
+      "_worker-entry-D3zVgP0m.js",
+      "_router-Bp1FaMTG.js",
+      "_index-Bp8QaAZy.js",
+      "_index-3bgYrsNh.js"
     ]
   },
   "src/routes/inquire.tsx?tss-serverfn-split": {
-    "file": "assets/inquire-C33ZcnZ-.js",
+    "file": "assets/inquire-B6WcWwWp.js",
     "name": "inquire",
     "src": "src/routes/inquire.tsx?tss-serverfn-split",
     "isDynamicEntry": true,
     "imports": [
-      "_createServerRpc-dm5LaInk.js",
-      "_index-Dm0glo5v.js",
-      "_worker-entry-5NGvoT4L.js"
+      "_createServerRpc-BYYXCyIA.js",
+      "_index-3bgYrsNh.js",
+      "_worker-entry-D3zVgP0m.js"
     ]
   },
   "tanstack-start-manifest:v": {
-    "file": "assets/_tanstack-start-manifest_v-cm67PjM5.js",
+    "file": "assets/_tanstack-start-manifest_v-BhRKRHx7.js",
     "name": "_tanstack-start-manifest_v",
     "src": "tanstack-start-manifest:v",
     "isDynamicEntry": true
@@ -456,7 +480,7 @@
     "src": "virtual:cloudflare/worker-entry",
     "isEntry": true,
     "imports": [
-      "_worker-entry-5NGvoT4L.js"
+      "_worker-entry-D3zVgP0m.js"
     ]
   }
 }

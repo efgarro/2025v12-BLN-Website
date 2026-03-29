@@ -1,1 +1,0 @@
-import{j as e,r as s,C as n}from"./main-Gmc8TrBX.js";import{I as a}from"./ImageCluster-9tTUJ17d.js";function o(){return e.jsxs("div",{children:[e.jsx(s.Suspense,{fallback:"Loading Middleman...",children:e.jsx(n,{children:e.jsx(a,{image_mix_name:"organic"})})}),e.jsx("div",{className:"h-12 mb-12"})]})}export{o as component};
