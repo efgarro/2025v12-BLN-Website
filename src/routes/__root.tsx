@@ -38,7 +38,7 @@ export const Route = createRootRouteWithContext<IRouterContext>()({
         content: "width=device-width, initial-scale=1",
       },
       {
-        title: "BijaLapa Natural",
+        title: "BijaLapa Natural Homepage",
       },
     ],
     links: [

@@ -14,6 +14,18 @@ export const getMarkdownfile = createServerFn().handler(async () => {
 });
 
 export const Route = createFileRoute("/baqueano/bijagual-waterfall")({
+  head: () => ({
+    meta: [
+      {
+        title: "Bijagual Waterfall",
+      },
+      {
+        name: "description",
+        content:
+          "It features an article with information on hiking trails at two private nature reserves providing access to the Bijagual Waterfall",
+      },
+    ],
+  }),
   loader: async () => {
     // Kick off loading as early as possible!
     return await getMarkdownfile();
@@ -32,7 +44,6 @@ function RouteComponent() {
           </Markdown>
         </div>
       </div>
-      
     </div>
   );
 }

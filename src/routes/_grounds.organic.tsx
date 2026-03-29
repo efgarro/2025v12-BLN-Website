@@ -4,6 +4,18 @@ import { useGetImageMixOptions } from "~/apiFns/apiFns";
 import { ImageCluster } from "~/components/ImageCluster";
 
 export const Route = createFileRoute("/_grounds/organic")({
+  head: () => ({
+    meta: [
+      {
+        title: "Sustainable Organic Practices",
+      },
+      {
+        name: "description",
+        content:
+          "It includes information on the sustainable organic practices adopted for the grounds from day one",
+      },
+    ],
+  }),
   loader: ({ context }) => {
     // Kick off loading as early as possible!
     context.queryClient.prefetchQuery(useGetImageMixOptions("organic"));

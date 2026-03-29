@@ -15,6 +15,18 @@ export const getMdfile = createServerFn().handler(async () => {
 });
 
 export const Route = createFileRoute("/_rooms/sunrise")({
+  head: () => ({
+    meta: [
+      {
+        title: "Sunrise Room",
+      },
+      {
+        name: "description",
+        content:
+          "It includes a description and a photo gallery of the Sunrise Room",
+      },
+    ],
+  }),
   loader: async ({ context }) => {
     // Kick off loading as early as possible!
     context.queryClient.prefetchQuery(useGetImageMixOptions("rooms"));
