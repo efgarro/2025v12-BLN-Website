@@ -1,1 +1,0 @@
-import{j as s,r as a,C as e}from"./main-RjjZ7tpV.js";import{I as r}from"./ImageCluster-Dm061wUe.js";function m(){return s.jsxs("div",{children:[s.jsx(a.Suspense,{fallback:"Loading Middleman...",children:s.jsx(e,{children:s.jsx(r,{image_mix_name:"yard"})})}),s.jsx("div",{className:"mb-12"})]})}export{m as component};

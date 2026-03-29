@@ -16,7 +16,6 @@ import { Route as GroundsRouteImport } from './routes/_grounds'
 import { Route as EatdoRouteImport } from './routes/_eatdo'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BaqueanoIndexRouteImport } from './routes/baqueano/index'
-import { Route as BaqueanoTownOfBijagualRouteImport } from './routes/baqueano/town-of-bijagual'
 import { Route as BaqueanoBijagualWaterfallRouteImport } from './routes/baqueano/bijagual-waterfall'
 import { Route as RoomsSunriseRouteImport } from './routes/_rooms.sunrise'
 import { Route as RoomsRoomsRouteImport } from './routes/_rooms.rooms'
@@ -61,11 +60,6 @@ const IndexRoute = IndexRouteImport.update({
 const BaqueanoIndexRoute = BaqueanoIndexRouteImport.update({
   id: '/baqueano/',
   path: '/baqueano/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BaqueanoTownOfBijagualRoute = BaqueanoTownOfBijagualRouteImport.update({
-  id: '/baqueano/town-of-bijagual',
-  path: '/baqueano/town-of-bijagual',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BaqueanoBijagualWaterfallRoute =
@@ -157,7 +151,6 @@ export interface FileRoutesByFullPath {
   '/rooms': typeof RoomsRoomsRoute
   '/sunrise': typeof RoomsSunriseRoute
   '/baqueano/bijagual-waterfall': typeof BaqueanoBijagualWaterfallRoute
-  '/baqueano/town-of-bijagual': typeof BaqueanoTownOfBijagualRoute
   '/baqueano/': typeof BaqueanoIndexRoute
 }
 export interface FileRoutesByTo {
@@ -177,7 +170,6 @@ export interface FileRoutesByTo {
   '/rooms': typeof RoomsRoomsRoute
   '/sunrise': typeof RoomsSunriseRoute
   '/baqueano/bijagual-waterfall': typeof BaqueanoBijagualWaterfallRoute
-  '/baqueano/town-of-bijagual': typeof BaqueanoTownOfBijagualRoute
   '/baqueano': typeof BaqueanoIndexRoute
 }
 export interface FileRoutesById {
@@ -202,7 +194,6 @@ export interface FileRoutesById {
   '/_rooms/rooms': typeof RoomsRoomsRoute
   '/_rooms/sunrise': typeof RoomsSunriseRoute
   '/baqueano/bijagual-waterfall': typeof BaqueanoBijagualWaterfallRoute
-  '/baqueano/town-of-bijagual': typeof BaqueanoTownOfBijagualRoute
   '/baqueano/': typeof BaqueanoIndexRoute
 }
 export interface FileRouteTypes {
@@ -224,7 +215,6 @@ export interface FileRouteTypes {
     | '/rooms'
     | '/sunrise'
     | '/baqueano/bijagual-waterfall'
-    | '/baqueano/town-of-bijagual'
     | '/baqueano/'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -244,7 +234,6 @@ export interface FileRouteTypes {
     | '/rooms'
     | '/sunrise'
     | '/baqueano/bijagual-waterfall'
-    | '/baqueano/town-of-bijagual'
     | '/baqueano'
   id:
     | '__root__'
@@ -268,7 +257,6 @@ export interface FileRouteTypes {
     | '/_rooms/rooms'
     | '/_rooms/sunrise'
     | '/baqueano/bijagual-waterfall'
-    | '/baqueano/town-of-bijagual'
     | '/baqueano/'
   fileRoutesById: FileRoutesById
 }
@@ -280,7 +268,6 @@ export interface RootRouteChildren {
   RoomsRoute: typeof RoomsRouteWithChildren
   InquireRoute: typeof InquireRoute
   BaqueanoBijagualWaterfallRoute: typeof BaqueanoBijagualWaterfallRoute
-  BaqueanoTownOfBijagualRoute: typeof BaqueanoTownOfBijagualRoute
   BaqueanoIndexRoute: typeof BaqueanoIndexRoute
 }
 
@@ -333,13 +320,6 @@ declare module '@tanstack/react-router' {
       path: '/baqueano'
       fullPath: '/baqueano/'
       preLoaderRoute: typeof BaqueanoIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/baqueano/town-of-bijagual': {
-      id: '/baqueano/town-of-bijagual'
-      path: '/baqueano/town-of-bijagual'
-      fullPath: '/baqueano/town-of-bijagual'
-      preLoaderRoute: typeof BaqueanoTownOfBijagualRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/baqueano/bijagual-waterfall': {
@@ -511,7 +491,6 @@ const rootRouteChildren: RootRouteChildren = {
   RoomsRoute: RoomsRouteWithChildren,
   InquireRoute: InquireRoute,
   BaqueanoBijagualWaterfallRoute: BaqueanoBijagualWaterfallRoute,
-  BaqueanoTownOfBijagualRoute: BaqueanoTownOfBijagualRoute,
   BaqueanoIndexRoute: BaqueanoIndexRoute,
 }
 export const routeTree = rootRouteImport
