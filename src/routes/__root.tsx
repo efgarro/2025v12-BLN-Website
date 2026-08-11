@@ -6,25 +6,18 @@ import {
   HeadContent,
   Scripts,
   createRootRouteWithContext,
-  Link,
-  RouterProvider,
-  Router,
 } from "@tanstack/react-router";
 
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
-import { QueryClient } from "@tanstack/react-query";
 
 import appStyles from "../css/styles.css?url";
 import appCss from "../styles/app.css?url";
 import {
   NavSettingsProvider,
-  useNavSettings,
 } from "~/components/context/NavigationContext";
 import NavBar from "~/components/NavBar";
 import { IRouterContext } from "~/types/blnTypes";
-import { getRouter } from "~/router";
-import { useScreenWidth } from "~/hooks/useScreenWidth";
 import Footer from "~/components/Footer";
 
 export const Route = createRootRouteWithContext<IRouterContext>()({

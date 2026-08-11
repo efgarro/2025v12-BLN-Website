@@ -1,21 +1,15 @@
 import {
   ClientOnly,
   createFileRoute,
-  RouterProvider,
 } from "@tanstack/react-router";
 
-import { FetchPics } from "~/components/FetchPics";
 import { Suspense } from "react";
-import { useScreenWidth } from "~/hooks/useScreenWidth";
-import { getRouter } from "~/router";
 import { useGetImageMixOptions } from "~/apiFns/apiFns";
 import { ImageCluster } from "~/components/ImageCluster";
 import CardGrounds from "~/components/CardGrounds";
 import CardHabitat from "~/components/CardHabitat";
 import CardEatdo from "~/components/CardEatdo";
 import CardRooms from "~/components/CardRooms";
-import Footer from "~/components/Footer";
-import SocialLinks from "~/components/SocialLinks";
 
 export const Route = createFileRoute("/")({
   loader: async ({ context }) => {
@@ -23,7 +17,6 @@ export const Route = createFileRoute("/")({
     context.queryClient.prefetchQuery(useGetImageMixOptions("home"));
   },
   component: Home,
-  //   loader: async () => await getTodo(),
 });
 
 function Home() {

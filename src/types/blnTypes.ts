@@ -1,5 +1,4 @@
 import { QueryClient } from "@tanstack/react-query";
-import { useScreenWidth } from "~/hooks/useScreenWidth";
 
 export interface IImg {
   id: string;

@@ -1,13 +1,9 @@
 import { ClientOnly, createFileRoute, Outlet } from "@tanstack/react-router";
 import { Suspense } from "react";
-import { useGetImageMix, useGetImageMixOptions } from "~/apiFns/apiFns";
-import MenuBarViewRooms from "~/components/MenuBarRooms";
+import { useGetImageMixOptions } from "~/apiFns/apiFns";
 import { ImageCluster } from "../components/ImageCluster";
 import { createServerFn } from "@tanstack/react-start";
 import axios from "axios";
-import Markdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
-import remarkGfm from "remark-gfm";
 import CardGrounds from "~/components/CardGrounds";
 import CardHabitat from "~/components/CardHabitat";
 import CardEatdo from "~/components/CardEatdo";
@@ -30,9 +26,6 @@ export const Route = createFileRoute("/_rooms/rooms")({
 });
 
 function Rooms() {
-  const data = Route.useLoaderData();
-  // const { data: mix } = useGetImageMix("home");
-  // console.log(mix);
   return (
     <div>
       <Suspense fallback="Loading Middleman...">

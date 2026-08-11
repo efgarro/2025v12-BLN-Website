@@ -3,10 +3,8 @@ import { Suspense } from "react";
 import { useGetImageMixOptions } from "~/apiFns/apiFns";
 import CardEatdo from "~/components/CardEatdo";
 import CardGrounds from "~/components/CardGrounds";
-import CardHabitat from "~/components/CardHabitat";
 import CardRooms from "~/components/CardRooms";
 import { ImageCluster } from "~/components/ImageCluster";
-import MenuBarHabitat from "~/components/MenuBarHabitat";
 
 export const Route = createFileRoute("/_habitat/habitat")({
   loader: async ({ context }) => {

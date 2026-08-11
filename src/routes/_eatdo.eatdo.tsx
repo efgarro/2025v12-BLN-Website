@@ -5,7 +5,6 @@ import CardGrounds from "~/components/CardGrounds";
 import CardHabitat from "~/components/CardHabitat";
 import CardRooms from "~/components/CardRooms";
 import { ImageCluster } from "~/components/ImageCluster";
-import MenuBarActivities from "~/components/MenuBarEatDo";
 
 export const Route = createFileRoute("/_eatdo/eatdo")({
   loader: async ({ context }) => {
