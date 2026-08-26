@@ -1,4 +1,4 @@
-import { ClientOnly, createFileRoute } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
 import axios from "axios";
 import Markdown from "react-markdown";
@@ -32,10 +32,10 @@ export const Route = createFileRoute("/_eatdo/hiking")({
     context.queryClient.prefetchQuery(useGetImageMixOptions("hiking"));
     return await getMdfile();
   },
-  component: RouteComponent,
+  component: Hiking,
 });
 
-function RouteComponent() {
+function Hiking() {
   const data = Route.useLoaderData();
   return (
     <div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 const MenuBarViewRooms = () => {
   return (
     <div className="core_flexRow justify-center">

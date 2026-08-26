@@ -13,9 +13,7 @@ import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
 import appStyles from "../css/styles.css?url";
 import appCss from "../styles/app.css?url";
-import {
-  NavSettingsProvider,
-} from "~/components/context/NavigationContext";
+import { NavSettingsProvider } from "~/components/context/NavigationContext";
 import NavBar from "~/components/NavBar";
 import { IRouterContext } from "~/types/blnTypes";
 import Footer from "~/components/Footer";

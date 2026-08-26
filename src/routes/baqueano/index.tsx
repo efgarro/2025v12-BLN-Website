@@ -30,10 +30,10 @@ export const Route = createFileRoute("/baqueano/")({
     // Kick off loading as early as possible!
     return await getMarkdownfile();
   },
-  component: RouteComponent,
+  component: BaqueanoHomepage,
 });
 
-function RouteComponent() {
+function BaqueanoHomepage() {
   const data = Route.useLoaderData();
   return (
     <div>

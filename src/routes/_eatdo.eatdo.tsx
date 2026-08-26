@@ -1,4 +1,4 @@
-import { ClientOnly, createFileRoute, Outlet } from "@tanstack/react-router";
+import { ClientOnly, createFileRoute } from "@tanstack/react-router";
 import { Suspense } from "react";
 import { useGetImageMixOptions } from "~/apiFns/apiFns";
 import CardGrounds from "~/components/CardGrounds";
@@ -11,10 +11,10 @@ export const Route = createFileRoute("/_eatdo/eatdo")({
     // Kick off loading as early as possible!
     context.queryClient.prefetchQuery(useGetImageMixOptions("eatdo"));
   },
-  component: RouteComponent,
+  component: EatDo,
 });
 
-function RouteComponent() {
+function EatDo() {
   return (
     <div>
       <Suspense fallback="Loading Middleman...">

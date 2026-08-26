@@ -6,8 +6,6 @@ import CardHabitat from "~/components/CardHabitat";
 import CardRooms from "~/components/CardRooms";
 import { ImageCluster } from "~/components/ImageCluster";
 
-import MenuBarGrounds from "~/components/MenuBarGrounds";
-
 export const Route = createFileRoute("/_grounds/grounds")({
   loader: ({ context }) => {
     // Kick off loading as early as possible!

@@ -4,7 +4,6 @@ import useReducerPersist from "../../hooks/useReducerPersist";
 import navSettingsStoreReducer from "../../utils/navSettingsStoreReducer";
 
 let NavSettingsContext = React.createContext<INavSettingsContext>(undefined!);
-// let NavSettingsContext = React.createContext<INavSettingsContext>(null!);
 
 const defaultNavSettingsStore: INavSettingsStore = {
   activeNavTab: "none",

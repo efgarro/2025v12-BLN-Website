@@ -20,10 +20,10 @@ export const Route = createFileRoute("/_grounds/organic")({
     // Kick off loading as early as possible!
     context.queryClient.prefetchQuery(useGetImageMixOptions("organic"));
   },
-  component: RouteComponent,
+  component: Organic,
 });
 
-function RouteComponent() {
+function Organic() {
   return (
     <div>
       <Suspense fallback="Loading Middleman...">

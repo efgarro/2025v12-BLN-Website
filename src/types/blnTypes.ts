@@ -1,5 +1,4 @@
 import { QueryClient } from "@tanstack/react-query";
-
 export interface IImg {
   id: string;
   width: string;

@@ -11,10 +11,10 @@ export const Route = createFileRoute("/_habitat/habitat")({
     // Kick off loading as early as possible!
     context.queryClient.prefetchQuery(useGetImageMixOptions("habitat"));
   },
-  component: RouteComponent,
+  component: Habitat,
 });
 
-function RouteComponent() {
+function Habitat() {
   return (
     <div>
       <Suspense fallback="Loading Middleman...">

@@ -14,10 +14,10 @@ export const Route = createFileRoute("/_grounds")({
       },
     ],
   }),
-  component: RouteComponent,
+  component: PathlessLayoutGrounds,
 });
 
-function RouteComponent() {
+function PathlessLayoutGrounds() {
   return (
     <div className="core_wrapper">
       <MenuBarGrounds />

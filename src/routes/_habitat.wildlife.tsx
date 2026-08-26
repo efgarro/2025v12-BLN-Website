@@ -22,10 +22,10 @@ export const Route = createFileRoute("/_habitat/wildlife")({
       useGetImageMixOptions("wildlife")
     );
   },
-  component: RouteComponent,
+  component: Wildlife,
 });
 
-function RouteComponent() {
+function Wildlife() {
   return (
     <div>
       <Suspense fallback="Loading Middleman...">

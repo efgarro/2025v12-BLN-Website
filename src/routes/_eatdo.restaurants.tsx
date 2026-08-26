@@ -32,12 +32,11 @@ export const Route = createFileRoute("/_eatdo/restaurants")({
     context.queryClient.prefetchQuery(useGetImageMixOptions("restaurant"));
     return await getMdfile();
   },
-  component: RouteComponent,
+  component: Restaurants,
 });
 
-function RouteComponent() {
+function Restaurants() {
   const data = Route.useLoaderData();
-  console.log(data);
   return (
     <>
       <div className="article_wrapper">

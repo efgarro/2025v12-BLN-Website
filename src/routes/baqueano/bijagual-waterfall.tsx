@@ -30,10 +30,10 @@ export const Route = createFileRoute("/baqueano/bijagual-waterfall")({
     // Kick off loading as early as possible!
     return await getMarkdownfile();
   },
-  component: RouteComponent,
+  component: BijagualWaterfall,
 });
 
-function RouteComponent() {
+function BijagualWaterfall() {
   const data = Route.useLoaderData();
   return (
     <div>

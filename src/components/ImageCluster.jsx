@@ -6,48 +6,10 @@ import { useGetImageMix } from "../apiFns/apiFns";
 export const ImageCluster = ({ image_mix_name }) => {
   const [dataPics, setDataPics] = useState([]);
   const [layouts, setLayouts] = useState({});
-  const { screenWidth, rowHeight } = useScreenWidth();
+  const { rowHeight } = useScreenWidth();
   const { data } = useGetImageMix(image_mix_name);
-  console.log(image_mix_name);
+  
   useEffect(() => {
-    // const fetchData = async () => {
-    //   try {
-    //     const response = await fetch(
-    //       `https://api.unsplash.com/search/photos?query=${searchTerm}&page=1&client_id=${client_Id}`,
-    //       {
-    //         accept: "application/json",
-    //       }
-    //     );
-    //     const data = await response.json();
-
-    //     const arrPics = data.results.reduce((reducedArr, pic, index) => {
-    //       if (index < 9) {
-    //         let picObj = {
-    //           id: pic.id,
-    //           width: pic.width,
-    //           height: pic.height,
-    //           url: pic.urls.small,
-    //         };
-    //         pic.width < pic.height
-    //           ? (picObj = {
-    //               ...picObj,
-    //               orientation: "por",
-    //             })
-    //           : (picObj = {
-    //               ...picObj,
-    //               orientation: "lan",
-    //             });
-    //         reducedArr.push(picObj);
-    //       }
-    //       return reducedArr;
-    //     }, []);
-
-    //     setDataPics(arrPics);
-    //   } catch (error) {
-    //     console.log(error);
-    //   }
-    // }; //endof fetchData
-    // fetchData();
     setDataPics(data);
   }, [image_mix_name]); //endof useEffect to fetchData
 
@@ -100,6 +62,7 @@ export const ImageCluster = ({ image_mix_name }) => {
         };
       });
     }; // endof generateLayoutXs
+
     const generateLayoutXxs = () => {
       return dataPics.map((item, index) => {
         return {
@@ -120,13 +83,9 @@ export const ImageCluster = ({ image_mix_name }) => {
       lg: generateLayoutLg(),
     });
   }, [dataPics]);
-  console.log("inside ImageCluster");
-  console.log(dataPics);
 
   return (
     <>
-      {console.log(screenWidth)}
-      {console.log(rowHeight)}
       <ImageClusterGrid
         dataPics={dataPics}
         layouts={layouts}

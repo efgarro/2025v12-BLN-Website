@@ -1,10 +1,7 @@
-import React from "react";
-
 const SocialLinks = () => {
   return (
-    // <nav>
     <div className="core_flexRow justify-center gap-8 mb-8">
-      <a href="https://wa.me/50683393335">
+      <a href="https://wa.me/50687956348">
         {/* <!-- Whatsapp --> */}
 
         <svg
@@ -42,7 +39,6 @@ const SocialLinks = () => {
         </svg>
       </a>
     </div>
-    // </nav>
   );
 };
 

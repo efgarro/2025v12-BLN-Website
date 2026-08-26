@@ -1,8 +1,4 @@
-import React from "react";
-import { useNavSettings } from "./context/NavigationContext";
-
 const MenuBarGrounds = () => {
-  const { navSettingsStore, dispatchNavSettingsStore } = useNavSettings();
   return (
     <div className="core_flexRow justify-center mt-2 mb-2">
       <ul className="menu menu-vertical gap-1 md:menu-horizontal md:px-1 md:gap-2">

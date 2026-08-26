@@ -1,4 +1,4 @@
-import { ClientOnly, createFileRoute, Outlet } from "@tanstack/react-router";
+import { ClientOnly, createFileRoute } from "@tanstack/react-router";
 import { Suspense } from "react";
 import { useGetImageMixOptions } from "~/apiFns/apiFns";
 import { ImageCluster } from "../components/ImageCluster";
@@ -8,19 +8,10 @@ import CardGrounds from "~/components/CardGrounds";
 import CardHabitat from "~/components/CardHabitat";
 import CardEatdo from "~/components/CardEatdo";
 
-export const getMdfile = createServerFn().handler(async () => {
-  const response = await axios.get(
-    "https://r2storage.bijalapa.com/prose/rooms-1.md",
-  );
-
-  return response.data;
-});
-
 export const Route = createFileRoute("/_rooms/rooms")({
   loader: async ({ context }) => {
     // Kick off loading as early as possible!
     context.queryClient.prefetchQuery(useGetImageMixOptions("rooms"));
-    return await getMdfile();
   },
   component: Rooms,
 });

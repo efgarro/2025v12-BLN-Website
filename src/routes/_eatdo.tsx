@@ -14,10 +14,10 @@ export const Route = createFileRoute("/_eatdo")({
       },
     ],
   }),
-  component: RouteComponent,
+  component: PathlessLayoutEatDo,
 });
 
-function RouteComponent() {
+function PathlessLayoutEatDo() {
   return (
     <div className="core_wrapper">
       <MenuBarEatDo />

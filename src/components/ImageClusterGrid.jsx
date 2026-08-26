@@ -6,7 +6,6 @@ const ResponsiveGridLayout = WidthProvider(Responsive);
 export class ImageClusterGrid extends React.Component {
   render() {
     return (
-      // <div className="core_wrapper">
       <ResponsiveGridLayout
         className="layout"
         layouts={this.props.layouts}
@@ -29,7 +28,6 @@ export class ImageClusterGrid extends React.Component {
           );
         })}
       </ResponsiveGridLayout>
-      // </div>
     );
   }
 }

@@ -14,10 +14,10 @@ export const Route = createFileRoute("/_habitat")({
       },
     ],
   }),
-  component: RouteComponent,
+  component: PathlessLayoutHabitat,
 });
 
-function RouteComponent() {
+function PathlessLayoutHabitat() {
   return (
     <div className="core_wrapper">
       <MenuBarHabitat />

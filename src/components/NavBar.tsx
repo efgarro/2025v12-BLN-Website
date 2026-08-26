@@ -1,6 +1,3 @@
-import { Outlet } from "@tanstack/react-router";
-import React from "react";
-
 const NavBar = () => {
   return (
     <div className="core_wrapper">
@@ -63,7 +60,6 @@ const NavBar = () => {
             <div tabIndex={0} role="button" className="btn btn-ghost ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                // xmlns:xlink="http://www.w3.org/1999/xlink"
                 viewBox="0,0,256,256"
                 width="27.5px"
                 height="27.5px"

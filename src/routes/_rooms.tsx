@@ -14,10 +14,10 @@ export const Route = createFileRoute("/_rooms")({
       },
     ],
   }),
-  component: RouteComponent,
+  component: PathlessLayoutRooms,
 });
 
-function RouteComponent() {
+function PathlessLayoutRooms() {
   return (
     <div className="core_wrapper">
       <MenuBarViewRooms />

@@ -13,13 +13,13 @@ export const getMdfile = createServerFn().handler(async () => {
 });
 
 export const Route = createFileRoute("/inquire")({
-  component: RouteComponent,
   loader: async () => {
     return await getMdfile();
   },
+  component: Inquire,
 });
 
-function RouteComponent() {
+function Inquire() {
   const data = Route.useLoaderData();
   return (
     <div>
