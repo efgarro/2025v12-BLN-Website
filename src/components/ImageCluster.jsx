@@ -8,10 +8,12 @@ export const ImageCluster = ({ image_mix_name }) => {
   const [layouts, setLayouts] = useState({});
   const { rowHeight } = useScreenWidth();
   const { data } = useGetImageMix(image_mix_name);
-  
+
   useEffect(() => {
-    setDataPics(data);
-  }, [image_mix_name]); //endof useEffect to fetchData
+    if (data) {
+      setDataPics(data);
+    }
+  }, [dataPics]); //endof useEffect to fetchData
 
   useEffect(() => {
     const generateLayoutLg = () => {

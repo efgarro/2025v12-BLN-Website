@@ -15,7 +15,7 @@ export const useScreenWidth = () => {
     return () => {
       window.removeEventListener("resize", handleChange);
     };
-  }, [screenWidth]);
+  }, []);
 
   const rowHeight = (screenWidth: number) => {
     if (screenWidth <= 480) {

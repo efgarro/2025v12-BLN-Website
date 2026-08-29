@@ -33,7 +33,7 @@ function Home() {
             <figure>
               <img
                 src="https://r2storage.bijalapa.com/logos/2024_BIJALAPA_LOGO_750x500.png"
-                alt="Logo"
+                alt="BijaLapa Natural Logo"
               />
             </figure>
             <div className="card-body bg-bln-azul-arena">
