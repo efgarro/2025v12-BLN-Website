@@ -28,11 +28,6 @@ export interface INavSettingsStore {
     | "wildlife"
     | "trees";
 }
-
-export interface INavSettingsStore {
-  activeNavTab: "none" | "rooms" | "grounds" | "activities" | "habitat";
-}
-
 export interface INavSettingsContext {
   navSettingsStore: INavSettingsStore;
   dispatchNavSettingsStore: React.Dispatch<INavSettingsAction>;

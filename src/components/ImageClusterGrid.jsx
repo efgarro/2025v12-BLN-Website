@@ -19,7 +19,6 @@ export class ImageClusterGrid extends React.Component {
         useCSSTransforms={false}
         compactType={"vertical"}
       >
-        {console.log(this.props.breakpoints)}
         {this.props.dataPics.map((photo) => {
           return (
             <div key={photo.id} className={"card--img"}>
