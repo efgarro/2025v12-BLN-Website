@@ -1,7 +1,4 @@
-import {
-  ClientOnly,
-  createFileRoute,
-} from "@tanstack/react-router";
+import { ClientOnly, createFileRoute } from "@tanstack/react-router";
 
 import { Suspense } from "react";
 import { useGetImageMixOptions } from "~/apiFns/apiFns";

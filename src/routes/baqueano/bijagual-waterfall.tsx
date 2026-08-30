@@ -8,6 +8,11 @@ import remarkGfm from "remark-gfm";
 export const getMarkdownfile = createServerFn().handler(async () => {
   const response = await axios.get(
     "https://r2storage.bijalapa.com/prose/baqueano/bijagual-waterfall.md",
+    {
+      fetchOptions: {
+        cache: "no-cache", // Disables fetch-level cache so React Query can manage it
+      },
+    },
   );
 
   return response.data;

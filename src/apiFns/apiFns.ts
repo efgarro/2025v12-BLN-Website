@@ -3,16 +3,21 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
   baseURL: "https://idearapps.com",
+  fetchOptions: {
+    cache: "no-cache", // Disables fetch-level cache so React Query can manage it
+  },
 });
 
 export const useGetImageMixOptions = (image_mix_name: string) =>
   queryOptions({
-    queryKey: ["cluster_mix", image_mix_name],
+    queryKey: ["cluster_mix"],
     queryFn: async () => {
       const res = await axiosInstance.get(
         `/bln/cluster/cluster_mix/${image_mix_name}`,
       );
       return res.data;
+      // const res = await fetch(`https://idearapps.com/bln/cluster/cluster_mix/${image_mix_name}`);
+      // return await res.json();
     },
   });
 

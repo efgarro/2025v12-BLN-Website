@@ -9,6 +9,11 @@ import { useGetImageMixOptions } from "~/apiFns/apiFns";
 export const getMdfile = createServerFn().handler(async () => {
   const response = await axios.get(
     "https://r2storage.bijalapa.com/prose/hiking-1.md",
+    {
+      fetchOptions: {
+        cache: "no-cache", // Disables fetch-level cache so React Query can manage it
+      },
+    },
   );
 
   return response.data;
