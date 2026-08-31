@@ -1,21 +1,14 @@
 import axios from "axios";
 import { createFileRoute } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
+import { axiosR2storage } from "~/config/axios";
 import Markdown from "react-markdown";
 import { useGetImageMixOptions } from "~/apiFns/apiFns";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 
 export const getMdfile = createServerFn().handler(async () => {
-  const response = await axios.get(
-    "https://r2storage.bijalapa.com/prose/rooms-guarumo-1.md",
-    {
-      fetchOptions: {
-        cache: "no-cache", // Disables fetch-level cache so React Query can manage it
-      },
-    },
-  );
-
+  const response = await axiosR2storage.get("/prose/rooms-guarumo-1.md");
   return response.data;
 });
 

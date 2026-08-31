@@ -1,18 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
-import axios from "axios";
 import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
+import { axiosR2storage } from "~/config/axios";
 
 export const getMarkdownfile = createServerFn().handler(async () => {
-  const response = await axios.get(
-    "https://r2storage.bijalapa.com/prose/baqueano/baqueano-guide-index.md",
-    {
-      fetchOptions: {
-        cache: "no-cache", // Disables fetch-level cache so React Query can manage it
-      },
-    },
+  const response = await axiosR2storage.get(
+    "/prose/baqueano/baqueano-guide-index.md",
   );
 
   return response.data;
