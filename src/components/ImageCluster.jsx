@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ImageClusterGrid } from "./ImageClusterGrid";
+import { ImageClusterGrid } from "./ImageClusterGridM";
 import { useScreenWidth } from "../hooks/useScreenWidth";
 import { useGetImageMix } from "../apiFns/apiFns";
 
@@ -13,6 +13,7 @@ export const ImageCluster = ({ image_mix_name }) => {
     if (data) {
       setDataPics(data);
     }
+    console.log(data);
   }, [dataPics]); //endof useEffect to fetchData
 
   useEffect(() => {

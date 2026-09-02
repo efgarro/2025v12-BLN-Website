@@ -6,6 +6,7 @@ import { Responsive, useContainerWidth } from "react-grid-layout";
 
 export const ImageClusterGrid = (props) => {
   const { dataPics, layouts, rowHeight } = props;
+  const [selected, setSelected] = React.useState(null);
 
   const { width, containerRef, mounted } = useContainerWidth();
   return (
@@ -17,15 +18,32 @@ export const ImageClusterGrid = (props) => {
           cols={{ lg: 12, md: 12, sm: 6, xs: 6, xxs: 6 }}
           width={width}
           rowHeight={rowHeight}
+          // dragConfig={{
+          //   enabled: false,
+          // }}
         >
           {dataPics.map((photo) => {
             return (
-              <div key={photo.id} className={"card--img"}>
+              <div
+                key={photo.id}
+                className={"card--img"}
+                onClick={() => {
+                  setSelected(photo);
+                }}
+              >
                 <img src={photo.url} alt={`${photo.description}`} />
               </div>
             );
           })}
+          {/* Modal */}
         </Responsive>
+      )}
+      {<p>{`${selected}`}</p>}
+      {selected && (
+        <dialog className="modal modal-open">
+          <img src={selected.url} className="max-h-screen" />
+          <button onClick={() => setSelected(null)}>Close</button>
+        </dialog>
       )}
     </div>
   );

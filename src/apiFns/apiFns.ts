@@ -3,7 +3,7 @@ import { axiosIdearAppsAPI } from "~/config/axios";
 
 export const useGetImageMixOptions = (image_mix_name: string) =>
   queryOptions({
-    queryKey: ["cluster_mix"],
+    queryKey: [image_mix_name],
     queryFn: async () => {
       const res = await axiosIdearAppsAPI.get(
         `/bln/cluster/cluster_mix/${image_mix_name}`,
