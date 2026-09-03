@@ -48,31 +48,25 @@ export const ImageClusterGrid: React.FC<Props> = ({
           cols={{ lg: 12, md: 12, sm: 6, xs: 6, xxs: 6 }}
           width={width}
           rowHeight={rowHeight}
-          // explicitly disable drag/resize on mobile (and optionally always)
-          dragConfig={{
-            enabled: false,
-            cancel: ".card--img button",
-          }}
-          // isResizable={false}
-          // ensure thumbnails are never used as drag handles
+          // disable dragging/resizing on small devices so taps work reliably
+          // isDraggable={!isMobile}
+          // isResizable={!isMobile}
+          // ensure the thumbnail button is never treated as a drag handle
           // draggableCancel=".card--img button"
-          // avoid transform positioning which can interfere with pointer events in some mobile browsers
-          // useCSSTransforms={false}
         >
           {dataPics.map((photo) => (
             <div key={photo.id?.toString()} className={"card--img"}>
               <button
                 type="button"
-                onClick={() => openImage(photo)}
-                onTouchEnd={(e) => {
-                  // allow normal click flow, but also open on touchend as a fallback.
-                  // stop propagation so grid doesn't see it.
-                  e.stopPropagation();
+                // use pointer event so iOS, Android and mouse all work consistently
+                onPointerUp={(e) => {
+                  // prevent grid's drag start from stealing this pointerup in some browsers
+                  e.preventDefault();
                   openImage(photo);
                 }}
+                onClick={() => openImage(photo)}
                 className="w-full h-full p-0 m-0 bg-transparent border-0 text-left"
                 aria-label={`Open image ${photo.description || photo.id}`}
-                style={{ touchAction: "manipulation" }} // improves tap reliability
               >
                 <img
                   src={photo.url}
