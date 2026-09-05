@@ -8,7 +8,13 @@ type ModalProps = {
   footer?: React.ReactNode;
 };
 
-export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children, footer }) => {
+export const Modal: React.FC<ModalProps> = ({
+  isOpen,
+  onClose,
+  title,
+  children,
+  footer,
+}) => {
   const closeBtnRef = useRef<HTMLButtonElement | null>(null);
   const scrollYRef = useRef<number>(0);
   const touchStartRef = useRef<{ x: number; y: number } | null>(null);
@@ -16,7 +22,10 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children, 
   // keep --vh updated so mobile address bar changes don't break modal sizing
   useEffect(() => {
     const setVh = () => {
-      document.documentElement.style.setProperty("--vh", `${window.innerHeight * 0.01}px`);
+      document.documentElement.style.setProperty(
+        "--vh",
+        `${window.innerHeight * 0.01}px`,
+      );
     };
     setVh();
     window.addEventListener("resize", setVh);
@@ -108,8 +117,19 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children, 
           aria-label="Close modal"
           className="absolute right-3 top-3 z-20 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/60 text-gray-700 hover:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 touch-manipulation"
         >
-          <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden>
-            <path strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+          <svg
+            className="h-5 w-5"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            aria-hidden
+          >
+            <path
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
 
@@ -119,11 +139,16 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children, 
           onClick={(e) => e.stopPropagation()}
         >
           {title && (
-            <h2 id="modal-title" className="sr-only sm:not-sr-only mb-2 text-center text-lg font-semibold text-gray-900">
+            <h2
+              id="modal-title"
+              className="sr-only sm:not-sr-only mb-2 text-center text-lg font-semibold text-gray-900"
+            >
               {title}
             </h2>
           )}
-          <div className="w-full flex items-center justify-center">{children}</div>
+          <div className="w-full flex items-center justify-center">
+            {children}
+          </div>
         </div>
 
         {/* footer/caption centered at the bottom */}

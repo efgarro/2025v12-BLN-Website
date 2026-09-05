@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Responsive, useContainerWidth } from "react-grid-layout";
-import Modal from "./ImageModal";
+import Modal from "./ImageModalV1";
 
 export interface Photo {
   id: string | number;
@@ -53,6 +53,10 @@ export const ImageClusterGrid: React.FC<Props> = ({
           // isResizable={!isMobile}
           // ensure the thumbnail button is never treated as a drag handle
           // draggableCancel=".card--img button"
+          dragConfig={{
+            enabled: !isMobile,
+            cancel: ".card--img button",
+          }}
         >
           {dataPics.map((photo) => (
             <div key={photo.id?.toString()} className={"card--img"}>
@@ -85,7 +89,7 @@ export const ImageClusterGrid: React.FC<Props> = ({
         title={undefined}
         footer={
           selectedImage?.description ? (
-            <div className="px-2">{selectedImage.description}</div>
+            <div className="px-4">{selectedImage.description}</div>
           ) : null
         }
       >
