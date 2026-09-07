@@ -46,13 +46,13 @@ export function CustomModal({
       className={`m-auto backdrop:bg-black/50 backdrop:backdrop-blur-sm rounded-sm p-1 shadow-2xl open:flex open:flex-col animate-in fade-in zoom-in-95 duration-200 outline-none`}
       // className={`w-[${imageModalWidth * 0.25}rem]`}
     >
-      {/* <div className="flex items-center justify-between mb-4"> */}
         {/* close button */}
         <button
           // ref={closeBtnRef}
           onClick={onClose}
           aria-label="Close modal"
-          className="absolute right-3 top-3 z-20 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/60 text-gray-700 hover:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 touch-manipulation"
+          // className="absolute right-3 top-3 z-20 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-gray-700 hover:bg-white focus:outline-none focus:ring-2v  focus:ring-indigo-500 touch-manipulation"
+          className="absolute right-3 top-3 z-20 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-gray-700 hover:bg-white focus:outline-none focus:ring-2v touch-manipulation"
         >
           <svg
             className="h-5 w-5"
@@ -75,7 +75,6 @@ export function CustomModal({
           >
             ✕
           </button> */}
-      {/* </div> */}
       <div className="text-sm text-gray-600">{children}</div>
       {/* footer/caption centered at the bottom */}
       {footer && (
