@@ -23,6 +23,8 @@ BijaLapa Natural is a eco-rural lodging located in the town of Bijagual, in the 
 - Immer for Inmutable State (if needed)
 - ExifReader
 
+Default BreakpointsPrefixMinimum WidthCSS Media Querysm640px@media (min-width: 640px)md768px@media (min-width: 768px)lg1024px@media (min-width: 1024px)xl1280px@media (min-width: 1280px)2xl1536px@media (min-width: 1536px)
+
 ```
 BijaLapa Natural Menu
 
@@ -197,7 +199,6 @@ server functions
 loaders
 middleware - request / server fn
 
-
 ## Upload \*.md files to R2 using wrangler CLI
 
 ```sh
@@ -207,7 +208,6 @@ npx wrangler r2 object put --remote 2025v12-bijalapa/prose/"$(basename "/c/00-Id
 ```
 
 C:\00-IdearApps\2025v12-BLN-Website\src\prose\baqueano-guide\bijagual-waterfall.md
-
 
 ### How can I exclude a config file from git merge a branch
 

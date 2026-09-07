@@ -18,9 +18,12 @@ export const ImageClusterGrid = (props) => {
           cols={{ lg: 12, md: 12, sm: 6, xs: 6, xxs: 6 }}
           width={width}
           rowHeight={rowHeight}
-          // dragConfig={{
-          //   enabled: false,
-          // }}
+          dragConfig={{
+            enabled: false,
+          }}
+          resizeConfig={{
+            enabled: false,
+          }}
         >
           {dataPics.map((photo) => {
             return (

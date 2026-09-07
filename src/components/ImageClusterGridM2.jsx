@@ -5,13 +5,13 @@ import { CustomModal } from "./ImageModalV2";
 // const ResponsiveGridLayout = WidthProvider(Responsive);
 
 export const ImageClusterGrid = (props) => {
-  const { dataPics, layouts, rowHeight } = props;
-  const [selected, setSelected] = React.useState(null);
+  const { dataPics, layouts, rowHeight, screenWidth } = props;
+  const [selectedImg, setSelectedImg] = React.useState(null);
 
   const { width, containerRef, mounted } = useContainerWidth();
 
   const closeModal = () => {
-    setSelected(null);
+    setSelectedImg(null);
   };
 
   return (
@@ -27,41 +27,43 @@ export const ImageClusterGrid = (props) => {
             enabled: false,
           }}
         >
-          {dataPics.map((photo) => {
+          {dataPics.map((image) => {
             return (
               <div
-                key={photo.id}
+                key={image.id}
                 className={"card--img"}
                 onClick={() => {
-                  setSelected(photo);
-                  console.log("onClick M2");
+                  setSelectedImg(image);
+                  console.log(image);
                 }}
               >
-                <img src={photo.url} alt={`${photo.description}`} />
+                <img src={image.url} alt={`${image.description}`} />
               </div>
             );
           })}
           {/* Modal */}
         </Responsive>
       )}
-      {<p>{`${selected}`}</p>}
-      {selected && (
+      {selectedImg && (
         <CustomModal
-          isOpen={!!selected}
+          isOpen={!!selectedImg}
           onClose={closeModal}
-          title={undefined}
+          screenWidth={screenWidth}
+          orientation={selectedImg.orientation}
           footer={
-            selected?.description ? (
-              <div className="px-4">{selected.description}</div>
+            selectedImg?.description ? (
+              <div className="px-4">{selectedImg.description}</div>
             ) : null
           }
         >
-          {selected && (
+          {selectedImg && (
+            // <p>Hellow</p>
             <div className="flex items-center justify-center w-full">
               <img
-                src={selected.url}
-                alt={selected.description || ""}
-                className="max-w-[95vw] max-h-[calc(var(--vh,1vh)*100-140px)] w-auto h-auto object-contain rounded shadow-lg"
+                src={selectedImg.url}
+                alt={selectedImg.description || ""}
+                className="w-auto h-auto object-contain shadow-lg"
+                // className="max-w-[95vw] max-h-[calc(var(--vh,1vh)*100-140px)] w-auto h-auto object-contain rounded shadow-lg"
               />
             </div>
           )}

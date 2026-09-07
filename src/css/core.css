@@ -74,6 +74,11 @@
   height: 100%;
 }
 
+.image_modal_container {
+  width: 20rem;
+  /* height: auto; */
+}
+
 .embla__container {
   display: flex;
   touch-action: pan-y pinch-zoom;
@@ -104,6 +109,11 @@
     padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     height: 100%;
   }
+
+  .image_modal_container {
+    width: 27.5rem;
+    height: auto;
+  }
   .embla__container {
     display: flex;
     touch-action: pan-y pinch-zoom;
@@ -130,6 +140,10 @@
     padding-left: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     height: 100%;
+  }
+  .image_modal_container {
+    width: 37.5rem;
+    height: auto;
   }
   .embla__container {
     display: flex;
@@ -161,7 +175,10 @@
     padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     height: 100%;
   }
-
+  .image_modal_container {
+    width: 37.5rem;
+    height: auto;
+  }
   .embla__container {
     display: flex;
     touch-action: pan-y pinch-zoom;
@@ -200,7 +217,10 @@
     padding-right: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
     height: 100%;
   }
-
+  .image_modal_container {
+    width: 37.5rem;
+    height: auto;
+  }
   .embla__container {
     display: flex;
     touch-action: pan-y pinch-zoom;
