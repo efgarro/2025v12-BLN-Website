@@ -14,13 +14,13 @@ function computeImageModalWidth(
   const isPortrait = orientation === "por";
 
   if (isPortrait) {
-    if (screenWidth <= 575) return Math.round(320);
+    if (screenWidth <= 575) return Math.round(340);
     if (screenWidth <= 767) return Math.round(440 / 1.5);
     return Math.round(600 / 1.5);
   } else {
     // treat everything else as landscape
-    if (screenWidth <= 575) return Math.round(320);
-    if (screenWidth <= 767) return Math.round(440);
+    if (screenWidth <= 575) return Math.round(340);
+    if (screenWidth <= 767) return Math.round(600);
     return 600;
   }
 }
