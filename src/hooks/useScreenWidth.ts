@@ -5,9 +5,7 @@ export const useScreenWidth = () => {
 
   React.useLayoutEffect(() => {
     const handleChange = () => {
-      setTimeout(() => {
-        setScreenWidth(window.innerWidth);
-      }, 250);
+      setScreenWidth(window.innerWidth);
     };
 
     window.addEventListener("resize", handleChange);

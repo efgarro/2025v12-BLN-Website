@@ -85,7 +85,7 @@ export const ImageCluster = ({ image_mix_name }) => {
       md: generateLayoutMd(),
       lg: generateLayoutLg(),
     });
-  }, [dataPics]);
+  }, [dataPics, screenWidth]);
   console.log(screenWidth);
   return (
     <>
