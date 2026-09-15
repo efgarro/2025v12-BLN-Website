@@ -15,8 +15,8 @@ function computeImageModalWidth(
 
   if (isPortrait) {
     if (screenWidth <= 575) return Math.round(340);
-    if (screenWidth <= 767) return Math.round(440);
-    return Math.round(600 / 1.5);
+    if (screenWidth <= 767) return Math.round(340);
+    return Math.round(400);
   } else {
     // treat everything else as landscape
     if (screenWidth <= 575) return Math.round(340);
