@@ -20,8 +20,8 @@ function computeImageModalWidth(
   } else {
     // treat everything else as landscape
     if (screenWidth <= 575) return Math.round(340);
-    if (screenWidth <= 767) return Math.round(600);
-    return 600;
+    if (screenWidth <= 767) return Math.round(510);
+    return 510;
   }
 }
 
