@@ -70,7 +70,7 @@ export function CustomModal({
       <button
         onClick={onClose}
         aria-label="Close modal"
-        className="absolute right-3 top-3 z-20 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-gray-700 hover:bg-white focus:outline-none focus:ring-2 touch-manipulation"
+        className="absolute right-3 top-3 z-20 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/50 text-gray-700 hover:bg-white focus:outline-none focus:ring-2 touch-manipulation"
       >
         <svg
           className="h-5 w-5"
