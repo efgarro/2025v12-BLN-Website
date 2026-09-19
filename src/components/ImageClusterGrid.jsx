@@ -1,32 +1,74 @@
 import React from "react";
-import { Responsive, WidthProvider } from "react-grid-layout";
+// import { Responsive, WidthProvider } from "react-grid-layout";
+import { Responsive, useContainerWidth } from "react-grid-layout";
+import { CustomModal } from "./ImageModal";
+// const ResponsiveGridLayout = WidthProvider(Responsive);
 
-const ResponsiveGridLayout = WidthProvider(Responsive);
+export const ImageClusterGrid = (props) => {
+  const { dataPics, layouts, rowHeight, screenWidth } = props;
+  const [selectedImg, setSelectedImg] = React.useState(null);
 
-export class ImageClusterGrid extends React.Component {
-  render() {
-    return (
-      <ResponsiveGridLayout
-        className="layout"
-        layouts={this.props.layouts}
-        rowHeight={this.props.rowHeight}
-        breakpoints={{ lg: 992, md: 768, sm: 576, xs: 480, xxs: 0 }}
-        /* [ 576 <= 4 cols < 778 ], [  768 <= 6 cols < 992 ], [ 992 <= 12 cols ] */
-        cols={{ lg: 12, md: 12, sm: 6, xs: 6, xxs: 6 }}
-        isResizable={false}
-        isDraggable={false}
-        margin={[15, 15]}
-        useCSSTransforms={false}
-        compactType={"vertical"}
-      >
-        {this.props.dataPics.map((photo) => {
-          return (
-            <div key={photo.id} className={"card--img"}>
-              <img src={photo.url} alt={`${photo.description}`} />
+  const { width, containerRef, mounted } = useContainerWidth();
+
+  const closeModal = () => {
+    setSelectedImg(null);
+  };
+
+  return (
+    <div ref={containerRef}>
+      {mounted && (
+        <Responsive
+          layouts={layouts}
+          breakpoints={{ lg: 992, md: 768, sm: 576, xs: 480, xxs: 0 }}
+          cols={{ lg: 12, md: 12, sm: 6, xs: 6, xxs: 6 }}
+          width={width}
+          rowHeight={rowHeight}
+          dragConfig={{
+            enabled: false,
+          }}
+        >
+          {dataPics.map((image) => {
+            return (
+              <div
+                key={image.id}
+                className={"card--img"}
+                onClick={() => {
+                  setSelectedImg(image);
+                  console.log(image);
+                }}
+              >
+                <img src={image.url} alt={`${image.description}`} />
+              </div>
+            );
+          })}
+          {/* Modal */}
+        </Responsive>
+      )}
+      {selectedImg && (
+        <CustomModal
+          isOpen={!!selectedImg}
+          onClose={closeModal}
+          screenWidth={screenWidth}
+          orientation={selectedImg.orientation}
+          footer={
+            selectedImg?.description ? (
+              <div className="px-4">{selectedImg.description}</div>
+            ) : null
+          }
+        >
+          {selectedImg && (
+            // <p>Hellow</p>
+            <div className="flex items-center justify-center w-full">
+              <img
+                src={selectedImg.url}
+                alt={selectedImg.description || ""}
+                className="w-auto h-auto object-contain shadow-lg"
+                // className="max-w-[95vw] max-h-[calc(var(--vh,1vh)*100-140px)] w-auto h-auto object-contain rounded shadow-lg"
+              />
             </div>
-          );
-        })}
-      </ResponsiveGridLayout>
-    );
-  }
-}
+          )}
+        </CustomModal>
+      )}
+    </div>
+  );
+};

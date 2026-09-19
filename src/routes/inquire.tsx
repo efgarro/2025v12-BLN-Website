@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
-import axios from "axios";
+import { axiosR2storage } from "~/config/axios";
 import Markdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 
 export const getMdfile = createServerFn().handler(async () => {
-  const response = await axios.get(
-    "https://r2storage.bijalapa.com/prose/inquire.md",
+  const response = await axiosR2storage.get(
+    "/prose/inquire.md",
   );
   return response.data;
 });

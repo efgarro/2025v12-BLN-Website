@@ -6,13 +6,14 @@ import { useGetImageMix } from "../apiFns/apiFns";
 export const ImageCluster = ({ image_mix_name }) => {
   const [dataPics, setDataPics] = useState([]);
   const [layouts, setLayouts] = useState({});
-  const { rowHeight } = useScreenWidth();
+  const { screenWidth, rowHeight } = useScreenWidth();
   const { data } = useGetImageMix(image_mix_name);
 
   useEffect(() => {
     if (data) {
       setDataPics(data);
     }
+    console.log(data);
   }, [dataPics]); //endof useEffect to fetchData
 
   useEffect(() => {
@@ -84,14 +85,15 @@ export const ImageCluster = ({ image_mix_name }) => {
       md: generateLayoutMd(),
       lg: generateLayoutLg(),
     });
-  }, [dataPics]);
-
+  }, [dataPics, screenWidth]);
+  console.log(screenWidth);
   return (
     <>
       <ImageClusterGrid
         dataPics={dataPics}
         layouts={layouts}
         rowHeight={rowHeight}
+        screenWidth={screenWidth}
       />
     </>
   );

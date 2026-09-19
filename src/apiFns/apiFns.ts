@@ -1,15 +1,11 @@
 import { queryOptions, useSuspenseQuery } from "@tanstack/react-query";
-import axios from "axios";
-
-const axiosInstance = axios.create({
-  baseURL: "https://idearapps.com",
-});
+import { axiosIdearAppsAPI } from "~/config/axios";
 
 export const useGetImageMixOptions = (image_mix_name: string) =>
   queryOptions({
-    queryKey: ["cluster_mix", image_mix_name],
+    queryKey: [image_mix_name],
     queryFn: async () => {
-      const res = await axiosInstance.get(
+      const res = await axiosIdearAppsAPI.get(
         `/bln/cluster/cluster_mix/${image_mix_name}`,
       );
       return res.data;

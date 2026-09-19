@@ -1,13 +1,11 @@
 import React from "react";
 
 export const useScreenWidth = () => {
-  const [screenWidth, setScreenWidth] = React.useState(
-    () => window.screen.width
-  );
+  const [screenWidth, setScreenWidth] = React.useState(() => window.innerWidth);
 
   React.useLayoutEffect(() => {
     const handleChange = () => {
-      setScreenWidth(window.screen.width);
+      setScreenWidth(window.innerWidth);
     };
 
     window.addEventListener("resize", handleChange);
@@ -24,7 +22,7 @@ export const useScreenWidth = () => {
       return 63;
     }
   };
- 
+
   return {
     screenWidth: screenWidth,
     rowHeight: rowHeight(screenWidth),
