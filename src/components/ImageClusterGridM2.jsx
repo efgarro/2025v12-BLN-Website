@@ -1,7 +1,7 @@
 import React from "react";
 // import { Responsive, WidthProvider } from "react-grid-layout";
 import { Responsive, useContainerWidth } from "react-grid-layout";
-import { CustomModal } from "./ImageModalV2";
+import { CustomModal } from "./ImageModalV3";
 // const ResponsiveGridLayout = WidthProvider(Responsive);
 
 export const ImageClusterGrid = (props) => {
