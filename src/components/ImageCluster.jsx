@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ImageClusterGrid } from "./ImageClusterGridM2";
+import { ImageClusterGrid } from "./ImageClusterGrid";
 import { useScreenWidth } from "../hooks/useScreenWidth";
 import { useGetImageMix } from "../apiFns/apiFns";
 
