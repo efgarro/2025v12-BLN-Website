@@ -9,53 +9,118 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as InquireRouteImport } from './routes/inquire'
-import { Route as RoomsRouteImport } from './routes/_rooms'
-import { Route as HabitatRouteImport } from './routes/_habitat'
-import { Route as GroundsRouteImport } from './routes/_grounds'
-import { Route as EatdoRouteImport } from './routes/_eatdo'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as EatdoRouteImport } from './routes/_eatdo'
+import { Route as GroundsRouteImport } from './routes/_grounds'
+import { Route as HabitatRouteImport } from './routes/_habitat'
+import { Route as RoomsRouteImport } from './routes/_rooms'
+import { Route as InquireRouteImport } from './routes/inquire'
+import { Route as EatdoEatdoRouteImport } from './routes/_eatdo.eatdo'
+import { Route as EatdoHikingRouteImport } from './routes/_eatdo.hiking'
+import { Route as EatdoRestaurantsRouteImport } from './routes/_eatdo.restaurants'
+import { Route as GroundsGroundsRouteImport } from './routes/_grounds.grounds'
+import { Route as GroundsOrganicRouteImport } from './routes/_grounds.organic'
+import { Route as GroundsRanchRouteImport } from './routes/_grounds.ranch'
+import { Route as GroundsYardRouteImport } from './routes/_grounds.yard'
+import { Route as HabitatHabitatRouteImport } from './routes/_habitat.habitat'
+import { Route as HabitatTreesRouteImport } from './routes/_habitat.trees'
+import { Route as HabitatWildlifeRouteImport } from './routes/_habitat.wildlife'
+import { Route as RoomsGuarumoRouteImport } from './routes/_rooms.guarumo'
+import { Route as RoomsRoomsRouteImport } from './routes/_rooms.rooms'
+import { Route as RoomsSunriseRouteImport } from './routes/_rooms.sunrise'
 import { Route as BaqueanoIndexRouteImport } from './routes/baqueano/index'
 import { Route as BaqueanoBijagualWaterfallRouteImport } from './routes/baqueano/bijagual-waterfall'
-import { Route as RoomsSunriseRouteImport } from './routes/_rooms.sunrise'
-import { Route as RoomsRoomsRouteImport } from './routes/_rooms.rooms'
-import { Route as RoomsGuarumoRouteImport } from './routes/_rooms.guarumo'
-import { Route as HabitatWildlifeRouteImport } from './routes/_habitat.wildlife'
-import { Route as HabitatTreesRouteImport } from './routes/_habitat.trees'
-import { Route as HabitatHabitatRouteImport } from './routes/_habitat.habitat'
-import { Route as GroundsYardRouteImport } from './routes/_grounds.yard'
-import { Route as GroundsRanchRouteImport } from './routes/_grounds.ranch'
-import { Route as GroundsOrganicRouteImport } from './routes/_grounds.organic'
-import { Route as GroundsGroundsRouteImport } from './routes/_grounds.grounds'
-import { Route as EatdoRestaurantsRouteImport } from './routes/_eatdo.restaurants'
-import { Route as EatdoHikingRouteImport } from './routes/_eatdo.hiking'
-import { Route as EatdoEatdoRouteImport } from './routes/_eatdo.eatdo'
 
-const InquireRoute = InquireRouteImport.update({
-  id: '/inquire',
-  path: '/inquire',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RoomsRoute = RoomsRouteImport.update({
-  id: '/_rooms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const HabitatRoute = HabitatRouteImport.update({
-  id: '/_habitat',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GroundsRoute = GroundsRouteImport.update({
-  id: '/_grounds',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EatdoRoute = EatdoRouteImport.update({
   id: '/_eatdo',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const GroundsRoute = GroundsRouteImport.update({
+  id: '/_grounds',
   getParentRoute: () => rootRouteImport,
+} as any)
+const HabitatRoute = HabitatRouteImport.update({
+  id: '/_habitat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RoomsRoute = RoomsRouteImport.update({
+  id: '/_rooms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InquireRoute = InquireRouteImport.update({
+  id: '/inquire',
+  path: '/inquire',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EatdoEatdoRoute = EatdoEatdoRouteImport.update({
+  id: '/eatdo',
+  path: '/eatdo',
+  getParentRoute: () => EatdoRoute,
+} as any)
+const EatdoHikingRoute = EatdoHikingRouteImport.update({
+  id: '/hiking',
+  path: '/hiking',
+  getParentRoute: () => EatdoRoute,
+} as any)
+const EatdoRestaurantsRoute = EatdoRestaurantsRouteImport.update({
+  id: '/restaurants',
+  path: '/restaurants',
+  getParentRoute: () => EatdoRoute,
+} as any)
+const GroundsGroundsRoute = GroundsGroundsRouteImport.update({
+  id: '/grounds',
+  path: '/grounds',
+  getParentRoute: () => GroundsRoute,
+} as any)
+const GroundsOrganicRoute = GroundsOrganicRouteImport.update({
+  id: '/organic',
+  path: '/organic',
+  getParentRoute: () => GroundsRoute,
+} as any)
+const GroundsRanchRoute = GroundsRanchRouteImport.update({
+  id: '/ranch',
+  path: '/ranch',
+  getParentRoute: () => GroundsRoute,
+} as any)
+const GroundsYardRoute = GroundsYardRouteImport.update({
+  id: '/yard',
+  path: '/yard',
+  getParentRoute: () => GroundsRoute,
+} as any)
+const HabitatHabitatRoute = HabitatHabitatRouteImport.update({
+  id: '/habitat',
+  path: '/habitat',
+  getParentRoute: () => HabitatRoute,
+} as any)
+const HabitatTreesRoute = HabitatTreesRouteImport.update({
+  id: '/trees',
+  path: '/trees',
+  getParentRoute: () => HabitatRoute,
+} as any)
+const HabitatWildlifeRoute = HabitatWildlifeRouteImport.update({
+  id: '/wildlife',
+  path: '/wildlife',
+  getParentRoute: () => HabitatRoute,
+} as any)
+const RoomsGuarumoRoute = RoomsGuarumoRouteImport.update({
+  id: '/guarumo',
+  path: '/guarumo',
+  getParentRoute: () => RoomsRoute,
+} as any)
+const RoomsRoomsRoute = RoomsRoomsRouteImport.update({
+  id: '/rooms',
+  path: '/rooms',
+  getParentRoute: () => RoomsRoute,
+} as any)
+const RoomsSunriseRoute = RoomsSunriseRouteImport.update({
+  id: '/sunrise',
+  path: '/sunrise',
+  getParentRoute: () => RoomsRoute,
 } as any)
 const BaqueanoIndexRoute = BaqueanoIndexRouteImport.update({
   id: '/baqueano/',
@@ -68,71 +133,6 @@ const BaqueanoBijagualWaterfallRoute =
     path: '/baqueano/bijagual-waterfall',
     getParentRoute: () => rootRouteImport,
   } as any)
-const RoomsSunriseRoute = RoomsSunriseRouteImport.update({
-  id: '/sunrise',
-  path: '/sunrise',
-  getParentRoute: () => RoomsRoute,
-} as any)
-const RoomsRoomsRoute = RoomsRoomsRouteImport.update({
-  id: '/rooms',
-  path: '/rooms',
-  getParentRoute: () => RoomsRoute,
-} as any)
-const RoomsGuarumoRoute = RoomsGuarumoRouteImport.update({
-  id: '/guarumo',
-  path: '/guarumo',
-  getParentRoute: () => RoomsRoute,
-} as any)
-const HabitatWildlifeRoute = HabitatWildlifeRouteImport.update({
-  id: '/wildlife',
-  path: '/wildlife',
-  getParentRoute: () => HabitatRoute,
-} as any)
-const HabitatTreesRoute = HabitatTreesRouteImport.update({
-  id: '/trees',
-  path: '/trees',
-  getParentRoute: () => HabitatRoute,
-} as any)
-const HabitatHabitatRoute = HabitatHabitatRouteImport.update({
-  id: '/habitat',
-  path: '/habitat',
-  getParentRoute: () => HabitatRoute,
-} as any)
-const GroundsYardRoute = GroundsYardRouteImport.update({
-  id: '/yard',
-  path: '/yard',
-  getParentRoute: () => GroundsRoute,
-} as any)
-const GroundsRanchRoute = GroundsRanchRouteImport.update({
-  id: '/ranch',
-  path: '/ranch',
-  getParentRoute: () => GroundsRoute,
-} as any)
-const GroundsOrganicRoute = GroundsOrganicRouteImport.update({
-  id: '/organic',
-  path: '/organic',
-  getParentRoute: () => GroundsRoute,
-} as any)
-const GroundsGroundsRoute = GroundsGroundsRouteImport.update({
-  id: '/grounds',
-  path: '/grounds',
-  getParentRoute: () => GroundsRoute,
-} as any)
-const EatdoRestaurantsRoute = EatdoRestaurantsRouteImport.update({
-  id: '/restaurants',
-  path: '/restaurants',
-  getParentRoute: () => EatdoRoute,
-} as any)
-const EatdoHikingRoute = EatdoHikingRouteImport.update({
-  id: '/hiking',
-  path: '/hiking',
-  getParentRoute: () => EatdoRoute,
-} as any)
-const EatdoEatdoRoute = EatdoEatdoRouteImport.update({
-  id: '/eatdo',
-  path: '/eatdo',
-  getParentRoute: () => EatdoRoute,
-} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -273,32 +273,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/inquire': {
-      id: '/inquire'
-      path: '/inquire'
-      fullPath: '/inquire'
-      preLoaderRoute: typeof InquireRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_rooms': {
-      id: '/_rooms'
-      path: ''
+    '/': {
+      id: '/'
+      path: '/'
       fullPath: '/'
-      preLoaderRoute: typeof RoomsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_habitat': {
-      id: '/_habitat'
-      path: ''
-      fullPath: '/'
-      preLoaderRoute: typeof HabitatRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/_grounds': {
-      id: '/_grounds'
-      path: ''
-      fullPath: '/'
-      preLoaderRoute: typeof GroundsRouteImport
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/_eatdo': {
@@ -308,12 +287,124 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EatdoRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
+    '/_grounds': {
+      id: '/_grounds'
+      path: ''
       fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+      preLoaderRoute: typeof GroundsRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/_habitat': {
+      id: '/_habitat'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof HabitatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_rooms': {
+      id: '/_rooms'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof RoomsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/inquire': {
+      id: '/inquire'
+      path: '/inquire'
+      fullPath: '/inquire'
+      preLoaderRoute: typeof InquireRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_eatdo/eatdo': {
+      id: '/_eatdo/eatdo'
+      path: '/eatdo'
+      fullPath: '/eatdo'
+      preLoaderRoute: typeof EatdoEatdoRouteImport
+      parentRoute: typeof EatdoRoute
+    }
+    '/_eatdo/hiking': {
+      id: '/_eatdo/hiking'
+      path: '/hiking'
+      fullPath: '/hiking'
+      preLoaderRoute: typeof EatdoHikingRouteImport
+      parentRoute: typeof EatdoRoute
+    }
+    '/_eatdo/restaurants': {
+      id: '/_eatdo/restaurants'
+      path: '/restaurants'
+      fullPath: '/restaurants'
+      preLoaderRoute: typeof EatdoRestaurantsRouteImport
+      parentRoute: typeof EatdoRoute
+    }
+    '/_grounds/grounds': {
+      id: '/_grounds/grounds'
+      path: '/grounds'
+      fullPath: '/grounds'
+      preLoaderRoute: typeof GroundsGroundsRouteImport
+      parentRoute: typeof GroundsRoute
+    }
+    '/_grounds/organic': {
+      id: '/_grounds/organic'
+      path: '/organic'
+      fullPath: '/organic'
+      preLoaderRoute: typeof GroundsOrganicRouteImport
+      parentRoute: typeof GroundsRoute
+    }
+    '/_grounds/ranch': {
+      id: '/_grounds/ranch'
+      path: '/ranch'
+      fullPath: '/ranch'
+      preLoaderRoute: typeof GroundsRanchRouteImport
+      parentRoute: typeof GroundsRoute
+    }
+    '/_grounds/yard': {
+      id: '/_grounds/yard'
+      path: '/yard'
+      fullPath: '/yard'
+      preLoaderRoute: typeof GroundsYardRouteImport
+      parentRoute: typeof GroundsRoute
+    }
+    '/_habitat/habitat': {
+      id: '/_habitat/habitat'
+      path: '/habitat'
+      fullPath: '/habitat'
+      preLoaderRoute: typeof HabitatHabitatRouteImport
+      parentRoute: typeof HabitatRoute
+    }
+    '/_habitat/trees': {
+      id: '/_habitat/trees'
+      path: '/trees'
+      fullPath: '/trees'
+      preLoaderRoute: typeof HabitatTreesRouteImport
+      parentRoute: typeof HabitatRoute
+    }
+    '/_habitat/wildlife': {
+      id: '/_habitat/wildlife'
+      path: '/wildlife'
+      fullPath: '/wildlife'
+      preLoaderRoute: typeof HabitatWildlifeRouteImport
+      parentRoute: typeof HabitatRoute
+    }
+    '/_rooms/guarumo': {
+      id: '/_rooms/guarumo'
+      path: '/guarumo'
+      fullPath: '/guarumo'
+      preLoaderRoute: typeof RoomsGuarumoRouteImport
+      parentRoute: typeof RoomsRoute
+    }
+    '/_rooms/rooms': {
+      id: '/_rooms/rooms'
+      path: '/rooms'
+      fullPath: '/rooms'
+      preLoaderRoute: typeof RoomsRoomsRouteImport
+      parentRoute: typeof RoomsRoute
+    }
+    '/_rooms/sunrise': {
+      id: '/_rooms/sunrise'
+      path: '/sunrise'
+      fullPath: '/sunrise'
+      preLoaderRoute: typeof RoomsSunriseRouteImport
+      parentRoute: typeof RoomsRoute
     }
     '/baqueano/': {
       id: '/baqueano/'
@@ -328,97 +419,6 @@ declare module '@tanstack/react-router' {
       fullPath: '/baqueano/bijagual-waterfall'
       preLoaderRoute: typeof BaqueanoBijagualWaterfallRouteImport
       parentRoute: typeof rootRouteImport
-    }
-    '/_rooms/sunrise': {
-      id: '/_rooms/sunrise'
-      path: '/sunrise'
-      fullPath: '/sunrise'
-      preLoaderRoute: typeof RoomsSunriseRouteImport
-      parentRoute: typeof RoomsRoute
-    }
-    '/_rooms/rooms': {
-      id: '/_rooms/rooms'
-      path: '/rooms'
-      fullPath: '/rooms'
-      preLoaderRoute: typeof RoomsRoomsRouteImport
-      parentRoute: typeof RoomsRoute
-    }
-    '/_rooms/guarumo': {
-      id: '/_rooms/guarumo'
-      path: '/guarumo'
-      fullPath: '/guarumo'
-      preLoaderRoute: typeof RoomsGuarumoRouteImport
-      parentRoute: typeof RoomsRoute
-    }
-    '/_habitat/wildlife': {
-      id: '/_habitat/wildlife'
-      path: '/wildlife'
-      fullPath: '/wildlife'
-      preLoaderRoute: typeof HabitatWildlifeRouteImport
-      parentRoute: typeof HabitatRoute
-    }
-    '/_habitat/trees': {
-      id: '/_habitat/trees'
-      path: '/trees'
-      fullPath: '/trees'
-      preLoaderRoute: typeof HabitatTreesRouteImport
-      parentRoute: typeof HabitatRoute
-    }
-    '/_habitat/habitat': {
-      id: '/_habitat/habitat'
-      path: '/habitat'
-      fullPath: '/habitat'
-      preLoaderRoute: typeof HabitatHabitatRouteImport
-      parentRoute: typeof HabitatRoute
-    }
-    '/_grounds/yard': {
-      id: '/_grounds/yard'
-      path: '/yard'
-      fullPath: '/yard'
-      preLoaderRoute: typeof GroundsYardRouteImport
-      parentRoute: typeof GroundsRoute
-    }
-    '/_grounds/ranch': {
-      id: '/_grounds/ranch'
-      path: '/ranch'
-      fullPath: '/ranch'
-      preLoaderRoute: typeof GroundsRanchRouteImport
-      parentRoute: typeof GroundsRoute
-    }
-    '/_grounds/organic': {
-      id: '/_grounds/organic'
-      path: '/organic'
-      fullPath: '/organic'
-      preLoaderRoute: typeof GroundsOrganicRouteImport
-      parentRoute: typeof GroundsRoute
-    }
-    '/_grounds/grounds': {
-      id: '/_grounds/grounds'
-      path: '/grounds'
-      fullPath: '/grounds'
-      preLoaderRoute: typeof GroundsGroundsRouteImport
-      parentRoute: typeof GroundsRoute
-    }
-    '/_eatdo/restaurants': {
-      id: '/_eatdo/restaurants'
-      path: '/restaurants'
-      fullPath: '/restaurants'
-      preLoaderRoute: typeof EatdoRestaurantsRouteImport
-      parentRoute: typeof EatdoRoute
-    }
-    '/_eatdo/hiking': {
-      id: '/_eatdo/hiking'
-      path: '/hiking'
-      fullPath: '/hiking'
-      preLoaderRoute: typeof EatdoHikingRouteImport
-      parentRoute: typeof EatdoRoute
-    }
-    '/_eatdo/eatdo': {
-      id: '/_eatdo/eatdo'
-      path: '/eatdo'
-      fullPath: '/eatdo'
-      preLoaderRoute: typeof EatdoEatdoRouteImport
-      parentRoute: typeof EatdoRoute
     }
   }
 }
